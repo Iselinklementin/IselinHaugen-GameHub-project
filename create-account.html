@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="sell.html">Sell</a></li>
+          <li><input type="text" placeholder="Search" /></li>
+          <li><a href="login.html">Log in</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Checkout</h1>
+      <div>
+        <h2>Contact info</h2>
+        <label for="name">Name / Surname</label>
+        <br />
+        <input type="text" name="Name" placeholder="Name / Surname" required />
+      </div>
+
+      <div>
+        <label for="email">E-mail</label>
+        <br />
+        <input type="text" name="email" placeholder="Your e-mail" required />
+      </div>
+
+      <div>
+        <label for="phone">Phone nr</label>
+        <br />
+        <input type="tel" name="phone" placeholder="Phone nr" required />
+      </div>
+
+      <div>
+        <h2>Address</h2>
+        <label for="address">Street</label>
+        <br />
+        <input type="text" name="street" placeholder="Street" required />
+      </div>
+
+      <div>
+        <label for="state">State</label>
+        <br />
+        <input type="text" name="state" placeholder="State" required />
+      </div>
+
+      <div>
+        <label for="postal-code">Postal code</label>
+        <br />
+        <input
+          type="number"
+          name="postal-code"
+          placeholder="Postal code"
+          required
+        />
+      </div>
+      <div>
+        <h2>Register</h2>
+        <label for="email">Email</label>
+        <br />
+        <input type="text" name="email" placeholder="Email" required />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <br />
+        <input type="text" name="password" placeholder="Password" required />
+      </div>
+      <div>
+        <label for="password">Password again</label>
+        <br />
+        <input
+          type="text"
+          name="password"
+          placeholder="Password again"
+          required
+        />
+      </div>
+      <form action="account.html">
+      <button type="submit">Create my account</button>
+      <div>
+          <input type="checkbox" name="terms">
+          <p>I agree to the Registration <i>Agreement and Privacy Policy</i></p>
+          <input type="checkbox" name="newsletter">
+          <p>Send med latest news and discounts</p>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="login.html">Log in</a></li>
+        <li><a href="create-account.html">Create account</a></li>
+        <li><a href="sell.html">Sell</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>FAQ</li>
+        <li>Safe payment</li>
+      </ul>
+    </footer>
+  </body>
+</html>
