@@ -19,49 +19,47 @@
       </nav>
     </header>
     <main>
+        
       <h1>Create account</h1>
-      <div>
+     <form action="account.html">
         <h2>Contact info</h2>
-        <label for="name">First name / Surname</label><br />
-        <input type="text" name="fname" placeholder="First name / Surname"/><br />
-        <label for="email">E-mail</label><br />
-        <input type="text" name="email" placeholder="Your e-mail"/><br />
-        <label for="phone">Phone number</label><br />
-        <input type="tel" name="phone" placeholder="Phone number"/>
+        <label>First name / Surname</label><br>
+        <input type="text" placeholder="First name / Surname"/><br><br>
+        <label>E-mail</label><br>
+        <input type="text" placeholder="Your e-mail"/><br><br>
+        <label>Phone number</label><br>
+        <input type="tel" placeholder="Phone number"/>
       </div>
 
       <div>
         <h2>Address</h2>
-        <label for="address">Street</label><br />
-        <input type="text" name="street" placeholder="Street"/><br>
-        <label for="state">State</label><br />
-        <input type="text" name="state" placeholder="State"/><br>
-        <label for="postal-code">Postal code</label><br />
+        <label>Street</label><br>
+        <input type="text" name="street" placeholder="Street"/><br><br>
+        <label>State</label><br>
+        <input type="text" name="state" placeholder="State"/><br><br>
+        <label>Postal code</label><br>
         <input type="number" name="post-code"placeholder="Postal code"/>
       </div>
 
       <div>
         <h2>Register</h2>
-        <label for="email">Email</label><br />
-        <input type="text" name="email" placeholder="Email"/><br>
-        <label for="password">Password</label><br />
-        <input type="text" name="password" placeholder="Password"/><br>
-        <label for="password">Password again</label><br />
+        <label>Email</label><br />
+        <input type="text" placeholder="Email"/><br><br>
+        <label>Password</label><br />
+        <input type="text" placeholder="Password"/><br><br>
+        <label>Confirm password</label><br />
         <input
-          type="text" name="pwd" placeholder="Password again"/>
-      </div>
-      <br>
+          type="text" placeholder="Confirm password"/><br><br>
+        <button>Create my account</button><br><br>
+    </div>
 
-      <form action="account.html">
-      <button type="submit">Create my account</button><br>
-      
-      <br>
-      <div>
-          <input type="checkbox" name="terms">
-          <label for="terms">I agree to the Registration Agreement and Privacy Policy</label><br>
-          <input type="checkbox" name="newsletter">
-          <label for="newsletter">Send med latest news and discounts</label>
-      </div>
+        <div>
+          <input type="checkbox">
+          <label>I agree to the <a href="/terms">Registration Agreement and Privacy Policy</a></label><br>
+          <input type="checkbox">
+          <label>Send med latest news and discounts</label>
+        </div>
+        </form>
     </main>
     <footer>
       <ul>
