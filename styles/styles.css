@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: Roboto, tahoma, verdana;
+}
+label {
+  font-family: Roboto, tahoma, verdana;
+}
