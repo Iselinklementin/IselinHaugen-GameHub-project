@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="sell.html">Sell</a></li>
+          <li><input type="text" placeholder="Search" /></li>
+          <li><a href="login.html">Log in</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Checkout</h1>
+
+      <div>
+        <h2>Contact info</h2>
+        <label for="name">First name/Surname</label><br />
+        <input type="text" name="Name" placeholder="First name/Surname" /><br />
+        <label for="email">E-mail</label><br />
+        <input type="text" name="email" placeholder="Your e-mail" /><br />
+        <label for="phone">Phone nr</label> <br />
+        <input type="tel" name="phone" placeholder="Phone number" />
+      </div>
+
+      <div>
+        <h2>Address</h2>
+        <label for="address">Street</label> <br />
+        <input type="text" name="street" placeholder="Street" /><br />
+        <label for="state">State</label><br />
+        <input type="text" name="state" placeholder="State" /><br />
+        <label for="postal-code">Postal code</label><br />
+        <input type="number" name="postal-code" placeholder="Postal code" />
+      </div>
+
+      <div>
+        <h2>Delivery method</h2>
+        <input type="radio" name="delivery" id="pickup" />
+        <label for="delivery">Pick-up point</label><br />
+        <input type="radio" name="delivery" id="homeaddress" />
+        <label for="delivery">Home address</label><br />
+        <input type="radio" name="delivery" id="ship" />
+        <label for="delivery">Shipment</label>
+      </div>
+
+      <div>
+        <h2>Payment</h2>
+        <input type="radio" name="payment" id="klarna" />
+        <label for="payment">Klarna - Pay in 14 days</label><br />
+        <input type="radio" name="payment" id="credit" />
+        <label for="payment">MasterCard / Credit</label><br />
+        <input type="radio" name="payment" id="monthly" />
+        <label for="payment">Pay monthly</label>
+      </div>
+
+      <div>
+        <h2>Summery</h2>
+        <p><strong>Castle Wars</strong> PS4</p>
+        <p>299,-</p>
+
+        <p><strong>Immortal</strong> PS4</p>
+        <p>299,-</p>
+
+        <h2>Sub-total</h2>
+        <p>NOK 699</p>
+        <form action="checkout-success.html">
+          <button type="submit">Purchase</button>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="login.html">Log in</a></li>
+        <li><a href="create-account.html">Create account</a></li>
+        <li><a href="sell.html">Sell</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>FAQ</li>
+        <li>Safe payment</li>
+      </ul>
+    </footer>
+  </body>
+</html>
