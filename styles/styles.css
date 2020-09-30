@@ -2,3 +2,33 @@ body {
   font-family: "Open Sans", sans-serif;
   font-family: "Roboto", sans-serif;
 }
+nav li {
+  display: inline-block;
+}
+nav ul {
+  padding: 0px;
+}
+nav a {
+  color: #000000;
+  text-decoration: none;
+  padding: 2rem;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+/* Any button over which the user's pointer is hovering */
+button:hover {
+  color: rgb(187, 126, 19);
+}
+.active {
+  color: darkorange;
+  text-decoration: underline;
+}
+h1,
+h2 {
+  text-transform: uppercase;
+}
+.gamelink {
+  text-decoration: none;
+  color: black;
+}
