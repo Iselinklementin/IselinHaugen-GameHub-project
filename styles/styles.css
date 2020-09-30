@@ -2,6 +2,19 @@ body {
   font-family: "Open Sans", sans-serif;
   font-family: "Roboto", sans-serif;
 }
+
+nav {
+  background-color: black;
+  height: 104px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+  opacity: 75%;
+}
+
 nav li {
   display: inline-block;
 }
@@ -9,13 +22,14 @@ nav ul {
   padding: 0px;
 }
 nav a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   padding: 2rem;
 }
 nav a:hover {
   text-decoration: underline;
 }
+
 /* Any button over which the user's pointer is hovering */
 button:hover {
   color: rgb(187, 126, 19);
