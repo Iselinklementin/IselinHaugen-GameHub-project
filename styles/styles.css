@@ -3,20 +3,17 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-nav {
+header {
   background-color: black;
-  height: 104px;
+  height: 4rem;
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
   z-index: 1;
   text-align: center;
-  opacity: 75%;
 }
 
 nav li {
   display: inline-block;
+  color: #ffffff;
 }
 nav ul {
   padding: 0px;
