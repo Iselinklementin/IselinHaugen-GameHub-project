@@ -5,19 +5,16 @@ body {
 
 header {
   background-color: black;
-  height: 4rem;
+  height: 5rem;
   width: 100%;
   z-index: 1;
-  text-align: center;
 }
 
 nav li {
-  display: inline-block;
+  display: inline;
   color: #ffffff;
 }
-nav ul {
-  padding: 0px;
-}
+
 nav a {
   color: #ffffff;
   text-decoration: none;
@@ -42,4 +39,14 @@ h2 {
 .gamelink {
   text-decoration: none;
   color: black;
+}
+
+.game-name {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.price {
+  font-weight: bold;
 }
