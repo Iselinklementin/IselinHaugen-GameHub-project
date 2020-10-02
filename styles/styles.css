@@ -102,6 +102,9 @@ ul.filter-list {
   padding: 1.5rem;
 }
 
+.home {
+}
+
 .prepurchase-list {
   display: flex;
   flex-wrap: wrap;
@@ -113,7 +116,7 @@ ul.filter-list {
 figure {
   padding: 1rem;
   margin: 1rem;
-  border: red solid;
+  border: solid red;
 }
 
 .gallery {
