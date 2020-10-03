@@ -1,4 +1,7 @@
 /* TRBL */
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -51,7 +54,6 @@ h2 {
 }
 
 footer ul {
-  margin: 0;
   padding: 0;
   list-style-type: none;
 }
@@ -69,6 +71,10 @@ footer li {
   color: black;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+figcaption {
+  margin-top: -1rem;
 }
 
 .price {
@@ -97,55 +103,48 @@ ul.filter-list {
   padding: 0;
 }
 
-.filter-platform > li {
+.filter-platform li {
   display: inline;
   padding: 1.5rem;
 }
 
-.home {
-}
-
-.prepurchase-list {
+.home-games {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
   border: forestgreen solid;
   justify-content: center;
+  clear: both;
 }
 
 figure {
-  padding: 1rem;
+  padding: 0;
   margin: 1rem;
-  border: solid red;
+  border: dotted red;
 }
 
-.gallery {
-  width: 235px;
+.gallery-home-top {
+  width: 243px;
   height: 315px;
 }
 
 .game1 {
   flex: 0;
-  padding-right: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
 .game2 {
   flex: 0;
-  padding-right: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
 .game3 {
   flex: 0;
-  padding-right: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
 .game4 {
   flex: 0;
-  padding-right: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
 .openbeta {
@@ -163,4 +162,38 @@ figure {
   top: 45%;
   left: 65%;
   color: white;
+}
+
+.release-game1 {
+  flex: 0;
+  padding: 0;
+}
+
+.release-game2 {
+  flex: 0;
+  padding: 0;
+}
+
+.release-game3 {
+  flex: 0;
+  padding: 0;
+}
+
+.gallery-home-bottom {
+  width: 235px;
+  height: 315px;
+}
+
+.overwatch {
+  height: 315px;
+  width: 545px;
+}
+
+.button-to-shop {
+  border: double red;
+}
+
+.traced-photo {
+  float: right;
+  margin-right: 10%;
 }
