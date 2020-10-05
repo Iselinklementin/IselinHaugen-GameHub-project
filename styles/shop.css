@@ -1,0 +1,26 @@
+.highlight:hover {
+  background-color: rgb(252, 160, 39);
+  text-decoration: none;
+}
+
+.highlight {
+  list-style-type: none;
+}
+
+.highlight > a {
+  color: black;
+  text-decoration: none;
+}
+
+.filter-container {
+  max-width: 145px;
+}
+
+ul.filter-list {
+  padding: 0;
+}
+
+.filter-platform li {
+  display: inline;
+  padding: 1.5rem;
+}

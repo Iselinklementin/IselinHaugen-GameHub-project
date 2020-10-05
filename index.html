@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/index.css" rel="stylesheet" />
     <title>IselinHaugen - GameHub</title>
   </head>
   <body>
@@ -16,12 +17,16 @@
         <nav>
           <ul>
             <div>
-              <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="shop.html">Shop</a></li>
-              <li><a href="sell.html">Sell</a></li>
-              <li><input type="text" placeholder="Search" /></li>
-              <li><a href="login.html">Log in</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li class="nav-left">
+                <a href="index.html" class="active">Home</a>
+              </li>
+              <li class="nav-left"><a href="shop.html">Shop</a></li>
+              <li class="nav-left"><a href="sell.html">Sell</a></li>
+              <li class="nav-left"><input type="text" placeholder="Search" />
+              </li>
+              <li><a href="index.html"><img class="nav-logo" src="/images/icons/logo.png" alt="Gamehub logo"/><a href="index.html"></a></li>
+              <li class="nav-right"><a href="login.html">Log in</a></li>
+              <li class="nav-right"><a href="contact.html">Contact</a></li>
             </div>
           </ul>
         </nav>
@@ -41,14 +46,12 @@
           />
         </figure>
         <br />
-        <ul class="slogan">
-          <li>List it</li>
-          <li>Send it</li>
-          <li>Get paid</li>
-        </ul>
+        <p class="slogan">
+          List it - Send it - Get paid
+        </p>
       </section>
 
-      <h2>Pre-purchase</h2>
+      <h2 class="heading-overview">Pre-purchase</h2>
       <section class="home-games">
         <figure class="game1">
           <img
@@ -60,7 +63,7 @@
           <figcaption>
             Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
           </figcaption>
-          <div class="price"><span>NOK 299</span></div>
+          <div class="price">NOK 299</div>
         </figure>
 
         <figure class="game2">
@@ -73,7 +76,7 @@
           <figcaption>
             Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
           </figcaption>
-          <div class="price"><span>NOK 299</span></div>
+          <div class="price">NOK 299</div>
         </figure>
 
         <figure class="game3">
@@ -86,7 +89,7 @@
           <figcaption>
             Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
           </figcaption>
-          <div class="price"><span>NOK 299</span></div>
+          <div class="price">NOK 299</div>
         </figure>
 
         <figure class="game4">
@@ -99,44 +102,40 @@
           <figcaption>
             Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
           </figcaption>
-          <div class="price"><span>NOK 299</span></div>
+          <div class="price">NOK 299</div>
         </figure>
       </section>
 
       <section class="openbeta">
         <figure>
-          <div>
-            <img
-              src="/images/games/war-game-1.jpg"
-              alt="Picture of a wargame"
-            />
-            <figcaption class="earlyaccess">
-              Get early access <br />
-              to open beta
-            </figcaption>
-          </div>
+          <img src="/images/games/war-game-1.jpg" alt="Picture of a wargame" />
+          <figcaption class="earlyaccess">
+            Get early access <br />
+            to open beta
+          </figcaption>
         </figure>
-        <button>Learn more</button><br /><br />
+        <button class="button openbeta-button">Learn more</button>
       </section>
 
-      <section class="button-to-shop">
+      <section class="to-shop">
         <form action="shop.html">
-          <label
-            >Experience intergalactic warfare through an epic story
-            campaign</label
-          ><br /><br />
-          <button>Learn more</button>
+          <label class="font-to-shop"
+            >Experience intergalactic warfare <br />
+            through an epic story campaign</label
+          >
         </form>
-        <figure>
-          <img
-            class="traced-photo"
-            src="/images/elements/illustration-home-low.png"
-            alt="Wardude protecting himself"
-          />
-        </figure>
+        <br />
+        <button class="button">Learn more</button>
       </section>
+      <figure>
+        <img
+          class="traced-photo"
+          src="/images/elements/illustration-home-low.png"
+          alt="Wardude protecting himself"
+        />
+      </figure>
 
-      <h2>New releases</h2>
+      <h2 class="heading-overview">New releases</h2>
       <section class="home-games">
         <figure class="release-game1">
           <img
@@ -178,18 +177,24 @@
         </figure>
       </section>
 
+      <div>
+        <img src="/images/games/wood-game-home.jpg" alt="">
       <form action="shop.html">
         <h3>Support a gamer</h3>
-        <button>Buy used</button>
+        <button class="button">Buy used</button>
       </form>
+    </div>
 
       <form action="sell.html">
         <h3>Earn money</h3>
-        <button>Sell games</button>
+        <button class="button">Sell games</button>
       </form>
       <br />
-      <button>Watch video</button>
+      <button class="button">Watch video</button>
       <div>
+        <figure>
+          <img class="illustration" src="/images/games/illustration-footer-low.png" alt="">
+        </figure>
         <p>Play it your way</p>
         <p>
           Epic Heroes and relentless action on diverse battlegrounds. Get
