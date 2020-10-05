@@ -3,9 +3,12 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   font-family: "Open Sans", sans-serif;
   font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -20,6 +23,7 @@ header {
 nav li {
   display: inline-block;
   color: #ffffff;
+  padding-top: 2rem;
 }
 
 nav a {
@@ -47,27 +51,51 @@ ul {
 .home-page-main {
   background: url(/images/backgrounds/background-home-together.jpg);
   color: white;
-  margin-top: -1.3rem;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
 }
 .footer {
   background: url(/images/backgrounds/footer.jpg);
   height: 383px;
   margin-top: -1.3rem;
+  background-repeat: none;
+  background-size: cover;
 }
 
-.intro {
-  height: 972px;
+/* OBS! This is the one pushing nav upwards on homepage */
+
+.intro-text {
+  max-height: 972px;
   text-align: center;
   padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .slogan {
   width: 20%;
-  display: inline-block;
+  display: inline-flex;
+  padding-top: 2rem;
 }
 
+.sell-icons {
+  margin-top: 5rem;
+}
+.slogan li {
+  padding: 1rem;
+  border: solid white;
+  margin-top: 0;
+  text-align: center;
+}
 .test-font-size {
   font-size: 5.6rem;
+}
+
+/* testing nav across pages */
+
+main {
+  margin-top: -1.3rem;
+  width: 100%;
 }
 
 /* Any button over which the user's pointer is hovering */
@@ -131,6 +159,8 @@ figcaption {
   font-weight: bold;
 }
 
+/* Shop - filter */
+
 .highlight:hover {
   background-color: rgb(252, 160, 39);
   text-decoration: none;
@@ -158,7 +188,7 @@ ul.filter-list {
   padding: 1.5rem;
 }
 
-/* trying flex */
+/* trying flex homepage */
 
 .home-games {
   display: flex;
@@ -248,4 +278,8 @@ figure {
 .traced-photo {
   float: right;
   margin-right: 10%;
+}
+
+.form__input {
+  display: block;
 }

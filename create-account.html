@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;0,900;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="styles/styles.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;0,900;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/styles.css" rel="stylesheet" />
     <title>Create account</title>
   </head>
   <body>
@@ -21,48 +24,95 @@
       </nav>
     </header>
     <main>
+      <h1>Create account</h1>
 
-    <section>    
-     <h1>Create account</h1>
-        <form action="account.html">
-        <h2>Contact info</h2>
-        <label>First name / Surname</label><br>
-        <input type="text" placeholder="First name / Surname"/><br><br>
-        <label>E-mail</label><br>
-        <input type="text" placeholder="Your e-mail"/><br><br>
-        <label>Phone number</label><br>
-        <input type="tel" placeholder="Phone number"/>
-      </section>
+      <form>
+        <fieldset>
+          <legend>Contact info</legend>
+          <label for="name">First name / Surname</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form__input"
+            placeholder="First name / Surname"
+            required
+          />
+          <label for="phone">Phone number</label><br />
+          <input
+            type="phone"
+            name="phone"
+            id="phone"
+            class="formt__input"
+            placeholder="Phone number"
+            required
+          />
+        </fieldset>
+      </form>
 
-    <section>
-      <h2>Address</h2>
-        <label>Street</label><br>
-        <input type="text" name="street" placeholder="Street"/><br><br>
-        <label>State</label><br>
-        <input type="text" name="state" placeholder="State"/><br><br>
-        <label>Postal code</label><br>
-        <input type="number" name="post-code"placeholder="Postal code"/>
-    </section>
+      <form>
+        <fieldset>
+          <legend>Address</legend>
+          <label for="street">Street</label>
+          <input
+            type="text"
+            name="street"
+            id="street"
+            class="form__input"
+            placeholder="Street"
+            required
+          />
+          <label>State</label>
+          <input
+            type="text"
+            name="state"
+            class="form__input"
+            placeholder="State"
+            required
+          />
+          <label>Postal code</label>
+          <input
+            type="tel"
+            name="post-code"
+            class="form__input"
+            placeholder="Postal code"
+            required
+          />
+        </fieldset>
+      </form>
 
-    <section>
-        <h2>Register</h2>
-        <label>Email</label><br />
-        <input type="text" placeholder="Email"/><br><br>
-        <label>Password</label><br />
-        <input type="text" placeholder="Password"/><br><br>
-        <label>Confirm password</label><br />
-        <input
-          type="text" placeholder="Confirm password"/><br><br>
-        <button>Create my account</button><br><br>
-    </section>
+      <form>
+        <fieldset>
+          <legend>Register</legend>
+          <label>Email</label>
+          <input type="text" class="form__input" placeholder="Email" required />
+          <label>Password</label>
+          <input
+            type="text"
+            class="form__input"
+            placeholder="Password"
+            required
+          />
+          <label>Confirm password</label>
+          <input
+            type="text"
+            class="form__input"
+            placeholder="Confirm password"
+            required
+          />
+        </fieldset>
+        <button>Create my account</button>
+      </form>
 
-        <div>
-          <input type="checkbox">
-          <label>I agree to the <a href="#">Registration Agreement and Privacy Policy</a></label><br>
-          <input type="checkbox">
-          <label>Send med latest news and discounts</label>
-        </div>
-        </form>
+      <div>
+        <input type="checkbox" />
+        <label
+          >I agree to the
+          <a href="#">Registration Agreement and Privacy Policy</a></label
+        ><br />
+        <input type="checkbox" />
+        <label>Send med latest news and discounts</label>
+      </div>
     </main>
     <footer>
       <ul>
