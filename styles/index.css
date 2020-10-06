@@ -138,10 +138,10 @@
 }
 
 /* Add to stylesheet if ok */
+
 .nav-logo {
-  max-height: 100px;
-  padding-top: 1rem;
-  justify-content: center;
+  max-height: 90px;
+  align-items: center;
 }
 
 .nav-left {

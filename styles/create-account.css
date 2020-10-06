@@ -1,0 +1,108 @@
+.create-account-form {
+  display: flex;
+  justify-content: center;
+  margin-top: -5.5rem;
+}
+
+.form-input {
+  display: block;
+  border-radius: 6px;
+  border-color: rgba(255, 255, 255, 0);
+  padding-right: 15px;
+  padding-top: 5px;
+}
+
+.create {
+  background-color: #2f97c6;
+  border-style: none;
+  height: 542px;
+  color: white;
+  flex: 0;
+  padding: 4rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  border: dotted red;
+}
+
+.headline {
+  margin-top: 2rem;
+  font-size: 24px;
+  padding-bottom: 1rem;
+  border: solid green;
+}
+
+.register {
+  background-color: #a5358b;
+  border-style: none;
+  color: white;
+  flex: 0;
+  padding: 4rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  border: dotted red;
+}
+
+.create-account {
+  background-image: url(/images/backgrounds/background-registerpages.jpg);
+  height: 946px;
+  width: 100%;
+}
+
+.footer {
+  background: url(/images/backgrounds/footer.jpg);
+  height: 383px;
+  width: 100%;
+  margin-top: -1.3rem;
+  background-repeat: none;
+  background-size: cover;
+}
+
+/* Add to stylesheet if ok */
+
+.nav-logo {
+  max-height: 90px;
+  align-items: center;
+}
+
+.nav-left {
+  float: left;
+  padding-top: 1.5rem;
+}
+
+.nav-right {
+  float: right;
+  padding-top: 1.5rem;
+}
+
+h1 {
+  color: white;
+  padding-top: 12rem;
+  padding-bottom: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.agreement a {
+  color: rgb(252, 160, 39);
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.agreement {
+  font-size: 0.8rem;
+}
+
+.checkbox {
+  padding-top: 2rem;
+}
+
+/*
+checkbox:checked {
+  padding-top: 2rem;
+  color: rgb(252, 160, 39);
+} */
+
+label {
+  border: springgreen solid;
+}

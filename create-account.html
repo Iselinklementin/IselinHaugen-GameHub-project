@@ -8,113 +8,123 @@
       rel="stylesheet"
     />
     <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/create-account.css" rel="stylesheet" />
     <title>Create account</title>
   </head>
-  <body>
+  <body class="create-account">
     <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="sell.html">Sell</a></li>
-          <li><input type="text" placeholder="Search" /></li>
-          <li><a href="login.html">Log in</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <div>
+        <nav>
+          <ul>
+            <div class="nav-wrap">
+              <li class="nav-left">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="nav-left"><a href="shop.html">Shop</a></li>
+              <li class="nav-left"><a href="sell.html">Sell</a></li>
+              <li class="nav-left"><input type="text" placeholder="Search" />
+              </li>
+              <li><a href="index.html"><img class="nav-logo" src="/images/icons/logo.png" alt="Gamehub logo"/><a href="index.html"></a></li>
+              <li class="nav-right"><a href="login.html">Log in</a></li>
+              <li class="nav-right"><a href="contact.html">Contact</a></li>
+            </div>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <h1>Create account</h1>
-
-      <form>
-        <fieldset>
-          <legend>Contact info</legend>
-          <label for="name">First name / Surname</label>
+      <form class="create-account-form" method="POST">
+        <fieldset class="create">
+          <legend class="headline">Contact info</legend>
+          <label class="contact-info" for="name">First name / Surname</label>
           <input
             type="text"
             name="name"
             id="name"
-            class="form__input"
+            class="form-input"
             placeholder="First name / Surname"
-            required
           />
-          <label for="phone">Phone number</label><br />
+          <label for="phone">Phone number</label>
           <input
             type="phone"
             name="phone"
             id="phone"
-            class="formt__input"
+            class="form-input"
             placeholder="Phone number"
-            required
           />
-        </fieldset>
-      </form>
-
-      <form>
-        <fieldset>
-          <legend>Address</legend>
-          <label for="street">Street</label>
+          <legend class="headline">Address</legend>
+          <label class="contact-info" for="street">Street</label>
           <input
             type="text"
             name="street"
             id="street"
-            class="form__input"
+            class="form-input"
             placeholder="Street"
-            required
           />
-          <label>State</label>
+          <label for="street">State</label>
           <input
             type="text"
             name="state"
-            class="form__input"
+            id="state"
+            class="form-input"
             placeholder="State"
-            required
           />
-          <label>Postal code</label>
+          <label for="postal-code">Postal code</label>
           <input
-            type="tel"
+            type="number"
             name="post-code"
-            class="form__input"
+            id="post-code"
+            class="form-input"
             placeholder="Postal code"
-            required
           />
         </fieldset>
-      </form>
 
-      <form>
-        <fieldset>
-          <legend>Register</legend>
-          <label>Email</label>
-          <input type="text" class="form__input" placeholder="Email" required />
-          <label>Password</label>
+
+        <fieldset class="register">
+          <legend class="headline">Register</legend>
+          <label for="email">Email</label>
           <input
             type="text"
-            class="form__input"
+            name="email"
+            id="email"
+            class="form-input"
+            placeholder="Email"
+            required
+          />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="form-input"
             placeholder="Password"
             required
           />
-          <label>Confirm password</label>
+          <label for="confirm-password">Confirm password</label>
           <input
-            type="text"
-            class="form__input"
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+            class="form-input"
             placeholder="Confirm password"
             required
           />
+          <button class="button">Create my account</button>
+          
+          <div class="checkbox">
+            <input type="checkbox" />
+            <label class="agreement"
+              >I agree to the
+              <a href="#">Registration Agreement and Privacy Policy</a></label
+            ><br />
+            <input type="checkbox" />
+            <label class="agreement">Send med latest news and discounts</label>
+          </div>
         </fieldset>
-        <button>Create my account</button>
       </form>
-
-      <div>
-        <input type="checkbox" />
-        <label
-          >I agree to the
-          <a href="#">Registration Agreement and Privacy Policy</a></label
-        ><br />
-        <input type="checkbox" />
-        <label>Send med latest news and discounts</label>
-      </div>
     </main>
-    <footer>
+    <footer class="footer">
       <ul>
         <li><a href="login.html">Log in</a></li>
         <li><a href="create-account.html">Create account</a></li>

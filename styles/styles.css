@@ -20,6 +20,11 @@ header {
   position: fixed;
 }
 
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
 nav li {
   display: inline-block;
   color: #ffffff;
@@ -86,10 +91,6 @@ button:hover {
   color: rgb(252, 160, 39);
   border-bottom: 2px rgb(252, 160, 39) solid;
 }
-h1,
-h2 {
-  text-transform: uppercase;
-}
 
 footer ul {
   padding-top: 7rem;
@@ -135,8 +136,4 @@ figcaption {
 figure {
   padding: 0;
   margin: 1rem;
-}
-
-.form__input {
-  display: block;
 }
