@@ -58,13 +58,6 @@ ul {
   width: 100%;
   background-size: cover;
 }
-.footer {
-  background: url(/images/backgrounds/footer.jpg);
-  height: 383px;
-  margin-top: -1.3rem;
-  background-repeat: none;
-  background-size: cover;
-}
 
 /* testing nav across pages */
 
@@ -92,6 +85,72 @@ button:hover {
   border-bottom: 2px rgb(252, 160, 39) solid;
 }
 
+figcaption {
+  margin-top: -1rem;
+}
+
+.price {
+  font-weight: bold;
+}
+
+/* Shop - filter */
+
+/* Footer editing */
+
+figure {
+  padding: 0;
+  margin: 1rem;
+}
+
+footer ul li {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+
+.footer-list {
+  display: inline-flex;
+  width: 100%;
+  padding-top: 4%;
+}
+
+.footer-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-logo {
+  max-height: 100px;
+  flex: 1;
+  margin-left: 8rem;
+}
+
+.footer-contact-1 {
+  flex: 1;
+  padding: 2rem;
+  margin-left: 7rem;
+}
+
+.footer-contact-2 {
+  flex: 1;
+  padding: 2rem;
+}
+
+.footer-contact-3 {
+  flex: 1;
+  padding: 2rem;
+  margin-right: 10rem;
+}
+
+.footer {
+  background: url(/images/backgrounds/footer.jpg);
+  height: 300px;
+  margin-top: -1.3rem;
+  background-size: cover;
+}
+
+/*
+
 footer ul {
   padding-top: 7rem;
   padding-left: 10rem;
@@ -99,6 +158,7 @@ footer ul {
   border: solid peru;
   text-decoration: none;
 }
+
 
 .footer-li a {
   color: white;
@@ -120,20 +180,4 @@ footer ul {
   margin: 10rem;
   border: green solid 1px;
 }
-
-figcaption {
-  margin-top: -1rem;
-}
-
-.price {
-  font-weight: bold;
-}
-
-/* Shop - filter */
-
-/* trying flex homepage */
-
-figure {
-  padding: 0;
-  margin: 1rem;
-}
+*/

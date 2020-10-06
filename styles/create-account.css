@@ -48,15 +48,6 @@
   width: 100%;
 }
 
-.footer {
-  background: url(/images/backgrounds/footer.jpg);
-  height: 383px;
-  width: 100%;
-  margin-top: -1.3rem;
-  background-repeat: none;
-  background-size: cover;
-}
-
 /* Add to stylesheet if ok */
 
 .nav-logo {
