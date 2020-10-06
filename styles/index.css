@@ -15,6 +15,12 @@
   font-size: 5.6rem;
 }
 
+.slogan li {
+  display: inline-block;
+  margin: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 /* Under header */
 
 .game-name {
@@ -115,6 +121,7 @@
 
 .font-to-shop {
   font-size: 20px;
+  line-height: 1.5;
 }
 
 .traced-photo {
@@ -124,9 +131,10 @@
 }
 
 .heading-overview {
-  padding-left: 11rem;
+  padding-left: 11.4rem;
   font-size: 16px;
   margin: 0;
+  clear: both;
 }
 
 /* Add to stylesheet if ok */
@@ -147,7 +155,5 @@
 }
 .illustration {
   width: 100%;
-  padding: 0;
-  margin: 0;
   position: relative;
 }
