@@ -1,15 +1,37 @@
 .create-account-form {
   display: flex;
   justify-content: center;
-  margin-top: -5.5rem;
+  margin-top: -5rem;
 }
 
 .form-input {
   display: block;
-  border-radius: 6px;
-  border-color: rgba(255, 255, 255, 0);
-  padding-right: 15px;
-  padding-top: 5px;
+  border-radius: 4px;
+  border-color: rgba(255, 255, 255, 0.404);
+  padding: 2px 30px;
+  margin: 10px;
+  opacity: 60%;
+  text-align: center;
+}
+
+legend {
+  position: absolute;
+  top: 16rem;
+}
+
+.headline {
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  padding-left: 2.9rem;
+  font-size: 24px;
+}
+
+.headline-register {
+  padding-left: 4.4rem;
+}
+
+.fieldset-column {
+  margin-top: 25px;
 }
 
 .create {
@@ -19,16 +41,7 @@
   color: white;
   flex: 0;
   padding: 4rem;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
-  border: dotted red;
-}
-
-.headline {
-  margin-top: 2rem;
-  font-size: 24px;
-  padding-bottom: 1rem;
-  border: solid green;
+  margin: 8rem 1rem;
 }
 
 .register {
@@ -37,32 +50,15 @@
   color: white;
   flex: 0;
   padding: 4rem;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
-  border: dotted red;
+  margin: 8rem 0;
 }
 
 .create-account {
   background-image: url(/images/backgrounds/background-registerpages.jpg);
   height: 946px;
-  width: 100%;
-}
-
-/* Add to stylesheet if ok */
-
-.nav-logo {
-  max-height: 90px;
-  align-items: center;
-}
-
-.nav-left {
-  float: left;
-  padding-top: 1.5rem;
-}
-
-.nav-right {
-  float: right;
-  padding-top: 1.5rem;
+  background-size: cover;
+  text-align: center;
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -86,6 +82,12 @@ h1 {
 
 .checkbox {
   padding-top: 2rem;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+button {
+  margin-top: 2rem;
 }
 
 /*
@@ -94,6 +96,19 @@ checkbox:checked {
   color: rgb(252, 160, 39);
 } */
 
-label {
-  border: springgreen solid;
+/* Add to stylesheet if ok */
+
+.nav-logo {
+  max-height: 90px;
+  align-items: center;
+}
+
+.nav-left {
+  float: left;
+  padding-top: 1.5rem;
+}
+
+.nav-right {
+  float: right;
+  padding-top: 1.5rem;
 }

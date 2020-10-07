@@ -37,7 +37,8 @@
       <form class="create-account-form" method="POST">
         <fieldset class="create">
           <legend class="headline">Contact info</legend>
-          <label class="contact-info" for="name">First name / Surname</label>
+          <div class="fieldset-column">
+          <label class="name" for="name">First name / Surname</label>
           <input
             type="text"
             name="name"
@@ -53,8 +54,7 @@
             class="form-input"
             placeholder="Phone number"
           />
-          <legend class="headline">Address</legend>
-          <label class="contact-info" for="street">Street</label>
+          <label for="street">Street</label>
           <input
             type="text"
             name="street"
@@ -78,11 +78,12 @@
             class="form-input"
             placeholder="Postal code"
           />
+          </div>
         </fieldset>
 
-
         <fieldset class="register">
-          <legend class="headline">Register</legend>
+          <legend class="headline headline-register">Register</legend>
+          <div class="fieldset-column">
           <label for="email">Email</label>
           <input
             type="text"
@@ -110,14 +111,15 @@
             placeholder="Confirm password"
             required
           />
+        </div>
           <button class="button">Create my account</button>
           
           <div class="checkbox">
             <input type="checkbox" />
             <label class="agreement"
               >I agree to the
-              <a href="#">Registration Agreement and Privacy Policy</a></label
-            ><br />
+              <a href="#">Registration Agreement and Privacy Policy</a></label>
+              <br>
             <input type="checkbox" />
             <label class="agreement">Send med latest news and discounts</label>
           </div>
