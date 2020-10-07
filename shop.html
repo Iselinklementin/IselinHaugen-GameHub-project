@@ -11,81 +11,222 @@
     <link href="styles/shop.css" rel="stylesheet" />
     <title>Shop</title>
   </head>
-  <body>
-    <header class="home-header">
+  <body class="background">
+    <header>
       <div>
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html" class="active">Shop</a></li>
-            <li><a href="sell.html">Sell</a></li>
-            <li><input type="text" placeholder="Search" /></li>
-            <li><a href="login.html">Log in</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <div class="nav-wrap">
+              <li class="nav-left">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="nav-left"><a href="shop.html" class="active">Shop</a></li>
+              <li class="nav-left"><a href="sell.html">Sell</a></li>
+              <li class="nav-left"><input type="text" placeholder="Search" />
+              </li>
+              <li><a href="index.html"><img class="nav-logo" src="/images/icons/logo.png" alt="Gamehub logo"/><a href="index.html"></a></li>
+              <li class="nav-right"><a href="login.html">Log in</a></li>
+              <li class="nav-right"><a href="contact.html">Contact</a></li>
+            </div>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <h1>Choose your weapon</h1>
+
+      <h1>Choose your <br> weapon</h1>
+
       <div class="filter-platform">
-        <li>Nintendo</li>
-        <li>PC</li>
-        <li>XBOX</li>
-        <li>PS</li>
+
+      <section class="filter-nintendo">
+        <div class="nintendo-gamepad-box">
+          <img class="nintendo-gamepad" src="/images/icons/nintendo.png" alt="Icon of nintendo-gamepad">
+        </div>
+        <div class="nintendo">Nintendo</div> 
+      </section> <br>
+
+      <section class="filter-pc">
+        <div class="pc-mouse-box">
+          <img class="pc-mouse" src="/images/icons/pc.png" alt="Icon of pc-mouse"></div>
+        <div class="pc">PC</div>
+      </section>
+
+      <section class="filter-xbox">
+        <div class="xbox-box">
+          <img class="xbox-gamepad" src="/images/icons/xbox.png" alt="Icon of xbox-gamepad"></div>
+        <div class="xbox">XBOX</div>
+      </section>
+
+      <section class="filter-ps">
+        <div class="ps-box"> <img class="ps-gamepad" src="/images/icons/ps.png" alt="Icon of playstation-gamepad"></div>
+        <div class="ps">PS</div>
+      </section>
       </div>
 
-      <p>Sort by: Relevance</p>
-      <section>
-        <h2>Pre-purchase</h2>
-        <p>
-          <a href="pre-purchase.html">Game Name</a><br />Lorem ipsum dolor sit
-          amet diam consetetur sadipscing elitr. NOK 299
-        </p>
-        <p>
-          <a href="pre-purchase.html">Game Name</a><br />Lorem ipsum dolor sit
-          amet diam consetetur sadipscing elitr. NOK 299
-        </p>
-        <p>
-          <a href="pre-purchase.html">Game Name</a><br />Lorem ipsum dolor sit
-          amet diam consetetur sadipscing elitr. NOK 299
-        </p>
-        <p>
-          <a href="pre-purchase.html">Game Name</a><br />Lorem ipsum dolor sit
-          amet diam consetetur sadipscing elitr. NOK 299
-        </p>
-        <p>
-          <a href="pre-purchase.html">Game Name</a><br />Lorem ipsum dolor sit
-          amet diam consetetur sadipscing elitr. NOK 299
-        </p>
-        <p>
-          <a href="pre-purchase.html">Game Name</a><br />Lorem ipsum dolor sit
-          amet diam consetetur sadipscing elitr. NOK 299
-        </p>
-        <p><a href="buy-game.html">Game Name</a></p>
-        <p>
-          Lorem ipsum dolor sit amet diam consetetur sadipscing elitr. NOK 299
-        </p>
-        <p><a href="buy-game.html">Game Name</a></p>
-        <p>
-          Lorem ipsum dolor sit amet diam consetetur sadipscing elitr. NOK 299
-        </p>
-        <p><a href="buy-game.html">Game Name</a></p>
-        <p>
-          Lorem ipsum dolor sit amet diam consetetur sadipscing elitr. NOK 299
-        </p>
-        <p><a href="buy-game.html">Game Name</a></p>
-        <p>
-          Lorem ipsum dolor sit amet diam consetetur sadipscing elitr. NOK 299
-        </p>
-        <p><a href="buy-game.html">Game Name</a></p>
-        <p>
-          Lorem ipsum dolor sit amet diam consetetur sadipscing elitr. NOK 299
-        </p>
-        <p><a href="buy-game.html">Game Name</a></p>
-        <p>
-          Lorem ipsum dolor sit amet diam consetetur sadipscing elitr. NOK 299
-        </p>
+      <p class="relevance">Sort by: Relevance</p>
+
+      <section class="games-gallery">
+
+        <figure class="game1">
+          <img
+            class="gallery-home-top"
+            src="images/games/entrance-game.jpg"
+            alt="cover of entrance-game"
+          />
+          <h3><a href="pre-purchase.html" class="game-name">Game Name</a></h3>
+          <figcaption>
+            Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
+          </figcaption>
+          <div class="price">NOK 299</div>
+        </figure>
+
+        <figure class="game2">
+          <img
+            class="gallery-home-top"
+            src="images/games/purple-game.jpg"
+            alt="cover of entrance-game"
+          />
+          <h3><a href="pre-purchase.html" class="game-name">Game Name</a></h3>
+          <figcaption>
+            Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
+          </figcaption>
+          <div class="price">NOK 299</div>
+        </figure>
+
+        <figure class="game3">
+          <img
+            class="gallery-home-top"
+            src="images/games/tree-game.jpg"
+            alt="cover of entrance-game"
+          />
+          <h3><a href="pre-purchase.html" class="game-name">Game Name</a></h3>
+          <figcaption>
+            Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
+          </figcaption>
+          <div class="price">NOK 299</div>
+        </figure>
+
+        <figure class="game4">
+          <img
+            class="gallery-home-top"
+            src="images/games/x-game.jpg"
+            alt="cover of entrance-game"
+          />
+          <h3><a href="pre-purchase.html" class="game-name">Game Name</a></h3>
+          <figcaption>
+            Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
+          </figcaption>
+          <div class="price">NOK 299</div>
+        </figure>
+
+        <figure class="game1">
+          <img
+            class="gallery-home-top"
+            src="images/games/woods-game.jpg"
+            alt="cover of entrance-game"
+          />
+          <h3><a href="pre-purchase.html" class="game-name">Game Name</a></h3>
+          <figcaption>
+            Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
+          </figcaption>
+          <div class="price">NOK 299</div>
+        </figure>
+
+        <figure class="game2">
+          <img
+            class="gallery-home-top"
+            src="images/games/war-game-2.jpg"
+            alt="cover of entrance-game"
+          />
+          <h3><a href="pre-purchase.html" class="game-name">Game Name</a></h3>
+          <figcaption>
+            Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
+          </figcaption>
+          <div class="price">NOK 299</div>
+        </figure>
+
+        <figure class="game3">
+          <img
+            class="gallery-home-top"
+            src="images/games/castle-game.jpg"
+            alt="cover of entrance-game"
+          />
+          <h3><a href="pre-purchase.html" class="game-name">Game Name</a></h3>
+          <figcaption>
+            Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
+          </figcaption>
+          <div class="price">NOK 299</div>
+        </figure>
+
+        <figure class="game4">
+          <img
+            class="gallery-home-top"
+            src="images/games/nightlight.jpg"
+            alt="cover of entrance-game"
+          />
+          <h3><a href="pre-purchase.html" class="game-name">Game Name</a></h3>
+          <figcaption>
+            Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
+          </figcaption>
+          <div class="price">NOK 299</div>
+        </figure>
+
+        <figure class="game1">
+          <img
+            class="gallery-home-top"
+            src="images/games/flowers-game.jpg"
+            alt="cover of entrance-game"
+          />
+          <h3><a href="pre-purchase.html" class="game-name">Game Name</a></h3>
+          <figcaption>
+            Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
+          </figcaption>
+          <div class="price">NOK 299</div>
+        </figure>
+
+        <figure class="game2">
+          <img
+            class="gallery-home-top"
+            src="images/games/war-game.jpg"
+            alt="cover of entrance-game"
+          />
+          <h3><a href="pre-purchase.html" class="game-name">Game Name</a></h3>
+          <figcaption>
+            Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
+          </figcaption>
+          <div class="price">NOK 299</div>
+        </figure>
+
+        <figure class="game3">
+          <img
+            class="gallery-home-top"
+            src="images/games/magicbook.jpg"
+            alt="cover of entrance-game"
+          />
+          <h3><a href="pre-purchase.html" class="game-name">Game Name</a></h3>
+          <figcaption>
+            Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
+          </figcaption>
+          <div class="price">NOK 299</div>
+        </figure>
+
+        <figure class="game4">
+          <img
+            class="gallery-home-top"
+            src="images/games/got-game.jpg"
+            alt="cover of entrance-game"
+          />
+          <h3><a href="pre-purchase.html" class="game-name">Game Name</a></h3>
+          <figcaption>
+            Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
+          </figcaption>
+          <div class="price">NOK 299</div>
+        </figure>
+
+        
+      </section>
+        
+        
       </section>
 
       <div class="filter-container">
@@ -118,14 +259,29 @@
         <h2>Bestsellers</h2>
       </aside>
     </main>
-    <footer>
-      <ul>
+    <footer class="footer">
+      <ul class="footer-list">
+
+        <li>
+          <img class="footer-logo" src="/images/icons/logo.png" alt="Gamehub logo">
+        </li>
+
+      <section class="footer-contact-1">
         <li><a href="login.html">Log in</a></li>
         <li><a href="create-account.html">Create account</a></li>
-        <li><a href="sell.html">Sell</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li>FAQ</li>
-        <li>Safe payment</li>
+      </section>
+
+      <section class="footer-contact-2">
+        <li class="footer-contact 1"><a href="sell.html">Sell</a></li>
+        <li class="footer-li footer-li-two">
+          <a href="contact.html">Contact</a>
+        </li>
+      </section>
+
+      <section class="footer-contact-3">
+        <li class="footer-li footer-li-three"><a href="index.html">FAQ</a></li>
+        <li class="footer-li footer-li-three"><a href="index.html">Safe payment</a></li>
+      </section>
       </ul>
     </footer>
   </body>

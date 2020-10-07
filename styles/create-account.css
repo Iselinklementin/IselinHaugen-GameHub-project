@@ -95,20 +95,3 @@ checkbox:checked {
   padding-top: 2rem;
   color: rgb(252, 160, 39);
 } */
-
-/* Add to stylesheet if ok */
-
-.nav-logo {
-  max-height: 90px;
-  align-items: center;
-}
-
-.nav-left {
-  float: left;
-  padding-top: 1.5rem;
-}
-
-.nav-right {
-  float: right;
-  padding-top: 1.5rem;
-}

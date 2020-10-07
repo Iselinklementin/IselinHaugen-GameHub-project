@@ -41,7 +41,7 @@ nav a:hover {
 
 p a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: bold;
 }
 
@@ -181,3 +181,18 @@ footer ul {
   border: green solid 1px;
 }
 */
+
+.nav-logo {
+  max-height: 90px;
+  align-items: center;
+}
+
+.nav-left {
+  float: left;
+  padding-top: 1.5rem;
+}
+
+.nav-right {
+  float: right;
+  padding-top: 1.5rem;
+}
