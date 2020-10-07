@@ -1,0 +1,125 @@
+.background {
+  background-image: url(/images/backgrounds/pre-purchase-immortal.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.main {
+  display: inline-flex;
+  border: solid green;
+}
+
+.breadcrumbs {
+  color: white;
+  padding-top: 8rem;
+  margin-left: 5rem;
+  font-size: 1rem;
+}
+
+h1 {
+  color: white;
+  padding-top: 2rem;
+  padding-left: 5rem;
+  padding-bottom: 3rem;
+  margin: 0;
+  font-size: 5.6rem;
+}
+
+.immortal {
+  color: #dc859c;
+}
+
+.group-buttons {
+  margin-left: 5rem;
+}
+
+.button-blue {
+  background-color: #1a8fc6;
+  border: #2f97c6 solid;
+  color: white;
+  width: 12rem;
+}
+
+h3 {
+  color: rgb(252, 160, 39);
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.game-info {
+  width: 25rem;
+  margin-left: 5rem;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+
+.intro {
+  font-size: 2rem;
+}
+
+.input-illustration {
+  background-image: url(/images/elements/skullers.png);
+  width: 290px;
+  height: 380px;
+  background-repeat: no-repeat;
+  margin-left: 5rem;
+  margin-top: 3rem;
+}
+
+.info-text {
+  margin-left: 5rem;
+  width: 400px;
+  line-height: 1.5;
+}
+
+.columns {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.left-side {
+  flex: 1;
+}
+
+.right-side {
+  flex: 0;
+  padding-top: 8rem;
+}
+
+.game-picture1 {
+  background-image: url(/images/games/purple-game-prepurchase.jpg);
+  height: 245px;
+  width: 455px;
+  margin-top: 2rem;
+  float: right;
+}
+
+.game-picture2 {
+  background-image: url(/images/games/gold-game-prepurchase.jpg);
+  height: 245px;
+  width: 455px;
+  margin-top: 2rem;
+  float: right;
+}
+
+.game-picture3 {
+  background-image: url(/images/games/tree-game-prepurchase.jpg);
+  height: 245px;
+  width: 455px;
+  margin-top: 2rem;
+  float: right;
+  margin-bottom: 5rem;
+}
+
+.footer {
+  clear: both;
+}
+
+/*
+
+
+}
+
+
+*/

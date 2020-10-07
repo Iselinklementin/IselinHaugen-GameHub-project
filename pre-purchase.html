@@ -8,35 +8,51 @@
       rel="stylesheet"
     />
     <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/pre-purchase.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="sell.html">Sell</a></li>
-          <li><input type="text" placeholder="Search" /></li>
-          <li><a href="login.html">Log in</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <div>
+        <nav>
+          <ul>
+            <div class="nav-wrap">
+              <li class="nav-left">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="nav-left"><a href="shop.html">Shop</a></li>
+              <li class="nav-left"><a href="sell.html">Sell</a></li>
+              <li class="nav-left"><input type="text" placeholder="Search" />
+              </li>
+              <li><a href="index.html"><img class="nav-logo" src="/images/icons/logo.png" alt="Gamehub logo"/><a href="index.html"></a></li>
+              <li class="nav-right"><a href="login.html">Log in</a></li>
+              <li class="nav-right"><a href="contact.html">Contact</a></li>
+            </div>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <p>Home / Shop / <strong>Product name</strong></p>
+    <main class="background">
+    <div class="columns">
+      <div class="left-side">
+      <p class="breadcrumbs">Home / Shop / <strong>Product name</strong></p>
       <section>
-        <h1>An untold chapter of immortal</h1>
-        <form action="shopping-cart.html">
-          <button type="submit">Pre-purchase</button>
-          <button type="submit">Watch trailer</button>
+        <h1>An untold <br> chapter of <br> <span class="immortal">immortal</span></h1>
+        <form class="group-buttons" action="shopping-cart.html">
+          <button class="button" type="submit">Pre-purchase</button> <br> <br>
+          <button class="button button-blue" type="submit">Watch trailer</button>
         </form>
+        
+        <section class="game-info">
         <h3>Become a legend</h3>
-        <p>
-          Fint the legend whose unique abilities suit you best & help your squad
+        <p class="intro">
+          Find the legend whose unique abilities suit you best & help your squad
           claim the title of Champion.
         </p>
-        <p>
+      </section>
+
+      <div class="input-illustration"></div>
+        <p class="info-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus
           neque ut nisi venenatis laoreet. Nulla sapien risus, egestas et
           blandit in, efficitur sit amet arcu. In id ligula vel elit volutpat
@@ -50,14 +66,22 @@
           auctor pulvinar. Nunc fermentum in arcu non malesuada. Nam vestibulum
           lacus placerat iaculis pharetra.
         </p>
-      </section>
+      </div>
+
+    <div class="right-side">
       <section>
         <h2>Game details</h2>
         <p>Genre Role playing / Action / Fantasy</p>
         <p>Works on Windows / PS4</p>
         <p>Release October 21, 2020</p>
         <p>Rating PEGI Rating 16+</p>
+      </section>
 
+      <div class="game-picture1"></div>
+      <div class="game-picture2"></div>
+      <div class="game-picture3"></div>
+
+      <section>
         <h2>System requirements</h2>
         <p>OS Lorem ipsum</p>
         <p>CPU Lorem ipsum</p>
@@ -67,15 +91,32 @@
         <p>HDD Lorem ipsum</p>
         <p>API Lorem ipsum</p>
       </section>
+    </div>
+  </div>
     </main>
-    <footer>
-      <ul>
+    <footer class="footer">
+      <ul class="footer-list">
+
+        <li>
+          <img class="footer-logo" src="/images/icons/logo.png" alt="Gamehub logo">
+        </li>
+
+      <section class="footer-contact-1">
         <li><a href="login.html">Log in</a></li>
         <li><a href="create-account.html">Create account</a></li>
-        <li><a href="sell.html">Sell</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li>FAQ</li>
-        <li>Safe payment</li>
+      </section>
+
+      <section class="footer-contact-2">
+        <li class="footer-contact 1"><a href="sell.html">Sell</a></li>
+        <li class="footer-li footer-li-two">
+          <a href="contact.html">Contact</a>
+        </li>
+      </section>
+
+      <section class="footer-contact-3">
+        <li class="footer-li footer-li-three"><a href="index.html">FAQ</a></li>
+        <li class="footer-li footer-li-three"><a href="index.html">Safe payment</a></li>
+      </section>
       </ul>
     </footer>
   </body>

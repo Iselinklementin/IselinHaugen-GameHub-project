@@ -178,8 +178,15 @@ ul.filter-list {
 
 aside {
   clear: both;
-  margin-left: 6rem;
   padding-top: 3rem;
+  width: 100%;
+}
+
+h2 {
+  background-color: rgb(252, 160, 39);
+  color: black;
+  width: 100%;
+  margin-left: 6rem;
 }
 
 /* gallery */
