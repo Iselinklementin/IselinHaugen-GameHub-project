@@ -13,6 +13,8 @@ h1 {
   float: right;
   margin-top: 14rem;
   margin-right: 5rem;
+  color: black;
+  font-weight: bold;
 }
 
 /* Filter nintendo */
@@ -200,9 +202,9 @@ h2 {
 .games-gallery {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
+  align-content: left;
   margin-left: 5rem;
-  width: 75%;
+  width: 79%;
 }
 .gallery-home-top {
   width: 243px;

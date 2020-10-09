@@ -8,55 +8,102 @@
       rel="stylesheet"
     />
     <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/contact.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9b8ac118a8.js" crossorigin="anonymous"></script>
     <title>Contact</title>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="sell.html">Sell</a></li>
-          <li><input type="text" placeholder="Search" /></li>
-          <li><a href="login.html">Log in</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+            <li class="nav-left">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-left"><a href="shop.html">Shop</a></li>
+            <li class="nav-left"><a href="sell.html">Sell</a></li>
+            <li class="nav-left"><i class="fas fa-search"></i><input type="search" placeholder="Search" />
+            </li>
+            <a href="index.html"><img class="nav-logo" src="/images/icons/logo.png" alt="Gamehub logo"/><a href="index.html"></a>
+            <li class="nav-right"><i class="far fa-user"></i><a href="login.html">Log in</a></li>
+            <li class="nav-right"><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </nav>
-    </header>
-    <main>
+  </header>
+    <main class="background">
+
+      <div class="contact-icon"></div>
       <h1>Contact us</h1>
-      <div>
-        <h2>Customer support</h2>
-        <p>
-          <strong>Email</strong> Lorem ipsum. <strong>Phone</strong> Lorem
-          ipsum. <strong>Address</strong> Lorem ipsum.
-        </p>
-      </div>
+<section class="contact">
+      <div class="customer-support">
+      <h2>Customer support</h2>
+      <table>
+        <tr>
+          <th>Email</th>
+          <td>Lorem@gamehub.com</td></tr>
+          <tr><th>Phone</th><td>+47 913 09 271</td></tr>
+          <tr><th>Address</th><td>Lorem ipsum, PB 3291</td></tr>
+          <tr><th>Web</th><td>www.loremipsum.com</td></tr>
+      </tr>
+      </table>
+    </div>
 
-      <div>
-        <h2>Press and Media</h2>
-        <p>
-          <strong>Email</strong> Lorem ipsum. <strong>Phone</strong> Lorem
-          ipsum. <strong>Address</strong> Lorem ipsum.
-        </p>
-      </div>
+    <div class="press-media">
+      <h2>Press and Media</h2>
+      <table>
+        <tr>
+          <th>Email</th>
+          <td>Lorem@gamehub.com</td></tr>
+          <tr><th>Phone</th><td>+47 913 09 271</td></tr>
+          <tr><th>Address</th><td>Lorem ipsum, PB 3291</td></tr>
+          <tr><th>Web</th><td>www.loremipsum.com</td></tr>
+      </tr>
+      </table>
+    </div>
 
-      <div>
-        <h2>Online</h2>
-        <p>
-          <strong>Email</strong> Lorem ipsum. <strong>Phone</strong> Lorem
-          ipsum. <strong>Address</strong> Lorem ipsum.
-        </p>
-      </div>
+    <div class="online">
+      <h2>Online</h2>
+      <table>
+        <tr>
+          <th>Email</th>
+          <td>Lorem@gamehub.com</td></tr>
+          <tr><th>Phone</th><td>+47 913 09 271</td></tr>
+          <tr><th>Address</th><td>Lorem ipsum, PB 3291</td></tr>
+          <tr><th>Web</th><td>www.loremipsum.com</td></tr>
+      </tr>
+      </table>
+    </div>
+  </section>
+
+  <div class="some">
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+  </div>
+
     </main>
-    <footer>
-      <ul>
+    <footer class="footer">
+      <ul class="footer-list">
+
+        <li>
+          <img class="footer-logo" src="/images/icons/logo.png" alt="Gamehub logo">
+        </li>
+
+      <section class="footer-contact-1">
         <li><a href="login.html">Log in</a></li>
         <li><a href="create-account.html">Create account</a></li>
-        <li><a href="sell.html">Sell</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li>FAQ</li>
-        <li>Safe payment</li>
+      </section>
+
+      <section class="footer-contact-2">
+        <li class="footer-contact 1"><a href="sell.html">Sell</a></li>
+        <li class="footer-li footer-li-two">
+          <a href="contact.html">Contact</a>
+        </li>
+      </section>
+
+      <section class="footer-contact-3">
+        <li class="footer-li footer-li-three"><a href="index.html">FAQ</a></li>
+        <li class="footer-li footer-li-three"><a href="index.html">Safe payment</a></li>
+      </section>
       </ul>
     </footer>
   </body>

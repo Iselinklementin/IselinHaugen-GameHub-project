@@ -137,21 +137,15 @@
 
 /* Add to stylesheet if ok */
 
-.nav-logo {
-  max-height: 90px;
-  align-items: center;
-}
-
-.nav-left {
-  float: left;
-  padding-top: 1.5rem;
-}
-
-.nav-right {
-  float: right;
-  padding-top: 1.5rem;
-}
 .illustration {
   width: 100%;
   position: relative;
+}
+
+.fas {
+  color: rgb(252, 160, 39);
+  position: relative;
+  left: 25px;
+  top: 2px;
+  border: solid red;
 }
