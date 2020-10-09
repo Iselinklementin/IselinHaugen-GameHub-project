@@ -41,6 +41,10 @@ h1 {
   width: 12rem;
 }
 
+.button-blue:hover {
+  background-color: #2ab3dd;
+}
+
 h3 {
   color: rgb(252, 160, 39);
   font-weight: normal;
@@ -117,9 +121,6 @@ h3 {
 }
 
 /*
-
-
-}
 
 
 */

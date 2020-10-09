@@ -67,8 +67,13 @@ main {
 }
 
 /* Any button over which the user's pointer is hovering */
-button:hover {
+button:hover,
+button:active {
   background-color: rgb(255, 174, 68);
+}
+
+.button:focus {
+  outline: none;
 }
 
 .button {
