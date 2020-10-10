@@ -28,7 +28,7 @@ h2 {
 nav li {
   color: #ffffff;
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 15px;
   vertical-align: middle;
 }
 
@@ -41,51 +41,54 @@ nav a:hover {
 }
 
 .wrap {
-  align-content: center;
   display: inline-flex;
-  border: solid pink;
+  align-content: center;
+  align-items: flex-start;
   height: 50px;
   width: 100%;
   margin-top: 2rem;
-  vertical-align: middle;
   padding: 0;
 }
 
 .nav-left-container {
-  border: rgb(228, 213, 82) thin solid;
   flex: 2;
   padding: 0;
-  margin: 0;
+  margin-top: 0.3rem;
+  text-align: center;
 }
 
 .nav-right-container {
-  border: blue thin solid;
   padding: 0;
-  margin: 0;
   flex: 2;
+  text-align: right;
 }
 
 .nav-logo-center {
   cursor: pointer;
-  border: green solid;
-  flex: 1;
+  flex: 0;
   padding: 0;
   margin: 0;
   text-align: center;
+}
+
+.shoppingcart-wrap {
+  padding: 0;
+  padding-right: 120px;
+  margin: 0;
+  justify-content: end;
+  display: inline-block;
+}
+
+.shoppingcart-icon {
+  width: 45px;
 }
 
 .logo {
   width: 120px;
 }
 
-.shoppingcart {
-  width: 45px;
-  border: solid springgreen thin;
-}
-
 .far {
   padding-right: 0.5rem;
-  border: thin lightcoral solid;
 }
 
 /* nav search */
@@ -105,11 +108,9 @@ input[type="search"] {
   font-size: 0.8rem;
   font-family: inherit;
   text-align: center;
-}
-
-.search-icon {
-  border: solid lightblue thin;
-  height: 25px;
+  background-image: url(/images/icons/search.svg);
+  background-repeat: no-repeat;
+  background-position: 10px;
 }
 
 input:focus {
@@ -121,6 +122,13 @@ input:hover {
 }
 
 /* delete if OK
+
+.search-icon {
+  border: solid lightblue thin;
+  width: 25px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 
   left: 15px;
   top: 2px;

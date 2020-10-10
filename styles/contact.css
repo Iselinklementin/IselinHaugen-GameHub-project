@@ -27,7 +27,9 @@ h1 {
   text-align: center;
 }
 
-div {
+.press-media,
+.online,
+.customer-support {
   padding: 1rem;
   margin: 0rem 1rem;
   padding-top: 4rem;

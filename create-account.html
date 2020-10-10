@@ -9,23 +9,30 @@
     />
     <link href="styles/styles.css" rel="stylesheet" />
     <link href="styles/create-account.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9b8ac118a8.js" crossorigin="anonymous"></script>
     <title>Create account</title>
   </head>
   <body class="create-account">
     <header>
       <nav>
-        <ul>
-            <li class="nav-left">
-              <a href="index.html">Home</a>
-            </li>
-            <li class="nav-left"><a href="shop.html" class="active">Shop</a></li>
-            <li class="nav-left"><a href="sell.html">Sell</a></li>
-            <li class="nav-left"><input type="text" placeholder="Search" />
-            </li>
-            <a href="index.html"><img class="nav-logo" src="/images/icons/logo.png" alt="Gamehub logo"/><a href="index.html"></a>
-            <li class="nav-right"><a href="login.html">Log in</a></li>
-            <li class="nav-right"><a href="contact.html">Contact</a></li>
-        </ul>
+        <ul class="wrap">
+          <div class="nav-left-container">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="sell.html">Sell</a></li>
+            <li class="searchbar"><form action="" method="GET"><input type="search" placeholder="Search" /></form></li>
+          </div>
+          <div class="nav-logo-center">
+           <a href="index.html"><img class="logo" src="/images/icons/logo.svg" alt="Gamehub logo"/><a href="index.html"></a>
+          </div> 
+          <div class="nav-right-container">
+            <li><i class="far fa-user"></i><a href="login.html" class="active">Log in</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <div class="shoppingcart-wrap">
+            <li><a href="shopping-cart.html"><img class="shoppingcart-icon" src="/images/icons/shoppingcart.svg" alt="Icon of shopping cart"></a></li>
+          </div>
+        </div>
+          </ul>
       </nav>
   </header>
     <main>
