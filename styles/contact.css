@@ -78,13 +78,7 @@ tr {
   flex: 0;
 }
 
-.fab {
-  font-size: 20px;
-  color: white;
-  padding: 0.5rem;
-}
-
-.some {
+.some-contact {
   position: relative;
   width: 120px;
   padding: 0;

@@ -1,0 +1,22 @@
+.background {
+  background-image: url(/images/backgrounds/background-registerpages.jpg);
+  background-size: cover;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: left 50% bottom 100%;
+  height: 948px;
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+h1 {
+  color: white;
+  padding-top: 12rem;
+  padding-bottom: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+  text-transform: initial;
+}

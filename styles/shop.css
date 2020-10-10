@@ -8,6 +8,15 @@ h1 {
   font-size: 5.6rem;
 }
 
+.background {
+  background-image: url(/images/backgrounds/background-shop.jpg);
+  background-repeat: no-repeat;
+  background-position: left 50% bottom 18%;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+
 .filter-platform {
   display: flex;
   float: right;
@@ -165,13 +174,6 @@ ul.filter-list {
 .filter-platform li {
   display: inline;
   padding: 1.5rem;
-}
-
-.background {
-  background-image: url(/images/backgrounds/background-shop.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
 }
 
 .footer {
