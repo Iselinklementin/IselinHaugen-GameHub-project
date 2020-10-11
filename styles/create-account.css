@@ -1,18 +1,16 @@
-.create-account {
+.background {
   background-image: url(/images/backgrounds/background-registerpages.jpg);
   background-size: cover;
-  text-align: center;
   background-repeat: no-repeat;
-  background-position: left 50% bottom 100%;
-  height: 948px;
+  background-position: left 50% bottom 18%;
+  height: 800px;
   width: 100%;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  color: white;
 }
 
 h1 {
   color: white;
-  padding-top: 12rem;
+  padding-top: 10rem;
   padding-bottom: 0;
   margin: 0;
   text-align: center;
@@ -23,6 +21,8 @@ h1 {
   display: flex;
   justify-content: center;
   margin-top: -5rem;
+  text-align: center;
+  margin-bottom: -0.6rem;
 }
 
 .form-input {
@@ -37,11 +37,11 @@ h1 {
 
 legend {
   position: absolute;
-  top: 16rem;
+  top: 15rem;
 }
 
 .headline {
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding-bottom: 2rem;
   padding-left: 2.9rem;
   font-size: 24px;
@@ -57,21 +57,23 @@ legend {
 
 .create {
   background-color: #2f97c6;
-  border-style: none;
-  height: 542px;
+  height: 30rem;
   color: white;
   flex: 0;
-  padding: 4rem;
-  margin: 8rem 1rem;
+  padding: 3rem;
+  margin-top: 8rem;
+  border-style: none;
 }
 
 .register {
   background-color: #a5358b;
-  border-style: none;
   color: white;
   flex: 0;
-  padding: 4rem;
-  margin: 8rem 0;
+  padding: 3rem;
+  margin-top: 8rem;
+  margin-bottom: 4.5rem;
+  height: 30rem;
+  border-style: none;
 }
 
 .agreement a {
@@ -80,18 +82,16 @@ legend {
   font-size: 0.8rem;
 }
 
-.agreement {
+.checkbox {
+  line-height: 1.5;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  text-align: left;
   font-size: 0.8rem;
 }
 
-.checkbox {
-  padding-top: 2rem;
-  text-align: left;
-  padding-left: 1rem;
-}
-
 button {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .iceberg {
@@ -103,7 +103,7 @@ button {
   z-index: 2;
   position: absolute;
   left: 64%;
-  top: 97%;
+  top: 80%;
 }
 
 /*

@@ -35,17 +35,6 @@ h1 {
   margin-left: 5rem;
 }
 
-.button-blue {
-  background-color: #1a8fc6;
-  border: #2f97c6 solid;
-  color: white;
-  width: 12rem;
-}
-
-.button-blue:hover {
-  background-color: #2ab3dd;
-}
-
 h3 {
   color: rgb(252, 160, 39);
   font-weight: normal;

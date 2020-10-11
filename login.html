@@ -20,7 +20,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="shop.html">Shop</a></li>
             <li><a href="sell.html">Sell</a></li>
-            <li class="searchbar"><form action="" method="GET"><input type="search" placeholder="Search" /></form></li>
+            <li id="search"><form action="" method="GET"><input type="search" placeholder="Search" /></form></li>
           </div>
           <div class="nav-logo-center">
            <a href="index.html"><img class="logo" src="/images/icons/logo.svg" alt="Gamehub logo"/><a href="index.html"></a>
@@ -36,27 +36,47 @@
       </nav>
   </header>
     <main class="background">
-      <form action="account.html">
-        <h1>Already registered?</h1>
-        <label>E-mail</label><br />
-        <input type="text" placeholder="Enter e-mail" /><br />
-        <label>Password</label><br />
-        <input type="text" placeholder="Enter password" /> <br /><br />
-        <button>Log in</button>
+      
+    <section class="form-section">
+      <form action="account.html" method="POST" class="login-form">
+        <fieldset class="login">
+        <legend>Already registered?</legend>
+        <label for="email">Email</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          class="form-input"
+          placeholder="Email"
+          required
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="form-input"
+          placeholder="Password"
+          required
+        /><a href="#"><p>Forgot your password?</a><button class="button button-blue">Log in</button>
+      </fieldset>
       </form>
-
-      <h2>New Customer?</h2>
+  </section>
+<section class="new-customer">
+      <h1>New Customer?</h1>
+<div class="box">
       <ul>
         <li>Get awesome discounts</li>
         <li>Info about new games first</li>
         <li>Earn money on games</li>
         <li>Online game saves</li>
       </ul>
-      <div>
         <form action="create-account.html">
-          <button>Create account</button>
+          <button class="button button-blue create">Create account</button>
         </form>
       </div>
+      </section>
+      <div class="dragon"></div>
     </main>
   </body>
   <footer class="footer">

@@ -213,21 +213,9 @@ h2 {
   height: 315px;
 }
 
-.game1 {
-  flex: 0;
-  padding: 0;
-}
-
-.game2 {
-  flex: 0;
-  padding: 0;
-}
-
-.game3 {
-  flex: 0;
-  padding: 0;
-}
-
+.game1,
+.game2,
+.game3,
 .game4 {
   flex: 0;
   padding: 0;
