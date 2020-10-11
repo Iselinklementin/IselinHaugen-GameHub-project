@@ -1,5 +1,5 @@
 .background {
-  background-image: url(/images/backgrounds/background-registerpages.jpg);
+  background-image: url(/images/backgrounds/register-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left 50% bottom 18%;
@@ -37,7 +37,7 @@ h1 {
 
 legend {
   position: absolute;
-  top: 15rem;
+  top: 16.4rem;
 }
 
 .headline {
@@ -110,4 +110,9 @@ button {
 checkbox:checked {
   padding-top: 2rem;
   color: rgb(252, 160, 39);
+
+  main {
+  width: 100%;
+  margin-top: -1rem;
+}
 } */

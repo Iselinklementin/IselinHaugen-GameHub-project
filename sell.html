@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/sell.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/9b8ac118a8.js" crossorigin="anonymous"></script>
     <title>Sell your game</title>
   </head>
@@ -19,7 +20,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="shop.html">Shop</a></li>
             <li><a href="sell.html" class="active">Sell</a></li>
-            <li class="searchbar"><form action="" method="GET"><input type="search" placeholder="Search" /></form></li>
+            <li id="search"><form action="" method="GET"><input type="search" placeholder="Search" /></form></li>
           </div>
           <div class="nav-logo-center">
            <a href="index.html"><img class="logo" src="/images/icons/logo.svg" alt="Gamehub logo"/><a href="index.html"></a>
@@ -34,18 +35,35 @@
           </ul>
       </nav>
   </header>
-    <main>
+    <main class="background">
+      
+      <section>
+      <div class="sell-guide">
+        <div class="text">
       <h1>Sell your game</h1>
-      <h2>Search for the right one</h2>
-      <ul>
-        <li>List it</li>
-        <li>Send it</li>
-        <li>Get paid</li>
-      </ul>
-      <div>
-        <h2>Search for the right game and platform</h2>
-        <input type="search" />
-      </div>
+      <h2>Just search for the right one</h2>
+    </div>
+
+      <figure class="slogan">
+        <img class="sell-icons"
+          src="/images/icons/list-send-pay.svg"
+          alt="Yellow icons for list, send and pay games"
+        />
+        <ul class="wrap-icontext">
+          <li class="list">List it</li>
+          <li class="list">Send it</li>
+          <li class="list">Get paid</li>
+        </ul>
+      </figure>
+    </div>
+    
+    </section>
+
+      <section class="search-section">
+        <h2 class="search-info">Search for the right game and platform</h2>
+        <form action="" method="GET"><input id="search-sell" type="search" placeholder="Search" /></form>
+      </section>
+
     </main>
     <footer class="footer">
       <ul class="footer-list">

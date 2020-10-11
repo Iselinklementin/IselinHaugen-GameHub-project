@@ -6,7 +6,10 @@
 }
 
 .sell-icons {
-  margin-top: 5rem;
+  width: 300px;
+  display: block;
+  margin: auto;
+  padding-top: 2rem;
 }
 
 .test-font-size {
@@ -16,7 +19,8 @@
 .slogan li {
   display: inline-block;
   margin: 1.5rem;
-  padding-right: 1.5rem;
+  padding-right: 1.67rem;
+  margin-top: 0;
 }
 
 /* Under header */
@@ -72,16 +76,8 @@
   color: white;
 }
 
-.release-game1 {
-  flex: 0;
-  padding: 0;
-}
-
-.release-game2 {
-  flex: 0;
-  padding: 0;
-}
-
+.release-game1,
+.release-game2,
 .release-game3 {
   flex: 0;
   padding: 0;
