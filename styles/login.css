@@ -95,11 +95,11 @@ button {
 
 .dragon {
   background-image: url(/images/elements/small-dragon.png);
-  height: 180px;
-  width: 180px;
+  height: 170px;
+  width: 170px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   left: 57%;
-  bottom: 31%;
+  bottom: 28%;
 }
