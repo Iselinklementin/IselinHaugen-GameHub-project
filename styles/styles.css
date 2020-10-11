@@ -48,7 +48,7 @@ nav a:hover {
 .wrap {
   display: inline-flex;
   align-content: center;
-  align-items: flex-start;
+  align-items: center;
   height: 50px;
   width: 100%;
   margin-top: 2rem;
@@ -89,7 +89,8 @@ nav a:hover {
 }
 
 .logo {
-  width: 120px;
+  width: 8.4rem;
+  padding-top: 1rem;
 }
 
 .far {

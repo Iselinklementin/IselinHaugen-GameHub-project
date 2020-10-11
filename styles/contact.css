@@ -8,7 +8,6 @@
   color: white;
   text-align: center;
 }
-
 .contact-icon {
   background-image: url(/images/icons/contact.png);
   background-repeat: no-repeat;
@@ -32,14 +31,14 @@ h1 {
 .online,
 .customer-support {
   padding: 1rem;
-  margin: 0rem 1rem;
+  margin: 0rem 0.2rem;
   padding-top: 4rem;
 }
 
 h2 {
   display: inline-flex;
   background-color: rgb(252, 160, 39);
-  width: 300px;
+  width: 270px;
   height: 38px;
   color: black;
   font-weight: normal;
@@ -59,7 +58,7 @@ table {
   text-align: left;
   border-spacing: 0.5rem;
   margin-top: 1rem;
-  width: 300px;
+  width: 270px;
 }
 
 td,
@@ -67,14 +66,8 @@ tr {
   padding: 0.2rem;
 }
 
-.customer-support {
-  flex: 0;
-}
-
-.press-media {
-  flex: 0;
-}
-
+.customer-support,
+.press-media,
 .online {
   flex: 0;
 }
@@ -86,3 +79,5 @@ tr {
   margin: auto;
   top: 14%;
 }
+
+/* border: solid red thin; */

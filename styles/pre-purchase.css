@@ -1,9 +1,14 @@
 .background {
-  background-image: url(/images/backgrounds/pre-purchase-immortal.jpg);
+  background-image: url(/images/backgrounds/background-immortal.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 50% bottom 18%;
+  height: 116.6rem;
+  width: 100%;
 }
 
 .main {
@@ -22,9 +27,10 @@ h1 {
   color: white;
   padding-top: 2rem;
   padding-left: 5rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
+  line-height: 1.1;
   margin: 0;
-  font-size: 5.6rem;
+  font-size: 4.7rem;
 }
 
 .immortal {
@@ -83,24 +89,24 @@ h3 {
 
 .game-picture1 {
   background-image: url(/images/games/purple-game-prepurchase.jpg);
-  height: 245px;
-  width: 455px;
+  height: 200px;
+  width: 380px;
   margin-top: 2rem;
   float: right;
 }
 
 .game-picture2 {
   background-image: url(/images/games/gold-game-prepurchase.jpg);
-  height: 245px;
-  width: 455px;
+  height: 200px;
+  width: 380px;
   margin-top: 2rem;
   float: right;
 }
 
 .game-picture3 {
   background-image: url(/images/games/tree-game-prepurchase.jpg);
-  height: 245px;
-  width: 455px;
+  height: 200px;
+  width: 380px;
   margin-top: 2rem;
   float: right;
   margin-bottom: 5rem;
