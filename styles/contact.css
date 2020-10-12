@@ -9,10 +9,10 @@
   text-align: center;
 }
 .contact-icon {
-  background-image: url(/images/icons/contact.png);
+  background-image: url(/images/icons/contact.svg);
   background-repeat: no-repeat;
-  height: 68px;
-  width: 98px;
+  width: 6rem;
+  height: 4rem;
   margin: auto;
   position: relative;
   top: 22%;

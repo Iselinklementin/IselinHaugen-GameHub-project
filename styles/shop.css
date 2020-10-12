@@ -1,3 +1,13 @@
+.background {
+  background-image: url(/images/backgrounds/background-shop.jpg);
+  background-repeat: no-repeat;
+  background-position: left 50% bottom 18%;
+  background-size: cover;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+
 h1 {
   color: white;
   padding-top: 12rem;
@@ -6,15 +16,6 @@ h1 {
   margin: 0;
   float: left;
   font-size: 5.6rem;
-}
-
-.background {
-  background-image: url(/images/backgrounds/background-shop.jpg);
-  background-repeat: no-repeat;
-  background-position: left 50% bottom 18%;
-  width: 100%;
-  color: white;
-  overflow: hidden;
 }
 
 .filter-platform {
@@ -26,111 +27,49 @@ h1 {
   font-weight: bold;
 }
 
-/* Filter nintendo */
+/* Filter platform */
 
-.filter-nintendo {
+.containers {
   flex: 1;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
-.nintendo-gamepad-box {
+.box {
   width: 116px;
   height: 104px;
   border: rgb(252, 160, 39) 1px solid;
+  text-align: center;
+}
+
+.platform {
+  border: thin rgb(252, 160, 39);
+  width: 116px;
+  height: 20px;
+  background-color: rgb(252, 160, 39);
   text-align: center;
 }
 
 .nintendo-gamepad {
-  margin-top: 34%;
-}
-
-.nintendo {
-  border: thin rgb(252, 160, 39);
-  width: 116px;
-  height: 20px;
-  background-color: rgb(252, 160, 39);
-  text-align: center;
-}
-
-/* Filter PC */
-
-.filter-pc {
-  flex: 1;
-  margin: 1rem;
-}
-
-.pc-mouse-box {
-  width: 116px;
-  height: 104px;
-  border: rgb(252, 160, 39) 1px solid;
-  text-align: center;
+  margin-top: 33%;
+  width: 4rem;
 }
 
 .pc-mouse {
   margin-top: 25%;
-}
-
-.pc {
-  border: thin rgb(252, 160, 39);
-  width: 116px;
-  height: 20px;
-  background-color: rgb(252, 160, 39);
-  text-align: center;
-}
-
-/* Filter XBOX */
-
-.filter-xbox {
-  flex: 1;
-  margin: 1rem;
-}
-
-.xbox-box {
-  width: 116px;
-  height: 104px;
-  border: rgb(252, 160, 39) 1px solid;
-  text-align: center;
+  width: 1.7rem;
 }
 
 .xbox-gamepad {
   margin-top: 25%;
-}
-
-.xbox {
-  border: thin rgb(252, 160, 39);
-  width: 116px;
-  height: 20px;
-  background-color: rgb(252, 160, 39);
-  text-align: center;
-}
-
-/* Filter PS */
-
-.filter-ps {
-  flex: 1;
-  margin: 1rem;
-}
-
-.ps-box {
-  width: 116px;
-  height: 104px;
-  border: rgb(252, 160, 39) 1px solid;
-  text-align: center;
+  width: 4rem;
 }
 
 .ps-gamepad {
   margin-top: 25%;
+  width: 4rem;
 }
 
-.ps {
-  border: thin rgb(252, 160, 39);
-  width: 116px;
-  height: 20px;
-  background-color: rgb(252, 160, 39);
-  text-align: center;
-}
-
-.relevance {
+.sort {
   clear: both;
   margin-left: 6rem;
 }
@@ -174,10 +113,6 @@ ul.filter-list {
 .filter-platform li {
   display: inline;
   padding: 1.5rem;
-}
-
-.footer {
-  clear: both;
 }
 
 aside {
