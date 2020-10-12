@@ -10,7 +10,7 @@
     <link href="styles/styles.css" rel="stylesheet" />
     <link href="styles/index.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/9b8ac118a8.js" crossorigin="anonymous"></script>
-    <title>IselinHaugen - GameHub</title>
+    <title>Iselin Haugen - GameHub</title>
   </head>
   <body>
     <header>
@@ -35,27 +35,33 @@
           </ul>
       </nav>
   </header>
-    <main class="home-page-main">
+    <main>
+<div class="backgrounds">
+  <div class="header-img"></div>
+<div class="background"></div></div>
+
       <section class="intro-text">
-        <h1>
-          Online gamestore <br /><span class="test-font-size"
-            >Buy & sell<br />games</span
-          >
-        </h1>
+        <h1>Online gamestore</h1>
+        <h2>Buy & sell games</h2>
+
         <figure class="sell-icons">
           <img
             src="/images/icons/list-send-pay.svg"
-            alt="Yellow icons for list, send and pay games"
-          />
+            alt="Yellow icons for list, send and pay games"/>
         </figure>
+
         <ul class="slogan">
           <li>List it</li>
           <li class="send-it">Send it</li>
           <li>Get paid</li>
         </ul>
+<div class="arrow"></div>
       </section>
 
-      <h2 class="heading-overview">Pre-purchase</h2>
+      <section class="container">
+      <div class="heading-overview">
+      <h3>Pre-purchase</h3>
+      <p>Go to shop</p></div>
       <section class="home-games">
         <figure class="game1">
           <img
@@ -95,7 +101,6 @@
           </figcaption>
           <div class="price">NOK 299</div>
         </figure>
-
         <figure class="game4">
           <img
             class="gallery-home-top"
@@ -109,37 +114,36 @@
           <div class="price">NOK 299</div>
         </figure>
       </section>
+    </section>
+
 
       <section class="openbeta">
         <figure>
-          <img src="/images/games/war-game-1.jpg" alt="Picture of a wargame" />
+          <img class="openbetaimg" src="/images/games/war-game-1.jpg" alt="Picture of a wargame" />
           <figcaption class="earlyaccess">
-            Get early access <br />
+            Get early access
             to open beta
+            <button class="button">Learn more</button>
           </figcaption>
         </figure>
-        <button class="button openbeta-button">Learn more</button>
       </section>
 
       <section class="to-shop">
         <form action="shop.html">
-          <label class="font-to-shop"
-            >Experience intergalactic warfare <br />
-            through an epic story campaign</label
-          >
+          <label class="font-to-shop">Experience intergalactic warfare
+            through an epic story campaign</label>
+            <button class="button">Learn more</button>
         </form>
-        <br />
-        <button class="button">Learn more</button>
-      </section>
       <figure>
         <img
-          class="traced-photo"
+          class="photo-to-shop"
           src="/images/elements/illustration-home-low.png"
           alt="Wardude protecting himself"
         />
       </figure>
+    </section>
 
-      <h2 class="heading-overview">New releases</h2>
+      <h3 class="heading-overview">New releases</h3>
       <section class="home-games">
         <figure class="release-game1">
           <img
@@ -181,12 +185,14 @@
         </figure>
       </section>
 
-      <div>
+      <div class="support">
+      <section>
         <img src="/images/games/wood-game-home.jpg" alt="">
       <form action="shop.html">
         <h3>Support a gamer</h3>
         <button class="button">Buy used</button>
       </form>
+      </section>
     </div>
 
       <form action="sell.html">
