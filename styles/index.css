@@ -1,5 +1,15 @@
-main {
+body,
+html {
   color: white;
+}
+
+html {
+  background: url(/images/backgrounds/background-home.jpg) no-repeat center
+    center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .header-img {
@@ -12,6 +22,15 @@ main {
   position: absolute;
   z-index: -1;
 }
+/*
+.background {
+  background-image: url(/images/backgrounds/home-full-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 
 .background {
   background-image: linear-gradient(
@@ -22,11 +41,12 @@ main {
     #e8921c 95%
   );
   width: 100vw;
-  height: 4800px;
+  height: 100vh;
+  background-size: cover;
   position: absolute;
   z-index: -2;
 }
-/*
+
 */
 
 .arrow {
@@ -57,17 +77,6 @@ main {
   flex: 1;
 }*/
 /*
-.background {
-  display: flex;
-  background-image: url(/images/backgrounds/home-full-background.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
-  height: 4500px;
-  position: absolute;
-  z-index: -1;
-  overflow: hidden;
-}
 
 
 .dragon-left {
