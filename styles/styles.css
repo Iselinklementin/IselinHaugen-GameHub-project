@@ -227,10 +227,9 @@ footer ul li {
 }
 
 .footer {
-  background: url(/images/backgrounds/footer.jpg);
+  background-image: radial-gradient(closest-side, #033654, #010b0f);
   height: 18.75rem;
   background-size: cover;
-  background-position: top;
 }
 
 .fab {
