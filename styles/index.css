@@ -1,6 +1,7 @@
 body,
 html {
   color: white;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -22,32 +23,6 @@ html {
   position: absolute;
   z-index: -1;
 }
-/*
-.background {
-  background-image: url(/images/backgrounds/home-full-background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.background {
-  background-image: linear-gradient(
-    177deg,
-    #080609 20%,
-    #0c2e41,
-    #564567 75%,
-    #e8921c 95%
-  );
-  width: 100vw;
-  height: 100vh;
-  background-size: cover;
-  position: absolute;
-  z-index: -2;
-}
-
-*/
 
 .arrow {
   background-image: url(/images/icons/arrow.svg);
@@ -140,7 +115,7 @@ h2 {
   margin-bottom: 14rem;
 }
 
-/* Under header */
+/* ------ Under header ------ */
 
 /* headings pre-purchase / new release */
 
@@ -177,7 +152,8 @@ h2 {
 .game3,
 .game4 {
   flex: 0;
-  padding: 0;
+  padding: 10px;
+  margin: 0;
 }
 
 /* open beta */

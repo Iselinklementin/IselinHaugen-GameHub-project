@@ -1,4 +1,159 @@
+.background {
+  background-image: url(/images/backgrounds/background-general.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 50% bottom 18%;
+  height: 800px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  text-align: left;
+  grid-auto-flow: column;
+  padding: 4rem 2rem;
+}
+
+.headline-background {
+  background-color: rgba(255, 255, 255, 0.161);
+  grid-column: 2 / 4;
+  grid-row: 5;
+}
+
+h1 {
+  color: white;
+  margin: 0.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+  grid-column: 2 / 4;
+  grid-row: 5;
+}
+
+h2 {
+  background-color: rgb(252, 160, 39);
+  color: black;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: initial;
+  height: 2rem;
+  line-height: 1.5;
+  grid-column: 1 / 3;
+  width: 100%;
+}
+
+.products-left {
+  grid-gap: 0.5rem;
+  grid-column: 2 / 3;
+  grid-row: 6;
+}
+
+.immortal {
+  border-top: thin solid white;
+}
+.gameinfo {
+  display: inline-flex;
+  width: 380px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.img-cart {
+  width: 70px;
+}
+
+.price {
+  font-weight: normal;
+}
+
+.button-blue {
+  width: 100%;
+  margin-top: 0.3rem;
+}
+
+figure {
+  margin: 0;
+}
+
+.addition {
+  grid-column: 3;
+  grid-row: 6;
+  padding-left: 1.4rem;
+  border-left: solid thin white;
+}
+
+.games-display {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.game1-img {
+  background-image: url(/images/games/entranceshopping.jpg);
+  width: 106px;
+  height: 141px;
+  background-repeat: no-repeat;
+  padding: 3px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.game2-img {
+  background-image: url(/images/games/purpleshopping.jpg);
+  width: 106px;
+  height: 141px;
+  background-repeat: no-repeat;
+  padding: 3px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.game3-img {
+  background-image: url(/images/games/treeshopping.jpg);
+  width: 106px;
+  height: 141px;
+  background-repeat: no-repeat;
+  padding: 3px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.game4-img {
+  background-image: url(/images/games/xshopping.jpg);
+  cursor: pointer;
+  width: 106px;
+  height: 141px;
+  background-repeat: no-repeat;
+  padding: 3px;
+  margin-bottom: 1rem;
+}
+
+.display-image {
+  margin: 0.5rem;
+}
+
 .gamelink {
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+.coupon {
+  grid-column: 3;
+  grid-row: 7;
+}
+
+.insert-coupon {
+  height: 3rem;
+  width: 30%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.127);
+  border-radius: 4px;
+  line-height: 3;
 }

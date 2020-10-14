@@ -20,7 +20,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="shop.html">Shop</a></li>
             <li><a href="sell.html">Sell</a></li>
-            <li class="searchbar"><form action="" method="GET"><input type="search" placeholder="Search" /></form></li>
+            <li id="search"><form action="" method="GET"><input type="search" placeholder="Search" /></form></li>
           </div>
           <div class="nav-logo-center">
            <a href="index.html"><img class="logo" src="/images/icons/logo.svg" alt="Gamehub logo"/><a href="index.html"></a>
@@ -35,40 +35,76 @@
           </ul>
       </nav>
   </header>
-    <main>
+
+    <main class="background">
+        <div class="wrapper">
+          <div class="headline-background"></div>
       <h1>Shopping Cart</h1>
-      <div>
+      <section class="products-left">
         <h2>Products</h2>
-        <h2><a href="buy-game.html" class="gamelink">Castle Wars</a></h2>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed. NOK 299
-        </p>
-        <h2><a href="pre-purchase.html" class="gamelink">Immortal</a></h2>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed. NOK 299
-        </p>
+        <section>
+          <div class="gameinfo">
+            <figure><img src="/images/games/castlewars-shopping.jpg" alt="Picture of castlewars" class="img-cart" ></figure>
+          <h3><a href="buy-game.html" class="gamelink">Castle Wars</a></h3>
+        <div class="price">NOK 299</div>
+        <figure><img src="/images/icons/trash.svg" alt="" class="trash"></figure>
+      </div>
+        </section>
+
+        <section class="immortal">
+          <div class="gameinfo">
+          <figure><img src="/images/games/immortal-shopping.jpg" alt="Picture of immortal" class="img-cart" ></figure>
+        <h3><a href="pre-purchase.html" class="gamelink">Immortal</a></h3>
+        <div class="price">NOK 299</div>
+        <figure><img src="/images/icons/trash.svg" alt=""class="trash"></figure>
+        </div>
         <form action="checkout.html">
-          <button>Proceed to checkout</button>
-        </form>
-      </div>
+          <button class="button button-blue">Proceed to checkout</button>
+      </section>
+     </section>
 
-      <div>
+      <div class="addition">
+      <section>
         <h2>Forgot something?</h2>
-        <p><a href="buy-game.html" class="gamelink">Game Name</a></p>
-        <p><a href="pre-purchase.html" class="gamelink">Game Name</a></p>
-        <p><a href="buy-game.html" class="gamelink">Game Name</a></p>
-        <p><a href="pre-purchase.html" class="gamelink">Game Name</a></p>
+        <section class="games-display">
+
+          <div class="display-image">
+            <figure class="game1-img"></figure>
+        <a href="buy-game.html" class="gamelink game1">Game Name</a>
+          </div>
+
+          <div class="display-image">
+          <figure class="game2-img"></figure>
+        <a href="pre-purchase.html" class="gamelink game2">Game Name</a>
       </div>
 
-      <div>
+      <div class="display-image">
+        <figure class="game3-img"></figure>
+        <a href="buy-game.html" class="gamelink game3">Game Name</a>
+      </div>
+
+      <div class="display-image">
+        <figure class="game4-img"></figure>
+        <a href="pre-purchase.html" class="gamelink game4">Game Name</a>
+      </div>
+
+      </section>
+    </section>
+
+      <section class="coupon">
         <h2>Use coupon / balance</h2>
         <p>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et. Lorem ipsum dolor sit
           amet, consetetur sadipscing elitr.
         </p>
-        <p>YzK1M-8Kv</p>
-      </div>
+        <form action="post">
+          <p class="insert-coupon">YzK1M-8Kv</p>
+        </form>
+  
+      </section>
+    </div>
+    </div>
     </main>
     <footer class="footer">
       <ul class="footer-list">
