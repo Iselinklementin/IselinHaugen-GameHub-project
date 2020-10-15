@@ -1,321 +1,74 @@
-html {
-  height: 100%;
-  width: 100%;
+header {
+  background: #119abf;
+  min-height: 100px;
 }
 
-header {
+.logo {
+  max-width: 100px;
+}
+
+nav,
+#hamburger-menu {
   display: none;
 }
 
-.grid {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas:
-    "intro"
-    "platformsfilter"
-    "gallerygames"
-    "filtersyellow"
-    "aside";
+nav ul {
+  padding: 0px;
 }
 
-/* GRID */
-.intro {
-  grid-area: intro;
-  justify-content: center;
+nav li {
+  display: block;
 }
 
-.platformsfilter {
-  grid-area: platformsfilter;
-}
-
-.gallerygames {
-  grid-area: gallerygames;
-}
-
-.filtersyellow {
-  grid-area: filtersyellow;
-}
-
-/* FILTER SIDE */
-
-h1 {
-  color: white;
-  margin: 0;
-  font-size: 3rem;
-  text-align: center;
-  padding-top: 2rem;
-  padding-left: 2rem;
-}
-
-.gamename {
-  text-align: center;
-}
-
-h3 a {
-  color: white;
+nav a {
   text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
+  color: #fff;
+  padding: 10px;
+  display: block;
 }
 
-.filter-platform {
-  display: flex;
-  color: black;
+nav a:hover {
+  text-decoration: underline;
+}
+
+.current {
   font-weight: bold;
 }
 
-.games-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 336px;
-  padding-bottom: 5rem;
+.hamburger-label {
+  float: right;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.5em;
+  display: block;
 }
 
-.gallery-home-top {
-  width: 160px;
-  height: 220px;
-  margin: 4px;
-  position: relative;
-  display: inline-block;
+#hamburger-menu:checked ~ nav {
+  display: block;
 }
 
-figcaption,
-.price {
-  display: none;
-}
-
-.highlight:hover {
-  background-color: rgb(252, 160, 39);
-  text-decoration: none;
-}
-
-.highlight {
-  list-style-type: none;
-}
-
-.highlight > a {
-  color: white;
-  text-decoration: none;
-}
-
-.platform {
-  border: thin rgb(252, 160, 39);
-  width: 80px;
-  height: 20px;
-  background-color: rgb(252, 160, 39);
-  text-align: center;
-}
-
-.filter-platform li {
-  display: inline-flex;
-}
-
-.filter-platform {
-  justify-content: center;
-}
-
-.containers {
-  flex: 0;
-  margin: 0.5rem;
-}
-
-.box {
-  width: 80px;
-  height: 70px;
-  border: rgb(252, 160, 39) 1px solid;
-  text-align: center;
-}
-
-.filter-container {
-  line-height: 1.5;
-  font-weight: normal;
-}
-
-.nintendo-gamepad {
-  margin-top: 33%;
-  width: 3rem;
-}
-
-.pc-mouse {
-  margin-top: 25%;
-  width: 1.3rem;
-}
-
-.xbox-gamepad {
-  margin-top: 25%;
-  width: 3rem;
-}
-
-.ps-gamepad {
-  margin-top: 25%;
-  width: 3rem;
-}
-
-.sort {
-  color: white;
-  display: inline-flex;
-  align-content: space-around;
-  padding-left: 3rem;
-}
-
-.highlight:hover {
-  background-color: rgb(252, 160, 39);
-  text-decoration: none;
-}
-
-.highlight {
-  list-style-type: none;
-}
-
-.highlight > a {
-  color: white;
-  text-decoration: none;
-}
-
-.filter-container {
-  max-width: 145px;
-}
-
-ul.filter-list {
-  padding: 0;
-}
-
-.background {
-  background-image: url(/images/backgrounds/background-shop.jpg);
-  background-repeat: no-repeat;
-  background-position: left 50% bottom 18%;
-  background-size: cover;
-  width: 100%;
-  color: white;
-  overflow: hidden;
-}
-
-h2 {
-  background-color: rgb(252, 160, 39);
-  color: black;
-  width: 100%;
-}
-
-.filtersyellow {
-  width: 16.5rem;
-  display: none;
-  color: white;
-}
-
-figcaption {
-  display: none;
-}
-
-figure {
-  margin: 0.5rem;
-}
-
-/* ------------------------------------ */
-
-@media only screen and (max-width: 360px) {
-  .grid {
-    grid-template-columns: repeat(1, lfr);
-    grid-template-areas:
-      "intro"
-      "gallerygames"
-      "aside";
+@media (min-width: 600px) {
+  .logo {
+    float: left;
   }
-  .platformsfilter {
+
+  nav {
+    display: inline-block;
+  }
+
+  .hamburger-label {
     display: none;
   }
 
-  .games-gallery {
-    padding-left: 2rem;
-  }
-}
-
-@media only screen and (min-width: 400px) {
-  .grid {
-    grid-template-columns: repeat(2, lfr);
-    grid-template-areas:
-      "intro platformsfilter"
-      "gallerygames gallerygames"
-      "aside aside aside";
+  ul {
+    display: flex;
   }
 
-  .games-gallery {
-    display: inline-flex;
-    flex-wrap: wrap;
-    max-width: 800px;
-    padding-left: 2rem;
-  }
-  .gallery-home-top {
-    width: 162px;
-    height: 240px;
-    margin: 4px;
-  }
-}
-
-@media only screen and (min-width: 850px) {
-  .grid {
-    grid-template-columns: repeat(3, lfr);
-    grid-template-areas:
-      "intro intro platformsfilter"
-      "gallerygames gallerygames gallerygames"
-      "aside aside aside";
-  }
-  .intro {
-    text-align: left;
-    padding-top: 5rem;
-    font-size: 4rem;
-    padding-left: 2rem;
+  li {
+    display: inline-block;
   }
 
-  .filter-platform {
-    flex-flow: row wrap;
-    height: 300px;
-    width: 280px;
-    align-items: center;
-    padding-top: 2rem;
-    align-content: space-evenly;
-  }
-
-  .games-gallery {
-    max-width: 1290px;
-  }
-
-  .box {
-    width: 100px;
-    height: 90px;
-  }
-
-  .platform {
-    width: 100px;
-    height: 20px;
-  }
-
-  .platform {
-    align-items: center;
-  }
-}
-
-@media only screen and (min-width: 1060px) {
-  .grid {
-    grid-template-columns: repeat(4, lfr);
-    grid-template-areas:
-      "intro intro platformsfilter platformsfilter"
-      "gallerygames gallerygames gallerygames filtersyellow"
-      "aside aside aside aside";
-  }
-
-  .filter-platform {
-    width: 500px;
-  }
-  .intro {
-    font-size: 5rem;
-  }
-  .filtersyellow {
-    display: initial;
-  }
-}
-
-@media only screen and (min-width: 1120px) {
-  .intro {
-    padding-top: 5rem;
+  nav a {
+    padding: 19% 40px;
   }
 }
