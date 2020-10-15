@@ -36,19 +36,15 @@ header {
   grid-area: filtersyellow;
 }
 
-aside {
-  grid-area: aside;
-}
-
 /* FILTER SIDE */
 
 h1 {
   color: white;
   margin: 0;
   font-size: 3rem;
-  padding-bottom: 1rem;
   text-align: center;
   padding-top: 2rem;
+  padding-left: 2rem;
 }
 
 .gamename {
@@ -72,6 +68,7 @@ h3 a {
   display: flex;
   flex-wrap: wrap;
   max-width: 336px;
+  padding-bottom: 5rem;
 }
 
 .gallery-home-top {
@@ -158,9 +155,8 @@ figcaption,
   color: white;
   display: inline-flex;
   align-content: space-around;
+  padding-left: 3rem;
 }
-/* game-list left*/
-/* filter right-side*/
 
 .highlight:hover {
   background-color: rgb(252, 160, 39);
@@ -194,16 +190,11 @@ ul.filter-list {
   overflow: hidden;
 }
 
-aside {
-  width: 100%;
-}
-
 h2 {
   background-color: rgb(252, 160, 39);
   color: black;
   width: 100%;
 }
-/* FILTER SIDE */
 
 .filtersyellow {
   width: 16.5rem;
@@ -232,6 +223,10 @@ figure {
   .platformsfilter {
     display: none;
   }
+
+  .games-gallery {
+    padding-left: 2rem;
+  }
 }
 
 @media only screen and (min-width: 400px) {
@@ -247,6 +242,7 @@ figure {
     display: inline-flex;
     flex-wrap: wrap;
     max-width: 800px;
+    padding-left: 2rem;
   }
   .gallery-home-top {
     width: 162px;
@@ -255,7 +251,7 @@ figure {
   }
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 850px) {
   .grid {
     grid-template-columns: repeat(3, lfr);
     grid-template-areas:
@@ -265,7 +261,7 @@ figure {
   }
   .intro {
     text-align: left;
-    padding-top: 3rem;
+    padding-top: 5rem;
     font-size: 4rem;
     padding-left: 2rem;
   }
@@ -298,7 +294,7 @@ figure {
   }
 }
 
-@media only screen and (min-width: 815px) {
+@media only screen and (min-width: 1060px) {
   .grid {
     grid-template-columns: repeat(4, lfr);
     grid-template-areas:
@@ -308,111 +304,18 @@ figure {
   }
 
   .filter-platform {
-    flex-flow: wrap;
     width: 500px;
-    text-align: right;
   }
   .intro {
     font-size: 5rem;
   }
   .filtersyellow {
     display: initial;
-    align-items: flex-end;
   }
 }
 
 @media only screen and (min-width: 1120px) {
   .intro {
-    padding-top: 4rem;
+    padding-top: 5rem;
   }
 }
-
-/*
-.box {
-  width: 116px;
-  height: 104px;
-  border: rgb(252, 160, 39) 1px solid;
-  text-align: center;
-}
-
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
-  justify-content: space-between;
-  padding-top: 11rem; 
-  
-  h1 {
-  color: white;
-  margin: 0;
-  font-size: 5rem;
-  padding-bottom: 1rem;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  background-color: thistle;
-}
-
-.games-gallery {
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex-basis: 240px;
-  align-content: left;
-  grid-column: 1 / 4;
-  grid-row: 3;
-  justify-content: space-between;
-}
-
-.filter-platform {
-  display: flex;
-  color: black;
-  font-weight: bold;
-  grid-column-start: 3;
-  grid-row: 1;
-}
-
-.filter-platform li {
-  padding: 1.5rem;
-  grid-column: 4;
-  grid-row: 3;
-  display: inline-flex;
-}
-.platform {
-  border: thin rgb(252, 160, 39);
-  width: 116px;
-  height: 20px;
-  background-color: rgb(252, 160, 39);
-  text-align: center;
-  grid-column: 2 / 2;
-  grid-row: 2 / span 2;
-}
-
-.filter-container {
-  line-height: 1.5;
-  font-weight: normal;
-  background-color: thistle;
-  grid-column-end: -1;
-}
-
-.box {
-  width: 116px;
-  height: 104px;
-  border: rgb(252, 160, 39) 1px solid;
-  text-align: center;
-  grid-column-end: -1;
-}
-
-.games-gallery {
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex-basis: 240px;
-  align-content: left;
-  justify-content: space-between;
-}
-
-.gallery-home-top {
-  width: 240px;
-  height: 340px;
-}
-
-*/
