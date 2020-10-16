@@ -11,26 +11,29 @@ body {
   padding: 0;
 }
 
+/* nav */
+
 header {
   background-color: black;
-  height: 5.5rem;
   width: 100%;
   z-index: 1;
   position: fixed;
 }
-
 h1,
 h2 {
   text-transform: uppercase;
 }
 
 nav li {
+  display: inline-flex;
   color: #ffffff;
-  display: inline-block;
   padding: 0 15px;
-  vertical-align: middle;
+  margin: 0;
 }
-
+nav {
+  width: 85%;
+  margin: auto;
+}
 nav a {
   color: #ffffff;
   text-decoration: none;
@@ -43,61 +46,38 @@ nav a:hover {
   color: rgb(252, 160, 39);
   border-bottom: 2px rgb(252, 160, 39) solid;
 }
-
 .wrap {
   display: inline-flex;
-  align-content: center;
-  align-items: center;
-  height: 50px;
-  width: 100%;
-  margin-top: 2rem;
+  margin: auto;
   padding: 0;
+  align-items: center;
+  width: 100%;
 }
-
 .nav-left-container {
   flex: 2;
-  padding: 0;
-  margin-top: 0.3rem;
-  text-align: center;
 }
-
-.nav-right-container {
-  padding: 0;
-  flex: 2;
-  text-align: right;
-}
-
 .nav-logo-center {
   cursor: pointer;
-  flex: 0;
-  padding: 0;
-  margin: 0;
+  flex: 3;
   text-align: center;
+  margin-left: -3rem;
+  margin-bottom: -2rem;
 }
-
-.shoppingcart-wrap {
-  padding: 0;
-  padding-right: 7rem;
-  margin: 0;
-  justify-content: end;
-  display: inline-block;
-}
-
-.shoppingcart-icon {
-  width: 2.8rem;
-}
-
 .logo {
   width: 8.4rem;
   padding-top: 1rem;
 }
-
+.nav-right-container {
+  flex: 2;
+  display: inline-flex;
+  align-items: center;
+}
+.shoppingcart-icon {
+  height: 2.4rem;
+}
 .far {
   padding-right: 0.5rem;
 }
-
-/* nav search */
-
 input[type="search"] {
   background-color: black;
   border: 1px solid rgb(252, 160, 39);
@@ -106,7 +86,6 @@ input[type="search"] {
   width: 10rem;
   padding: 0;
 }
-
 #search ::placeholder {
   color: white;
   font-size: 0.8rem;
@@ -116,13 +95,8 @@ input[type="search"] {
   background-repeat: no-repeat;
   background-position: 10px;
 }
-
 #search input:focus {
   outline: none;
-}
-
-#search input:hover {
-  background-color: rgba(238, 234, 228, 0.123);
 }
 p a {
   text-decoration: none;
@@ -134,9 +108,8 @@ ul {
   list-style-type: none;
 }
 
-/* testing nav across pages */
+/* buttons */
 
-/* Any button over which the user's pointer is hovering */
 button:hover,
 button:active {
   background-color: rgb(255, 174, 68);
@@ -181,6 +154,8 @@ figure {
   padding: 0;
   margin: 1rem;
 }
+
+/* footer */
 
 footer ul li {
   display: flex;

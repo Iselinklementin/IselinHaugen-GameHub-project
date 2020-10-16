@@ -5,25 +5,19 @@ body {
   margin: 0;
   padding: 0;
 }
-
 header {
   background-color: black;
 }
-
 nav li {
   display: inline-flex;
   color: #ffffff;
   padding: 0 15px;
   margin: 0;
-  border: yellow thin solid;
 }
-
 nav {
   width: 85%;
-  border: solid pink;
   margin: auto;
 }
-
 nav a {
   color: #ffffff;
   text-decoration: none;
@@ -31,54 +25,45 @@ nav a {
 nav a:hover {
   color: rgb(252, 160, 39);
 }
+.active {
+  color: rgb(252, 160, 39);
+  border-bottom: 2px rgb(252, 160, 39) solid;
+}
 .wrap {
   display: inline-flex;
   margin: auto;
   padding: 0;
   align-items: center;
   width: 100%;
-  border: red thin solid;
 }
-
+.nav-left-container {
+  flex: 2;
+  border: lightpink solid thin;
+}
+.nav-logo-center {
+  cursor: pointer;
+  flex: 3;
+  text-align: center;
+  margin-left: -3rem;
+  margin-bottom: -2rem;
+  border: lightpink solid thin;
+}
 .logo {
   width: 8.4rem;
   padding-top: 1rem;
 }
-
+.nav-right-container {
+  flex: 2;
+  display: inline-flex;
+  align-items: center;
+  border: lightpink solid thin;
+}
 .shoppingcart-icon {
   height: 2.4rem;
 }
-
-.active {
-  color: rgb(252, 160, 39);
-  border-bottom: 2px rgb(252, 160, 39) solid;
-}
-.nav-left-container {
-  flex: 2;
-  padding: 0;
-  border: solid thin lightblue;
-}
-
-.nav-logo-center {
-  cursor: pointer;
-  flex: 3;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  border: solid thin white;
-}
-
-.nav-right-container {
-  flex: 2;
-  align-content: end;
-  border: solid thin lightblue;
-  align-items: baseline;
-}
-
 .far {
   padding-right: 0.5rem;
 }
-
 input[type="search"] {
   background-color: black;
   border: 1px solid rgb(252, 160, 39);
@@ -87,7 +72,6 @@ input[type="search"] {
   width: 10rem;
   padding: 0;
 }
-
 #search ::placeholder {
   color: white;
   font-size: 0.8rem;
@@ -97,7 +81,6 @@ input[type="search"] {
   background-repeat: no-repeat;
   background-position: 10px;
 }
-
 #search input:focus {
   outline: none;
 }

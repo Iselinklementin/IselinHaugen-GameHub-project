@@ -1,4 +1,14 @@
+html {
+  background: url(/images/backgrounds/background-shop.jpg) no-repeat center
+    center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .grid {
+  padding-top: 3rem;
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
@@ -10,6 +20,7 @@
 }
 
 /* GRID */
+
 .intro {
   grid-area: intro;
 }
@@ -26,18 +37,12 @@
   grid-area: filtersyellow;
 }
 
-/* FILTER SIDE */
-
 h1 {
   color: white;
   margin: 0;
   font-size: 3rem;
   text-align: center;
   padding-top: 2rem;
-}
-
-.gamename {
-  text-align: center;
 }
 
 h3 a {
@@ -66,6 +71,10 @@ h3 a {
   margin: 4px;
   position: relative;
   display: inline-block;
+}
+
+.gamename {
+  text-align: center;
 }
 
 figcaption,
@@ -168,15 +177,6 @@ figcaption,
 
 ul.filter-list {
   padding: 0;
-}
-
-html {
-  background: url(/images/backgrounds/background-shop.jpg) no-repeat center
-    center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 h2 {
@@ -335,22 +335,6 @@ figure {
   }
   .platform {
     width: 116px;
-  }
-  .nintendo-gamepad {
-    margin-top: 33%;
-    width: 4rem;
-  }
-  .pc-mouse {
-    margin-top: 25%;
-    width: 1.7rem;
-  }
-  .xbox-gamepad {
-    margin-top: 25%;
-    width: 4rem;
-  }
-  .ps-gamepad {
-    margin-top: 25%;
-    width: 4rem;
   }
   .gallery-home-top {
     width: 243px;
