@@ -333,21 +333,17 @@ figure {
     width: 116px;
     height: 104px;
   }
-
   .platform {
     width: 116px;
   }
-
   .nintendo-gamepad {
     margin-top: 33%;
     width: 4rem;
   }
-
   .pc-mouse {
     margin-top: 25%;
     width: 1.7rem;
   }
-
   .xbox-gamepad {
     margin-top: 25%;
     width: 4rem;
@@ -359,5 +355,8 @@ figure {
   .gallery-home-top {
     width: 243px;
     height: 345px;
+  }
+  .games-gallery {
+    max-width: 2000px;
   }
 }

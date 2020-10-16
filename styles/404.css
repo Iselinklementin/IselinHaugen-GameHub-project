@@ -1,74 +1,215 @@
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 header {
-  background: #119abf;
-  min-height: 100px;
-}
-
-.logo {
-  max-width: 100px;
-}
-
-nav,
-#hamburger-menu {
-  display: none;
-}
-
-nav ul {
-  padding: 0px;
+  background-color: black;
 }
 
 nav li {
-  display: block;
+  display: inline-flex;
+  color: #ffffff;
+  padding: 0 15px;
+  margin: 0;
+  border: yellow thin solid;
+}
+
+nav {
+  width: 85%;
+  border: solid pink;
+  margin: auto;
 }
 
 nav a {
+  color: #ffffff;
   text-decoration: none;
-  color: #fff;
-  padding: 10px;
-  display: block;
 }
-
 nav a:hover {
-  text-decoration: underline;
+  color: rgb(252, 160, 39);
+}
+.wrap {
+  display: inline-flex;
+  margin: auto;
+  padding: 0;
+  align-items: center;
+  width: 100%;
+  border: red thin solid;
 }
 
-.current {
+.logo {
+  width: 8.4rem;
+  padding-top: 1rem;
+}
+
+.shoppingcart-icon {
+  height: 2.4rem;
+}
+
+.active {
+  color: rgb(252, 160, 39);
+  border-bottom: 2px rgb(252, 160, 39) solid;
+}
+.nav-left-container {
+  flex: 2;
+  padding: 0;
+  border: solid thin lightblue;
+}
+
+.nav-logo-center {
+  cursor: pointer;
+  flex: 3;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  border: solid thin white;
+}
+
+.nav-right-container {
+  flex: 2;
+  align-content: end;
+  border: solid thin lightblue;
+  align-items: baseline;
+}
+
+.far {
+  padding-right: 0.5rem;
+}
+
+input[type="search"] {
+  background-color: black;
+  border: 1px solid rgb(252, 160, 39);
+  border-radius: 8px;
+  height: 35px;
+  width: 10rem;
+  padding: 0;
+}
+
+#search ::placeholder {
+  color: white;
+  font-size: 0.8rem;
+  font-family: inherit;
+  text-align: center;
+  background-image: url(/images/icons/search.svg);
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+
+#search input:focus {
+  outline: none;
+}
+/*
+width: 2.8rem;
+
+  padding: 0;
+  margin-top: 0.3rem;
+text-align: center;
+
+class="shoppingcart-wrap"
+  vertical-align: middle;
+
+  align-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0;
+
+header {
+  background-color: black;
+  height: 5.5rem;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+nav a:hover {
+  color: rgb(252, 160, 39);
+}
+
+.wrap {
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.nav-left-container {
+  flex: 2;
+  padding: 0;
+  margin-top: 0.3rem;
+  text-align: center;
+}
+
+.nav-right-container {
+  padding: 0;
+  flex: 2;
+  text-align: right;
+}
+
+.nav-logo-center {
+  cursor: pointer;
+  flex: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.shoppingcart-wrap {
+  padding: 0;
+  padding-right: 7rem;
+  margin: 0;
+  justify-content: end;
+  display: inline-block;
+}
+
+.far {
+  padding-right: 0.5rem;
+}
+
+input[type="search"] {
+  background-color: black;
+  border: 1px solid rgb(252, 160, 39);
+  border-radius: 8px;
+  height: 35px;
+  width: 10rem;
+  padding: 0;
+}
+
+#search ::placeholder {
+  color: white;
+  font-size: 0.8rem;
+  font-family: inherit;
+  text-align: center;
+  background-image: url(/images/icons/search.svg);
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+
+#search input:focus {
+  outline: none;
+}
+
+#search input:hover {
+  background-color: rgba(238, 234, 228, 0.123);
+}
+p a {
+  text-decoration: none;
+  color: white;
   font-weight: bold;
 }
 
-.hamburger-label {
-  float: right;
-  color: #fff;
-  padding: 10px;
-  font-size: 1.5em;
-  display: block;
+ul {
+  list-style-type: none;
 }
-
-#hamburger-menu:checked ~ nav {
-  display: block;
-}
-
-@media (min-width: 600px) {
-  .logo {
-    float: left;
-  }
-
-  nav {
-    display: inline-block;
-  }
-
-  .hamburger-label {
-    display: none;
-  }
-
-  ul {
-    display: flex;
-  }
-
-  li {
-    display: inline-block;
-  }
-
-  nav a {
-    padding: 19% 40px;
-  }
-}
+*/
