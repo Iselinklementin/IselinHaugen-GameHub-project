@@ -95,6 +95,10 @@ input[type="search"] {
   background-image: url(/images/icons/search.svg);
   background-repeat: no-repeat;
   background-position: 10px;
+  background-size: 15px;
+}
+::-moz-placeholder {
+  opacity: 1;
 }
 #search input:focus {
   outline: none;
