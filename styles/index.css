@@ -76,7 +76,7 @@ h2 {
 /* headings pre-purchase / new release */
 
 .container {
-  max-width: 75%;
+  max-width: 90%;
   margin: auto;
 }
 
@@ -262,4 +262,11 @@ h2 {
   left: 25px;
   top: 2px;
   border: solid red;
+}
+
+@media only screen and (min-width: 1500px) {
+  .header-img {
+    background: url(/images/backgrounds/heading-bigsize.jpg);
+    background-position: 50%;
+  }
 }
