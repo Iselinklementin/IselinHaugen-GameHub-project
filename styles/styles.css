@@ -58,7 +58,7 @@ nav a:hover {
 }
 .nav-logo-center {
   cursor: pointer;
-  flex: 3;
+  flex: 1;
   text-align: center;
   margin-left: -3rem;
   margin-bottom: -2rem;
@@ -71,6 +71,7 @@ nav a:hover {
   flex: 2;
   display: inline-flex;
   align-items: center;
+  justify-content: end;
 }
 .shoppingcart-icon {
   height: 2.4rem;
@@ -152,7 +153,6 @@ figcaption {
 
 figure {
   padding: 0;
-  margin: 1rem;
 }
 
 /* footer */
