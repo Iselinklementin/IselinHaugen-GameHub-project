@@ -52,6 +52,7 @@ nav a:hover {
   padding: 0;
   align-items: center;
   width: 100%;
+  position: relative;
 }
 .nav-left-container {
   flex: 2;
@@ -71,7 +72,7 @@ nav a:hover {
   flex: 2;
   display: inline-flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .shoppingcart-icon {
   height: 2.4rem;
