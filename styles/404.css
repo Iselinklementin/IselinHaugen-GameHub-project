@@ -2,13 +2,8 @@ body,
 html {
   color: white;
   scroll-behavior: smooth;
-  text-align: center;
 }
 
-header,
-.footer {
-  display: none;
-}
 html {
   background: url(/images/backgrounds/background-home.jpg) no-repeat center
     center;
@@ -47,7 +42,8 @@ h2 {
 }
 
 .intro-text {
-  padding-top: 4rem;
+  padding-top: 7rem;
+  text-align: center;
 }
 
 .section-intro {
@@ -95,9 +91,15 @@ button {
   align-items: baseline;
   justify-content: space-between;
   margin: auto;
-  font-size: 1rem;
-  width: 90%;
+  max-width: 95%;
+
   display: none;
+}
+
+.direct-link {
+  color: rgb(252, 160, 39);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .games-display-one {
@@ -127,9 +129,34 @@ button {
   cursor: pointer;
 }
 
+.text-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  line-height: 1.4;
+}
+
+.game-name {
+  text-decoration: none;
+  color: white;
+}
+
+.price {
+  color: black;
+  background-color: rgb(252, 160, 39);
+  height: 25px;
+  width: 90px;
+  text-align: center;
+}
+
+figcaption {
+  font-weight: 500;
+}
+
 figcaption,
 .price,
-.game-name {
+.game-name,
+.support-display {
   display: none;
 }
 
@@ -212,6 +239,22 @@ figcaption,
   max-width: 150px;
 }
 
+h3 {
+  margin-top: 1rem;
+}
+
+.new-rel-wrap {
+  padding: 10px;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.display-two figcaption {
+  padding: 10px;
+  display: none;
+}
+
 .gallery-bottom {
   width: 150px;
   height: 205px;
@@ -222,7 +265,7 @@ figcaption,
   max-width: 330px;
 }
 
-/* SUPPORT  */
+/* SUPPORT MOBILE */
 
 .support {
   display: flex;
@@ -259,8 +302,59 @@ figcaption,
   line-height: 1;
 }
 
+/* SUPPORT SCREEN */
+
 .support-display {
+  position: relative;
+  display: block;
+  height: 520px;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   display: none;
+}
+
+.support-img {
+  display: flex;
+  max-height: 520px;
+  position: absolute;
+  max-width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  position: absolute;
+  align-items: left;
+  top: 12%;
+  left: 4%;
+}
+
+.buttons h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.suprt-btn {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.support-sell {
+  display: block;
+  position: relative;
+  height: 520px;
+  left: 14%;
+  color: rgb(252, 160, 39);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.8rem;
 }
 
 /* BETA */
@@ -359,7 +453,7 @@ figcaption,
     max-width: 300px;
   }
 
-  /* SUPPORT  */
+  /*    !!!!!    SUPPORT MOBILE  !!!!!  */
 
   .container {
     width: 230px;
@@ -481,21 +575,16 @@ figcaption,
   }
 
   figcaption,
+  .direct-link,
   .price,
   .game-name {
     display: initial;
   }
 
-  .game-name,
-  .price {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
   .games-display-one {
     margin-top: 0;
     text-align: left;
+    flex-wrap: nowrap;
   }
   .gallery-top {
     width: 235px;
@@ -545,8 +634,13 @@ figcaption,
 
   /*  GALLERY TWO  */
 
+  .display-two figcaption {
+    display: block;
+  }
+
   .games-display-two {
     margin-top: 0;
+    flex-wrap: nowrap;
     text-align: left;
     max-width: 70%;
   }
@@ -561,11 +655,13 @@ figcaption,
   .gallery-bottom {
     width: 235px;
     height: 315px;
+    padding: 10px;
   }
 
   .overwatch {
     height: 315px;
     width: 545px;
+    padding: 10px;
   }
 
   .release {
@@ -577,6 +673,10 @@ figcaption,
 
   .support {
     display: none;
+  }
+
+  .support-display {
+    display: block;
   }
 
   /* BETA */
@@ -632,11 +732,18 @@ figcaption,
   .beta-btn {
     display: initial;
     top: -4rem;
-    right: 22%;
+    right: 25%;
   }
 
   .access {
     top: -20rem;
-    right: 22%;
+    right: 25%;
+  }
+
+  /* SUPPORT SCREEN */
+
+  .support-sell {
+    width: 49%;
+    left: 25%;
   }
 }

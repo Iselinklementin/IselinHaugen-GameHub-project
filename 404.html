@@ -64,11 +64,11 @@
 
 <!------- GALLERY ONE -------->
 
-    <div class="display-one">
+<div class="display-one">
       
 <div class="heading-overview">
       <h3>Pre-purchase</h3>
-      <p><span class=direct-link>Go to shop</span></p></div>
+     <a href="shop.html" class=direct-link>Go to shop</a></div>
       <section class="games-display-one">
         <figure class="game1">
           <img
@@ -76,12 +76,15 @@
             src="images/games/entrance-game.jpg"
             alt="cover of entrance-game"
           />
-          <h3><a href="pre-purchase.html" class="game-name">Game Name</a></h3>
+          <div class="text-wrapper">
+            <h3><a href="pre-purchase.html" class="game-name">Game Name</a></h3>
+            <div class="price">NOK 299</div>
+          </div>
           <figcaption>
-            Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
+            Lorem ipsum dolor sit amet diam consetetur sadipscing.
           </figcaption>
-          <div class="price">NOK 299</div>
         </figure>
+  
 
         <figure class="game2">
           <img
@@ -89,11 +92,14 @@
             src="images/games/purple-game.jpg"
             alt="cover of entrance-game"
           />
-          <h3><a href="pre-purchase.html" class="game-name">Game Name</a></h3>
-          <figcaption>
-            Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
-          </figcaption>
-          <div class="price">NOK 299</div>
+         
+          <div class="text-wrapper">
+            <h3><a href="pre-purchase.html" class="game-name">Game Name</a></h3>
+            <div class="price">NOK 299</div>
+          </div>
+            <figcaption>
+              Lorem ipsum dolor sit amet diam consetetur sadipscing.
+            </figcaption>
         </figure>
 
         <figure class="game3">
@@ -102,11 +108,13 @@
             src="images/games/tree-game.jpg"
             alt="cover of entrance-game"
           />
-          <h3><a href="pre-purchase.html" class="game-name">Game Name</a></h3>
-          <figcaption>
-            Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
-          </figcaption>
-          <div class="price">NOK 299</div>
+          <div class="text-wrapper">
+            <h3><a href="pre-purchase.html" class="game-name">Game Name</a></h3>
+            <div class="price">NOK 299</div>
+          </div>
+            <figcaption>
+              Lorem ipsum dolor sit amet diam consetetur sadipscing.
+            </figcaption>
         </figure>
  
         <figure class="game4">
@@ -115,11 +123,13 @@
             src="images/games/x-game.jpg"
             alt="cover of entrance-game"
           />
-          <h3><a href="pre-purchase.html" class="game-name">Game Name</a></h3>
-          <figcaption>
-            Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
-          </figcaption>
-          <div class="price">NOK 299</div>
+          <div class="text-wrapper">
+            <h3><a href="pre-purchase.html" class="game-name">Game Name</a></h3>
+            <div class="price">NOK 299</div>
+          </div>
+            <figcaption>
+              Lorem ipsum dolor sit amet diam consetetur sadipscing.
+            </figcaption>
         </figure>
       </section>
 </div>
@@ -158,21 +168,27 @@
         <figure class="release-game1">
           <img class="overwatch" src="/images/games/diva-game.jpg"
             alt="Picture of D.VA from Overwatch"/>
-          <h3><a href="buy-game.html" class="game-name">Game Name</a></h3>
+          
+            <div class="text-wrapper new-rel-wrap">
+            <h3><a href="buy-game.html" class="game-name">Game Name</a></h3>
+            <div class="price">NOK 299</div>
+            </div>
           <figcaption>
-            Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
+            Lorem ipsum dolor sit amet diam consetetur sadipscing.
+            Lorem ipsum dolor sit amet diam consetetur sadipscing.
           </figcaption>
-          <div class="price">NOK 299</div>
         </figure>
 
         <figure class="release-game2">
           <img class="gallery-bottom" src="/images/games/lol-game.jpg"
             alt="Picture from LOL"/>
-          <h3><a href="buy-game.html" class="game-name">Game Name</a></h3>
+            <div class="text-wrapper new-rel-wrap">
+              <h3><a href="buy-game.html" class="game-name">Game Name</a></h3>
+              <div class="price">NOK 299</div>
+              </div>
           <figcaption>
-            Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
+            Lorem ipsum dolor sit amet diam consetetur sadipscing.
           </figcaption>
-          <div class="price">NOK 299</div>
         </figure>
 
         <figure class="release-game3">
@@ -181,11 +197,13 @@
             src="/images/games/gorilla-game.jpg"
             alt="Picture of Gorilla"
           />
-          <h3><a href="buy-game.html" class="game-name">Game Name</a></h3>
+          <div class="text-wrapper new-rel-wrap">
+            <h3><a href="buy-game.html" class="game-name">Game Name</a></h3>
+            <div class="price">NOK 299</div>
+            </div>
           <figcaption>
-            Lorem ipsum dolor sit amet diam consetetur sadipscing elitr.
+            Lorem ipsum dolor sit amet diam consetetur sadipscing.
           </figcaption>
-          <div class="price">NOK 299</div>
         </figure>
       </section>
 </div>
@@ -204,25 +222,28 @@
 
 <!------- SUPPORT / SELL -------->
 
-<div class="support-display">
-      <section class="support-sell">
-      <figure>
-        <img src="/images/games/wood-game-home.jpg" alt="Picture from game - giving and receive">
-      </figure>
 
+<section class="support-display">
+      <section class="support-wrap">
+      <figure>
+        <img class="support-img" src="/images/games/wood-game-home.jpg" alt="Picture from game - giving and receive">
+      </figure>
+      </section>
+
+      <section class="support-sell">
       <div class="buttons">
       <form action="shop.html">
         <h3>Support a gamer</h3>
-        <button class="button button-blue">Buy used</button>
+        <button class="button button-blue suprt-btn">Buy used</button>
       </form>
 
       <form action="sell.html">
         <h3>Earn money</h3>
-        <button class="button">Sell games</button>
+        <button class="button suprt-btn">Sell games</button>
       </form>
+    </div>
     </section>
-    </div>
-    </div>
+  </section>
 
 
     <!------- BETA -------->
@@ -237,7 +258,7 @@
   <h2 class="access">Get early access<span class="span-beta"> to open beta</span></h2>
   <button class="button beta-btn">Open beta</button>
 </div>
-</div>
+
 
 
       <!------- ILLUSTRATION TO SHOP -------->
