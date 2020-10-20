@@ -91,8 +91,7 @@ button {
   align-items: baseline;
   justify-content: space-between;
   margin: auto;
-  max-width: 95%;
-
+  max-width: 980px;
   display: none;
 }
 
@@ -147,6 +146,7 @@ button {
   height: 25px;
   width: 90px;
   text-align: center;
+  line-height: 1.8;
 }
 
 figcaption {
@@ -213,10 +213,14 @@ figcaption,
 .games-display-two {
   display: flex;
   flex-wrap: wrap;
-  max-width: 95%;
   margin: auto;
   justify-content: center;
   margin-top: -1rem;
+}
+
+.display-two {
+  max-width: 980px;
+  margin: auto;
 }
 
 .release-game1 {
@@ -350,7 +354,7 @@ h3 {
   display: block;
   position: relative;
   height: 520px;
-  left: 14%;
+  left: 12%;
   color: rgb(252, 160, 39);
   font-weight: bold;
   text-transform: uppercase;
@@ -660,7 +664,7 @@ h3 {
 
   .overwatch {
     height: 315px;
-    width: 545px;
+    max-width: 600px;
     padding: 10px;
   }
 
