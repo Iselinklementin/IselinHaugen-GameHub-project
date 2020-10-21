@@ -1,4 +1,5 @@
-/* TRBL */
+/* TRBL*/
+
 * {
   box-sizing: border-box;
 }
@@ -11,11 +12,253 @@ body {
   padding: 0;
 }
 
-/* nav */
+header {
+  background-color: #000000;
+  min-height: 100px;
+}
+
+.active {
+  color: rgb(252, 160, 39);
+  border-bottom: 1px rgb(252, 160, 39) solid;
+}
+
+nav,
+#hamburger-menu {
+  display: none;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: block;
+  border-bottom: rgb(252, 160, 39) thin solid;
+  width: 30%;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 0;
+  display: block;
+  font-weight: 400;
+}
+nav a:hover {
+  color: rgb(252, 160, 39);
+}
+
+.hamburger-label {
+  position: absolute;
+  padding: 30px;
+  font-size: 1.9rem;
+  display: block;
+  color: rgb(252, 160, 39);
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+  padding-top: 100px;
+  padding-left: 30px;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.nav-logo-center {
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+.logo {
+  width: 6.5rem;
+  padding-top: 1rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.shoppingcart-wrap {
+  position: relative;
+  right: 4%;
+  list-style-type: none;
+}
+
+.shoppingcart-icon {
+  height: 2.8rem;
+  position: absolute;
+  right: 0;
+  font-size: 1.9rem;
+  display: block;
+  margin-top: 1.4rem;
+}
+
+.search-bar {
+  display: none;
+}
+ul li .far {
+  display: none;
+}
+
+input[type="search"] {
+  background-color: black;
+  border: 1px solid rgb(252, 160, 39);
+  border-radius: 8px;
+  height: 35px;
+  width: 10rem;
+  padding: 0;
+}
+#search ::placeholder {
+  color: white;
+  font-size: 0.8rem;
+  font-family: inherit;
+  text-align: center;
+  background-image: url(/images/icons/search.svg);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 15px;
+}
+::-moz-placeholder {
+  opacity: 1;
+}
+#search input:focus {
+  outline: none;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+/*                    MEDIA                    */
+
+@media (min-width: 650px) {
+  header {
+    max-height: 100px;
+  }
+
+  nav {
+    display: inline-block;
+  }
+
+  nav li {
+    border-bottom: none;
+  }
+
+  .hamburger-label {
+    display: none;
+  }
+
+  ul .wrap {
+    display: flex;
+    margin: 0;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  nav a {
+    display: inline;
+  }
+
+  .wrap {
+    display: flex;
+    padding-top: 20px;
+    width: 100vw;
+    justify-content: space-between;
+  }
+
+  .nav-left-container,
+  .nav-right-container {
+    display: inline-flex;
+    align-items: center;
+    max-width: 35%;
+  }
+
+  .nav-left-container {
+    flex: 2;
+    margin-left: 8%;
+  }
+  .nav-right-container {
+    flex: 2;
+    justify-content: flex-end;
+    margin-right: 13%;
+    align-items: center;
+  }
+
+  .nav-li-contain {
+    display: flex;
+    justify-content: flex-end;
+    width: 280px;
+  }
+
+  .nav-li-contain a {
+    padding: 0;
+  }
+
+  .shoppingcart-wrap {
+    position: relative;
+    right: 6%;
+  }
+
+  ul li .far {
+    display: initial;
+  }
+  .far {
+    color: white;
+    padding-right: 10px;
+  }
+
+  .login {
+    padding-right: 7px;
+    display: block;
+  }
+
+  .shop-text {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .search-bar {
+    display: initial;
+  }
+
+  .shoppingcart-wrap {
+    position: relative;
+    right: 11%;
+  }
+  .nav-right-container {
+    margin-right: 16%;
+  }
+
+  .wrap {
+    padding-top: 12px;
+  }
+
+  .login {
+    padding-right: 0;
+  }
+
+  .shoppingcart-wrap {
+    position: relative;
+    right: 11%;
+  }
+  .nav-right-container {
+    margin-right: 16%;
+  }
+}
+
+/* nav 
 
 header {
   background-color: black;
-  width: 100%;
+  width: 100vw;
   z-index: 1;
   position: fixed;
 }
@@ -42,10 +285,6 @@ nav a:hover {
   color: rgb(252, 160, 39);
 }
 
-.active {
-  color: rgb(252, 160, 39);
-  border-bottom: 2px rgb(252, 160, 39) solid;
-}
 .wrap {
   display: inline-flex;
   margin: auto;
@@ -104,6 +343,7 @@ input[type="search"] {
 #search input:focus {
   outline: none;
 }
+
 p a {
   text-decoration: none;
   color: white;
