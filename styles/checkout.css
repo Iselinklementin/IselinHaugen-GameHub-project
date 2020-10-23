@@ -1,0 +1,97 @@
+.background {
+  background-image: url(/images/backgrounds/background-general.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 50% bottom 18%;
+  height: 800px;
+  width: 100%;
+  color: white;
+}
+
+.wrapper {
+  padding-top: 1rem;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "headline"
+    "contact"
+    "address"
+    "delivery"
+    "payment"
+    "summery";
+}
+
+.headline {
+  grid-area: headline;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.address {
+  grid-area: address;
+}
+
+.delivery {
+  grid-area: delivery;
+}
+
+.payment {
+  grid-area: payment;
+}
+
+.summery {
+  grid-area: summery;
+}
+
+@media only screen and (min-width: 850px) {
+  .grid {
+    grid-template-columns: repeat(3, lfr);
+    grid-template-areas:
+      "headline headline headline"
+      "contact delivery summery"
+      "address payment summery";
+  }
+}
+
+/*
+
+.wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  text-align: left;
+  padding-top: 5rem;
+}
+
+.headline-background {
+  background-color: rgba(255, 255, 255, 0.161);
+  grid-column: 2 / 4;
+  grid-row: 1;
+}
+
+h1 {
+  color: white;
+  margin: 0.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+  grid-column: 3 / 6;
+  grid-row: 1;
+}
+
+h2 {
+  background-color: rgb(252, 160, 39);
+  color: black;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: initial;
+  height: 2rem;
+  line-height: 1.5;
+  grid-column: 3 / 6;
+  width: 100%;
+}
+*/

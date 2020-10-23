@@ -22,7 +22,7 @@ legend {
 }
 
 .login-form {
-  padding-top: 9.2rem;
+  padding-top: 4rem;
   display: inline-block;
   margin: auto;
 }
@@ -59,7 +59,7 @@ main a {
   display: block;
 }
 
-button {
+.button {
   display: block;
   margin: auto;
   margin-top: 1rem;

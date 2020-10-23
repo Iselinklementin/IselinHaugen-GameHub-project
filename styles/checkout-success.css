@@ -1,0 +1,10 @@
+.background {
+  background-image: url(/images/backgrounds/register-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 50% bottom 18%;
+  height: 800px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}

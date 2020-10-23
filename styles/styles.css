@@ -356,8 +356,8 @@ ul {
 
 /* buttons */
 
-button:hover,
-button:active {
+.button:hover,
+.button:active {
   background-color: rgb(255, 174, 68);
 }
 
@@ -365,6 +365,28 @@ button:active {
   outline: none;
 }
 
+.button {
+  display: block;
+  background-color: rgb(252, 160, 39);
+  font: inherit;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid rgb(214, 136, 33);
+  padding: 14px 18px;
+  cursor: pointer;
+  width: 12rem;
+  height: 3rem;
+  font-size: 1rem;
+  border: red solid thin;
+}
+
+a.button {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+/*
 .button {
   background-color: rgb(252, 160, 39);
   font: inherit;
@@ -376,6 +398,11 @@ button:active {
   width: 12rem;
   height: 3rem;
   font-size: 1rem;
+}
+*/
+
+a.button-blue {
+  color: white;
 }
 
 .button-blue {

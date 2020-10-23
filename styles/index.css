@@ -42,7 +42,7 @@ h2 {
 }
 
 .intro-text {
-  padding-top: 7rem;
+  padding-top: 3rem;
   text-align: center;
 }
 
@@ -51,17 +51,23 @@ h2 {
   margin: auto;
 }
 
-button {
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button,
+.purple {
   margin-top: 2rem;
   margin-right: 1rem;
   margin-left: 1rem;
 }
 
-.purple {
+a.purple {
   border: solid #7f276e 1px;
   background-color: #a5358b;
   color: white;
-  margin-top: 1rem;
 }
 
 .sell-icons {
@@ -337,7 +343,7 @@ h3 {
   position: absolute;
   align-items: left;
   top: 12%;
-  left: 4%;
+  left: 8%;
 }
 
 .buttons h3 {
@@ -347,12 +353,12 @@ h3 {
 
 .suprt-btn {
   margin: 0;
+  margin-top: 1rem;
   margin-bottom: 30px;
 }
 
 .support-sell {
   display: block;
-  position: relative;
   height: 520px;
   left: 12%;
   color: rgb(252, 160, 39);
@@ -384,7 +390,6 @@ h3 {
   background-color: rgba(0, 0, 0, 0.654);
   height: 55px;
   font-size: 1.7rem;
-  padding: 10px;
 }
 
 /* ILLUSTRATION BOTTOM */
@@ -404,6 +409,12 @@ h3 {
 @media only screen and (min-width: 454px) {
   .header-img {
     height: 500px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   /*  TO SHOP  */
@@ -457,7 +468,7 @@ h3 {
     max-width: 300px;
   }
 
-  /*    !!!!!    SUPPORT MOBILE  !!!!!  */
+  /* SUPPORT MOBILE */
 
   .container {
     width: 230px;
@@ -516,7 +527,6 @@ h3 {
     top: -7rem;
     right: 0%;
     margin: 0;
-    padding: 0;
   }
 
   .access {
@@ -525,15 +535,13 @@ h3 {
     top: -17rem;
     right: 0%;
     font-size: 3rem;
-    padding: 10px;
     margin-bottom: 1rem;
     text-align: right;
-    max-width: 50%;
   }
 }
 @media only screen and (min-width: 839px) {
   .header-img {
-    background: url(/images/backgrounds/header-dragons.jpg);
+    background: url(/images/backgrounds/headerdragons.jpg);
     background-repeat: no-repeat;
     width: 100vw;
     height: 800px;
@@ -546,14 +554,26 @@ h3 {
     padding-right: 6rem;
   }
 
+  .section-intro {
+    max-width: 36rem;
+  }
+
   .intro-text {
-    padding-top: 7rem;
+    padding-top: 3rem;
     text-align: center;
     margin: auto;
   }
 
   .purple {
     display: none;
+  }
+
+  .button-top {
+    margin-top: 4rem;
+  }
+
+  .sell-icons {
+    margin-top: 3rem;
   }
 
   h1 {
@@ -575,7 +595,7 @@ h3 {
 
   .heading-overview {
     display: flex;
-    margin-top: 9rem;
+    margin-top: 12rem;
   }
 
   figcaption,
@@ -627,7 +647,7 @@ h3 {
     max-width: 38rem;
   }
 
-  .form {
+  .browse-shop {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -713,8 +733,13 @@ h3 {
     top: -20rem;
     right: 18%;
     text-align: right;
-    max-width: 24%;
     line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .buttons {
+    left: 18%;
   }
 }
 
@@ -740,7 +765,6 @@ h3 {
   }
 
   .access {
-    top: -20rem;
     right: 25%;
   }
 
@@ -749,5 +773,9 @@ h3 {
   .support-sell {
     width: 49%;
     left: 25%;
+  }
+  .buttons {
+    left: 26%;
+    width: 13%;
   }
 }

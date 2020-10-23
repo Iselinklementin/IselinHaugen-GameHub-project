@@ -46,7 +46,7 @@ button {
 
 h1 {
   color: white;
-  padding-top: 8.2rem;
+  padding-top: 3rem;
   line-height: 1.2;
   margin: 0;
   font-size: 2.4rem;
@@ -58,12 +58,8 @@ h1 {
 }
 
 .group-buttons {
-  margin-top: 40rem;
+  margin-top: 42rem;
   text-align: center;
-}
-
-.heading-text {
-  margin-top: 5rem;
 }
 
 .game-info {
@@ -252,6 +248,10 @@ th {
     font-size: 4.4rem;
     text-align: left;
     margin-left: 2rem;
+  }
+
+  .group-buttons {
+    margin-top: 4rem;
   }
 
   .img-from-game {
