@@ -548,12 +548,6 @@ h3 {
     background-position: 50%;
     position: absolute;
   }
-
-  .wrapper {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-
   .section-intro {
     max-width: 36rem;
   }

@@ -1,104 +1,147 @@
 main {
-  height: 200px;
-}
-
-* {
-  box-sizing: border-box;
-}
-html,
-body {
-  font-family: "Open Sans", sans-serif;
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-footer {
-  background-image: radial-gradient(closest-side, #033654, #010b0f);
-  height: 22rem;
+  background-image: url(/images/backgrounds/background-general.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 50% bottom 18%;
+  height: 570px;
+  width: 100%;
+  color: white;
+  text-align: center;
+
 }
 
-footer ul {
-  list-style-type: none;
+.slogan {
+  border-bottom: rgb(252, 160, 39) solid 2px;
+  max-width: 300px;
+  display: inline-flex;
+  padding: 0 0 1rem 0;
+  margin: 3rem 0 0 0;
+  justify-content: center;
+}
+
+.icons {
   padding: 0;
-}
-
-footer li a {
-  color: white;
-  text-decoration: none;
-  line-height: 1.8;
-}
-
-footer li a:hover {
-  font-weight: 700;
-}
-
-.li-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.footer-logo {
-  display: flex;
-  width: 6.5rem;
-  margin: auto;
-  padding-top: 2rem;
-}
-
-footer section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 10rem;
-  padding: 10px;
-  margin: 0.5rem;
-}
-
-footer figure {
-  justify-content: center;
-  padding: 10px;
-  color: white;
-  display: flex;
   margin: 1rem;
 }
 
-.fab {
-  font-size: 1.2rem;
+.slogan img {
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+.sell-guide {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+
+h1 {
+  color: rgb(214, 136, 33);
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+  padding: 1rem 3rem 0 3rem;
+}
+
+h2 {
+  text-transform: initial;
+  font-weight: lighter;
+  padding: 1rem 4rem 0 4rem;
+  max-width: 600px;
+  font-size: 1.6rem;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.search-section h2 {
+  font-weight: lighter;
+  font-size: 1.3rem;
+  line-height: 4;
+  max-width: 14rem;
+  display: none;
+}
+
+#search-sell {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgb(252, 160, 39);
+  border-radius: 8px;
+  height: 35px;
+  font-size: 1rem;
+  width: 200px;
+}
+
+#search-sell::placeholder {
+  font-size: 1rem;
+  font-family: inherit;
+  text-align: center;
+  background-image: url(/images/icons/search.svg);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 15px;
   color: white;
-  padding: 0.5rem;
+  text-align: center;
 }
 
-.fab:hover {
-  color: rgb(255, 174, 68);
+input:focus {
+  outline: none;
 }
 
-@media (min-width: 650px) {
-  footer ul {
+#search-sell:hover {
+  background-color: rgba(238, 234, 228, 0.123);
+  padding: 0 1rem;
+}
+
+@media (min-width: 900px) {
+
+.container {
+  position: relative;
+  display: flex;
+  height: 320px;
+  justify-content: center;
+  padding: 60px;
+}
+
+  .border {
+    position: absolute;
+    border: rgb(252, 160, 39) 2px solid;
+    max-width: 800px;
     display: flex;
+    text-align: left;
     align-items: center;
-    justify-content: center;
+    padding: 2rem;
   }
 
-  footer section {
-    margin: 1.5rem;
-  }
+  .slogan {
+    order: 2;
   }
 
-  @media (min-width: 1000px) {
-   footer {
-     display: flex;
-     justify-content: center;
-   }
-   .footer-logo {
-    margin: 1rem;
-    margin-right: 3rem;
+  .sell-guide {
+    padding-right: 2rem;
+  }
+
+  h1, h2 {
+    text-align: left;
     padding: 0;
+    margin-bottom: 0.5rem;
   }
 
-  footer section {
-    max-width: 15rem;
-    margin: 2rem;
+  .icons {
+    padding: 10px;
+    margin: 0;
   }
-    }
+
+  .slogan {
+    border-bottom: none;
+    margin-top: 1rem;
+    padding-left: 30px;
+  }
+
+  .search-section h2 {
+    display: initial;
+  }
+
+  #search-sell {
+    width: 350px;
+  }
+}

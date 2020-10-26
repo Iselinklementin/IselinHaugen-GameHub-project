@@ -1,20 +1,21 @@
-html {
-  background: url(/images/backgrounds/register-background.jpg) no-repeat center
-    center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+main {
+  background-image: url(/images/backgrounds/register-background.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 50% bottom 18%;
+  height: 1100px;
+  width: 100%;
   color: white;
+  text-align: center;
 }
 
 .contact-icon {
   background-image: url(/images/icons/contact.svg);
   background-repeat: no-repeat;
-  width: 6rem;
-  height: 4rem;
+  width: 5.6rem;
+  height: 7rem;
+  background-position: bottom;
   margin: auto;
-  margin-top: 3rem;
 }
 
 h1 {
@@ -32,6 +33,7 @@ h1 {
   padding: 1rem;
   margin: 0rem 0.2rem;
   padding-top: 4rem;
+  flex: 0;
 }
 
 h2 {
@@ -53,7 +55,6 @@ h2 {
   justify-content: center;
   flex-wrap: wrap;
 }
-
 table {
   text-align: left;
   border-spacing: 0.5rem;
@@ -66,19 +67,24 @@ tr {
   padding: 0.2rem;
 }
 
-.customer-support,
-.press-media,
-.online {
-  flex: 0;
-}
-
 .some-contact {
+  display: none;
   position: relative;
-  width: 120px;
-  padding: 0;
-  margin: auto;
-  top: 14%;
+  top: 18%;
 }
 
-@media only screen and (min-width: 1050px) {
+.some-contact .fab {
+  font-size: 1.8rem;
+}
+@media only screen and (min-width: 617px) {
+
+  main {
+    height: 800px;
+}
+}
+
+@media only screen and (min-width: 926px) {
+.some-contact {
+  display: initial;
+}
 }
