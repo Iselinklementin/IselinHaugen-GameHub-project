@@ -3,23 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;0,900;1,400;1,700&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;0,900;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link href="styles/styles.css" rel="stylesheet" />
+    <!--<link href="styles/shopping-cart.css" rel="stylesheet" />-->
     <link href="styles/404.css" rel="stylesheet" />
-    <!-- <link href="styles/sell.css" rel="stylesheet" /> -->
-    <script src="https://kit.fontawesome.com/9b8ac118a8.js" crossorigin="anonymous"></script>
-    <title> 404 -Sell your game</title>
+    <script
+      src="https://kit.fontawesome.com/9b8ac118a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>404 - Shopping Cart</title>
   </head>
   <body>
     <header>
-      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <label class="hamburger-label" for="hamburger-menu"
+        ><i class="fas fa-bars"></i
+      ></label>
       <input type="checkbox" id="hamburger-menu" />
       <div class="nav-logo-center">
-        <a href="index.html"><img class="logo" src="/images/icons/logo.svg" alt="Gamehub logo"/></a>
+        <a href="index.html"
+          ><img class="logo" src="/images/icons/logo.svg" alt="Gamehub logo"
+        /></a>
       </div>
       <div class="shoppingcart-wrap">
         <li>
-          <a href="shopping-cart.html"><img class="shoppingcart-icon" src="/images/icons/shoppingcart.svg" alt="Icon of shopping cart" /></a>
+          <a href="shopping-cart.html"
+            ><img
+              class="shoppingcart-icon"
+              src="/images/icons/shoppingcart.svg"
+              alt="Icon of shopping cart"
+          /></a>
         </li>
       </div>
       <nav>
@@ -28,7 +43,7 @@
             <div class="nav-li-contain">
               <li><a href="index.html">Home</a></li>
               <li><a href="shop.html">Shop</a></li>
-              <li><a href="sell.html" class="active">Sell</a></li>
+              <li><a href="sell.html">Sell</a></li>
             </div>
             <div class="search-bar">
               <li id="search">
@@ -52,78 +67,115 @@
         </ul>
       </nav>
     </header>
-    <main>
 
-<div class="container">
-    <div class="border">
-      <section class="slogan">
-        <figure class="icons">
-          <img src="/images/icons/list.svg" alt="Icon - Set your price">
-          <figcaption>List it</figcaption>
-        </figure>
+    <main class="background">
+      <div class="grid">
+        <section class="headline">
+          <div class="headline-background"></div>
+          <h1>Shopping Cart</h1>
+        </section>
 
-        <figure class="icons">
-          <img src="/images/icons/send.svg" alt="Icon - Send your game">
-          <figcaption>Send it</figcaption>
-        </figure>
+        <section class="products">
+          <h2>Products</h2>
+          <section>
+            <div class="gameinfo">
+              <figure>
+                <img src="/images/games/castlewars-shopping.jpg" alt="Picture of castlewars" class="img-cart"/>
+              </figure>
+              <h3><a href="buy-game.html" class="gamelink">Castle Wars</a></h3>
+              <p class="price">NOK 299</p>
+              <figure>
+                <img src="/images/icons/trash.svg" alt="" class="trash" />
+              </figure>
+            </div>
+          </section>
 
-        <figure class="icons">
-          <img src="/images/icons/paid-icon.svg" alt="Icon - Get paid">
-          <figcaption>Get paid</figcaption>
-      </figure>
-      </section>
-    
-      <section class="sell-guide">
-      <h1>Sell your game</h1>
-      <h2>Just search for the right one</h2>
-    </section>
+          <section class="castle">
+            <div class="gameinfo">
+              <figure>
+                <img
+                  src="/images/games/immortal-shopping.jpg" alt="Picture of immortal" class="img-cart"/>
+              </figure>
+              <h3><a href="pre-purchase.html" class="gamelink">Castle Wars</a></h3>
+              <p class="price">NOK 299</p>
+              <figure>
+                <img src="/images/icons/trash.svg" alt="" class="trash" />
+              </figure>
+            </div>
+            <a href="checkout.html" class="button button-blue">Proceed to checkout</a>
+          </section>
+        </section>
+
+        <div class="container-right">
+          <section class="coupon">
+            <div class="coupon-container">
+            <h2>Use coupon / balance</h2>
+            <p>
+              Lorem ipsum dolor sit amet.
+            </p>
+            <form action="post">
+              <p class="insert-coupon">YzK1M-8Kv</p>
+            </form>
+          </div>
+        </section>
+
+        <div class="offer-extra">
+          <section class="extra">
+            <h2>Forgot something?</h2>
+            <section class="games-display">
+
+              <figure class="game">
+                <img class="gallery" src="/images/games/entranceshopping.jpg" alt="cover of entrance-game"/>
+                <a href="buy-game.html" class="gamelink">Game Name</a>
+             </figure>
+
+             <figure class="game">
+              <img class="gallery" src="/images/games/purpleshopping.jpg" alt="cover of fantasy-game"/>
+              <a href="buy-game.html" class="gamelink">Game Name</a>
+             </figure>
+
+             <figure class="game">
+              <img class="gallery" src="/images/games/treeshopping.jpg" alt="cover of tree-game"/>
+              <a href="buy-game.html" class="gamelink">Game Name</a>
+             </figure>
+
+             <figure class="game">
+              <img class="gallery" src="/images/games/xshopping.jpg" alt="cover of x-game"/>
+              <a href="buy-game.html" class="gamelink">Game Name</a>
+             </figure>
+            </section>
+          </section>
+        </div>
+      </div>
     </div>
-  </div>
-  
-      <section class="search-section">
-        <h2>Search for the right game and platform</h2>
-        <form action="" method="GET" class="sell-searchbar"><input id="search-sell" type="search" placeholder="Search" /></form>
-      </section>
-  
     </main>
     <footer>
-      <img class="footer-logo" src="/images/icons/logo.svg" alt="Gamehub logo"/>
+      <img
+        class="footer-logo"
+        src="/images/icons/logo.svg"
+        alt="Gamehub logo"
+      />
       <ul>
         <div class="li-wrap">
-        <section>
-          <li><a href="login.html">Log in</a></li>
-          <li><a href="sell.html">Sell</a></li>
-          <li><a href="create-account.html">Create account</a></li>
-        </section>
-        
-        <section>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Safe payment</a></li>
-        </section>
-      </div>
+          <section>
+            <li><a href="login.html">Log in</a></li>
+            <li><a href="sell.html">Sell</a></li>
+            <li><a href="create-account.html">Create account</a></li>
+          </section>
 
-      <figure>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </figure>
-     
+          <section>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Safe payment</a></li>
+          </section>
+        </div>
+
+        <figure>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </figure>
       </ul>
     </footer>
   </body>
 </html>
-
-<!--    <section class="slogan">
-        <figure>
-          <img src="/images/icons/list.svg" alt="Icon - Set your price">
-          <img src="/images/icons/send.svg" alt="Icon - Send your game">
-          <img src="/images/icons/paid-icon.svg" alt="Icon - Get paid">
-
-        <figcaption class="wrap-icontext">
-          <li class="list">List it</li>
-          <li class="list">Send it</li>
-          <li class="list">Get paid</li>
-        </figcaption> 
-      </figure>
-      </section>-->

@@ -113,7 +113,11 @@ input[type="search"] {
   width: 10rem;
   padding: 0 1rem;
   color: white;
+  text-align: center;
+  font-size: 1rem;
 }
+
+
 #search ::placeholder {
   color: white;
   font-size: 0.8rem;

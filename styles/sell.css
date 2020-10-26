@@ -69,8 +69,20 @@ h2 {
   height: 35px;
   font-size: 1rem;
   width: 200px;
+  text-align: center;
 }
 
+/*
+.sell-searchbar::-webkit-search-cancel-button {
+  background-color: aqua;
+  border: red solid;
+}
+
+#search-sell::-webkit-search-cancel-button{
+  background: rgb(214, 136, 33);
+  border: red solid;
+}
+*/
 #search-sell::placeholder {
   font-size: 1rem;
   font-family: inherit;
