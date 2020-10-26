@@ -1,7 +1,10 @@
+main {
+  height: 200px;
+}
+
 * {
   box-sizing: border-box;
 }
-
 html,
 body {
   font-family: "Open Sans", sans-serif;
@@ -10,231 +13,92 @@ body {
   padding: 0;
 }
 
-html {
-  background: url(/images/backgrounds/home-background.jpg) no-repeat center
-    center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+footer {
+  background-image: radial-gradient(closest-side, #033654, #010b0f);
+  height: 22rem;
   background-size: cover;
 }
 
-header {
-  background-color: #000000;
-  min-height: 100px;
-}
-
-nav,
-#hamburger-menu {
-  display: none;
-}
-
-nav ul {
-  padding: 0px;
-}
-
-nav li {
-  display: block;
-  border-bottom: rgb(252, 160, 39) thin solid;
-  width: 30%;
-}
-
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  padding: 10px;
-  padding-left: 0;
-  display: block;
-  font-weight: 400;
-}
-nav a:hover {
-  color: rgb(252, 160, 39);
-}
-
-.hamburger-label {
-  position: absolute;
-  padding: 30px;
-  font-size: 1.9rem;
-  display: block;
-  color: rgb(252, 160, 39);
-}
-
-#hamburger-menu:checked ~ nav {
-  display: block;
-  padding-top: 100px;
-  padding-left: 30px;
-  margin: 0;
-  padding-bottom: 30px;
-}
-
-.nav-logo-center {
-  cursor: pointer;
-  text-align: center;
-  position: relative;
-}
-.logo {
-  width: 6.5rem;
-  padding-top: 1rem;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-.shoppingcart-wrap {
-  position: relative;
-  right: 0;
-}
-
-.shoppingcart-icon {
-  height: 2.8rem;
-  position: absolute;
-  padding: 27px;
-  right: 0;
-  font-size: 1.9rem;
-  display: block;
-}
-
-.search-bar {
-  display: none;
-}
-ul li .far {
-  display: none;
-}
-
-input[type="search"] {
-  background-color: black;
-  border: 1px solid rgb(252, 160, 39);
-  border-radius: 8px;
-  height: 35px;
-  width: 10rem;
+footer ul {
+  list-style-type: none;
   padding: 0;
 }
-#search ::placeholder {
+
+footer li a {
   color: white;
-  font-size: 0.8rem;
-  font-family: inherit;
-  text-align: center;
-  background-image: url(/images/icons/search.svg);
-  background-repeat: no-repeat;
-  background-position: 10px;
-  background-size: 15px;
+  text-decoration: none;
+  line-height: 1.8;
 }
-::-moz-placeholder {
-  opacity: 1;
+
+footer li a:hover {
+  font-weight: 700;
 }
-#search input:focus {
-  outline: none;
+
+.li-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  display: flex;
+  width: 6.5rem;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 10rem;
+  padding: 10px;
+  margin: 0.5rem;
+}
+
+footer figure {
+  justify-content: center;
+  padding: 10px;
+  color: white;
+  display: flex;
+  margin: 1rem;
+}
+
+.fab {
+  font-size: 1.2rem;
+  color: white;
+  padding: 0.5rem;
+}
+
+.fab:hover {
+  color: rgb(255, 174, 68);
 }
 
 @media (min-width: 650px) {
-  body {
-    background-color: cadetblue;
-  }
-  header {
-    max-height: 100px;
-  }
-
-  nav {
-    display: inline-block;
-  }
-
-  nav li {
-    border-bottom: none;
-  }
-
-  .hamburger-label {
-    display: none;
-  }
-
-  ul {
+  footer ul {
     display: flex;
-    margin: 0;
-  }
-
-  li {
-    display: inline-block;
-  }
-
-  nav a {
-    display: inline;
-  }
-
-  .wrap {
-    display: flex;
-    padding-top: 20px;
-    width: 100vw;
-    justify-content: space-between;
-  }
-
-  .nav-left-container,
-  .nav-right-container {
-    display: inline-flex;
     align-items: center;
-    max-width: 35%;
+    justify-content: center;
   }
 
-  .nav-left-container {
-    flex: 2;
-    margin-left: 8%;
+  footer section {
+    margin: 1.5rem;
   }
-  .nav-right-container {
-    flex: 2;
-    justify-content: flex-end;
-    margin-right: 13%;
-    align-items: center;
   }
 
-  .nav-li-contain {
-    display: flex;
-    justify-content: flex-end;
-    width: 300px;
-  }
-
-  .nav-li-contain a {
+  @media (min-width: 1000px) {
+   footer {
+     display: flex;
+     justify-content: center;
+   }
+   .footer-logo {
+    margin: 1rem;
+    margin-right: 3rem;
     padding: 0;
   }
-  ul li .far {
-    display: initial;
-  }
-  .far {
-    color: white;
-    padding-right: 10px;
-  }
 
-  .login {
-    padding-left: 6px;
-    padding-right: 5px;
-    display: block;
+  footer section {
+    max-width: 15rem;
+    margin: 2rem;
   }
-
-  .shoppingcart-icon {
-    margin-top: -1rem;
-  }
-
-  .shop-text {
-    display: none;
-  }
-}
-@media (min-width: 1000px) {
-  .search-bar {
-    display: initial;
-  }
-
-  .shoppingcart-wrap {
-    position: relative;
-    right: 8%;
-  }
-
-  .wrap {
-    padding-top: 12px;
-  }
-
-  .nav-right-container {
-    margin-right: 16%;
-  }
-
-  .login {
-    padding-right: 0;
-  }
-}
+    }
