@@ -42,65 +42,75 @@
       </nav>
   </header>
     <main class="background">
-      <div class="wrapper">
+      <div class="grid">
 
         <div class="headline-background"></div>
       <h1 class="headline">Checkout</h1>
 
-      <form action="checkout-success.html">
-        <section class="contact">
-          <h2>Contact info</h2>
-          <label>First name / Surname</label>
-          <input type="text" placeholder="First name/Surname" /><br /><br />
-          <label>E-mail</label><br />
-          <input type="text" placeholder="Your e-mail" /><br /><br />
-          <label>Phone nr</label><br />
-          <input type="tel" placeholder="Phone number" />
-        </section>
+      <section class="contact">
+      <form method="POST">
+        <fieldset>
+          <legend>Contact info</legend>
+          <label class="name" for="name">First name / Surname</label>
+          <input type="text" name="name" id="name" class="form-input" placeholder="First name / Surname"/>
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" class="form-input" placeholder="Email" required/>
+          <label for="phone">Phone number</label>
+          <input type="phone" name="phone" id="phone" class="form-input" placeholder="Phone number"/>
+        </fieldset>
+      </form>
+      </section>
 
-        <section class="address">
-          <h2>Address</h2>
-          <label>Street</label> <br />
-          <input type="text" placeholder="Street" /><br /><br />
-          <label>State</label><br />
-          <input type="text" placeholder="State" /><br /><br />
-          <label>Postal code</label><br />
-          <input type="number" placeholder="Postal code" />
-        </section>
+      <section class="address">
+      <form method="POST">
+        <fieldset>
+          <legend>Address</legend>
+          <label for="street">Street</label>
+          <input type="text" name="street" id="street" class="form-input" placeholder="Street"/>
+          <label for="street">State</label>
+          <input type="text" name="state" id="state" class="form-input" placeholder="State"/>
+          <label for="postal-code">Postal code</label>
+          <input type="number" name="post-code" id="post-code" class="form-input" placeholder="Postal code"/>
+        </fieldset>
+      </form>
+    </section>
 
-        <section class="delivery">
-          <h2>Delivery method</h2>
-          <input type="radio" name="delivery" value="pickup" />
-          <label>Pick-up point</label><br />
-          <input type="radio" name="delivery" value="homeaddress" />
-          <label>Home address</label><br />
-          <input type="radio" name="delivery" value="ship" />
-          <label>Shipment</label>
-        </section>
-
-        <section class="payment">
-          <h2>Payment</h2>
-          <input type="radio" name="payment" value="klarna" />
-          <label>Klarna - Pay in 14 days</label><br />
-          <input type="radio" name="payment" value="credit" />
-          <label>MasterCard / Credit</label><br />
-          <input type="radio" name="payment" value="monthly" />
-          <label>Pay monthly</label>
-        </section>
+    <section class="delivery">
+      <form method="POST">
+        <fieldset>
+          <legend>Delivery method</legend>
+          <div class="radio-wrap">
+          <label class="radio-container"><span class="radio-text">Pick-up point</span><input type="radio" name="delivery" value="pickup"><span class="hub-radio"></span></label>
+          <label class="radio-container"><span class="radio-text">Home address</span><input type="radio" name="delivery" value="homeaddress"><span class="hub-radio"></span></label>
+          <label class="radio-container"><span class="radio-text">Shipment</span><input type="radio" name="delivery" value="ship"><span class="hub-radio"></span></label>
+        </div>
+        </fieldset>
+      </form>
+    </section>
+   
+    <section class="payment">
+      <form method="POST">     
+        <fieldset>
+          <legend>Payment</legend>
+          <div class="radio-wrap">
+          <label class="radio-container"><span class="radio-text">Klarna - Pay in 14 days</span><input type="radio" name="payment" value="klarna"><span class="hub-radio"></span></label>
+          <label class="radio-container"><span class="radio-text">MasterCard / Credit</span><input type="radio" name="payment" value="credit"><span class="hub-radio"></span></label>
+          <label class="radio-container"><span class="radio-text">Pay monthly</span><input type="radio" name="payment" value="monthly"><span class="hub-radio"></span></label>
+        </div>
+        </fieldset>
+      </form>
+    </section>
 
         <section class="summery">
           <h2>Summery</h2>
-          <p><strong>Castle Wars</strong> PS4</p>
-          <p>NOK 299</p>
-
-          <p><strong>Immortal</strong> PS4</p>
-          <p>NOK 299</p>
-
+          <p><strong>Castle Wars</strong>PS4</p>
+          <p class="price">NOK 299</p>
+          <p><strong>Immortal</strong>PS4</p>
+          <p class="price">NOK 299</p>
           <h2>Sub-total</h2>
-          <p>NOK 699</p>
-          <button>Purchase</button>
+          <p class="price">NOK 699</p>
+          <a href="checkout-success.html" class="button button-blue">Purchase</a>
         </section>
-      </form>
     </div>
     </main>
     <footer>
