@@ -7,7 +7,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left 50% bottom 18%;
-  height: 2000px;
+  height: 1700px;
   width: 100%;
   color: white;
 }
@@ -135,10 +135,93 @@ form {
   background-color: rgb(252, 160, 39);
 }
 
-.summery {
- border-left: white thin solid;
- padding-left: 1rem;
+.summery-container {
+  background-color: rgb(252, 160, 39);
+  width: 340px;
+}
 
+.summery {
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.sub-wrap {
+  background-color: white;
+  margin: auto;
+}
+
+.sub-wrap h2 {
+  background-color: transparent;
+}
+
+.cart {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.cart img {
+  height: 70px;
+  width: 60px;
+  border-radius: 10%;
+}
+
+.cover {
+  flex: 0;
+  padding: 10px 0 0 10px;
+}
+
+.cover img:first-child {
+margin-bottom: 10px;
+}
+
+.price-section, .game-text {
+  height: 145px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+.price {
+  font-weight: normal;
+}
+
+.game-title p {
+margin: 0;
+padding: 0;
+}
+
+.game-title {
+  margin-top: 1.5rem;
+}
+
+.price-section p:nth-child(1) {
+padding-top: 9px;
+}
+
+.price-section p:nth-child(2) {
+  padding-top: 27px;
+  }
+
+.container-subtotal h2 {
+  font-size: 1.5rem;
+  padding: 16px;
+  border-top: rgba(128, 128, 128, 0.644) thin solid;
+  width: 280px;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+#subtotal {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.button {
+  margin: auto;
+  margin-bottom: -2rem;
 }
 
 /* ------------------------------------ */
@@ -181,10 +264,10 @@ form {
     grid-row: 3;
   }
 
-  .summery {
+  .summery-container {
     grid-column: span 2 ;
     grid-row: 4;
-    border:lightcoral 2px solid;
+    margin: auto;
   }
 
   .delivery label, .payment label {
@@ -213,6 +296,7 @@ form {
   .contact, .address {
     margin-right: 1rem;
   }
+}
 
 /* ------------------------------------ */
 
@@ -248,97 +332,36 @@ form {
     grid-row: 3;
   }
 
-  .summery {
+  .summery-container {
     grid-column: 3;
     grid-row-start: 2;
     grid-row-end: 4;
-    border-left: white thin solid;
-    padding-left: 1rem;
-  }
-}
-
-/*
-
-@media only screen and (min-width: 850px) {
-  .grid {
-    grid-template-columns: repeat(2, lfr);
-    grid-template-rows: repeat(2, lfr);
-    grid-template-areas:
-      "headline headline"
-      "contact address"
-      "delivery payment"
-      "summery";
+    height: 515px;
+    margin-left: 2rem;
+    margin-top: 1rem;
   }
 
-.wrapper {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  text-align: left;
-  padding-top: 5rem;
-}
+  .cart {
+    margin-top: 2rem;
+  }
 
-.headline-background {
-  background-color: rgba(255, 255, 255, 0.161);
-  grid-column: 2 / 4;
-  grid-row: 1;
-}
+  .game-text, .price-section {
+    height: 165px;
+    }
 
-h1 {
-  color: white;
-  margin: 0.5rem;
-  font-size: 2.5rem;
-  text-align: center;
-  grid-column: 3 / 6;
-  grid-row: 1;
-}
+  .cover img:nth-child(2) {
+    margin-top: 20px;
+    }
 
-h2 {
-  background-color: rgb(252, 160, 39);
-  color: black;
-  text-align: center;
-  font-size: 1.3rem;
-  font-weight: 500;
-  text-transform: initial;
-  height: 2rem;
-  line-height: 1.5;
-  grid-column: 3 / 6;
-  width: 100%;
-}
+  .container-subtotal {
+    padding-top: 2rem;
+  }
+  .container-subtotal h2 {
+    padding-top: 30px;
+  }
 
-  grid-template-areas:
-    "headline"
-    "contact"
-    "address"
-    "delivery"
-    "payment"
-    "summery";
-}
-
-.headline {
-  grid-area: headline;
-}
-
-.contact {
-  grid-area: contact;
-}
-
-.address {
-  grid-area: address;
-}
-
-.delivery {
-  grid-area: delivery;
-}
-
-.payment {
-  grid-area: payment;
-}
-
-.summery {
-  grid-area: summery;
-}
-*/
+  .button {
+    width: 80%;
+    margin-top: 2.6rem;
+  }
 }
