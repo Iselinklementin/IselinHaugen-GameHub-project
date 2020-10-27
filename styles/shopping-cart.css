@@ -3,7 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left 50% bottom 18%;
-  height: 1850px;
+  height: 1500px;
   width: 100%;
   color: white;
   text-align: center;
@@ -57,14 +57,22 @@ h2 {
   width: 100%;
 }
 
+.trash {
+  cursor: pointer;
+}
+
 .gameinfo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 360px;
   justify-content: space-between;
   align-items: center;
   padding: 0;
   background-color: rgba(255, 255, 255, 0.052);
+}
+
+.gameinfo h3 {
+  margin-right: 1rem;
 }
 
 .castle {
@@ -83,7 +91,7 @@ h2 {
 .button-blue {
   width: 16rem;
   margin: auto;
-  margin-top: 1rem;
+  margin-top: 2.2rem;
 }
 
 .products {
@@ -174,16 +182,10 @@ h2 {
   }
 
   .gameinfo {
-    display: inline-flex;
-    flex-direction: row;
     width: auto;
     max-width: 450px;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .price {
-    padding: 30px;
   }
 }
 
