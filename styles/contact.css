@@ -77,14 +77,13 @@ tr {
   font-size: 1.8rem;
 }
 @media only screen and (min-width: 617px) {
-
   main {
     height: 800px;
-}
+  }
 }
 
 @media only screen and (min-width: 926px) {
-.some-contact {
-  display: initial;
-}
+  .some-contact {
+    display: block;
+  }
 }

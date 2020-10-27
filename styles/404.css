@@ -3,7 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left 50% bottom 18%;
-  height: 1750px;
+  height: 1850px;
   width: 100%;
   color: white;
   text-align: center;
@@ -16,7 +16,7 @@
     "headline"
     "products"
     "offer-extra"
-    "coupon"
+    "coupon";
 }
 
 /* GRID */
@@ -40,7 +40,7 @@
 h1 {
   color: white;
   margin: 0.5rem;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   text-align: center;
   padding-top: 2rem;
 }
@@ -57,7 +57,6 @@ h2 {
   width: 100%;
 }
 
-
 .gameinfo {
   display: flex;
   flex-direction: column;
@@ -65,11 +64,10 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.052);
 }
 
 .castle {
-  border-top: thin solid white;
   margin-top: 0rem;
   padding-top: 1rem;
 }
@@ -91,10 +89,10 @@ h2 {
 .products {
   display: grid;
   justify-content: center;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
-.img-cart{
+.img-cart {
   padding: 0;
   margin: 0;
 }
@@ -113,8 +111,9 @@ h2 {
   justify-content: center;
   text-align: center;
   height: 200px;
-  border: 1px solid rgba(214, 136, 33, 0.214);
-  background-color: rgba(167, 107, 29, 0.262);
+  border: solid thin rgb(3, 3, 27);
+  background: linear-gradient(#890b334e, #d2690c);
+  margin-bottom: 2rem;
 }
 
 .coupon-container {
@@ -141,7 +140,6 @@ h2 {
   justify-content: space-between;
   align-items: center;
 }
-
 
 /* GALLERY */
 
@@ -170,26 +168,26 @@ h2 {
   width: 130px;
 }
 
-
 @media only screen and (min-width: 650px) {
-
   .background {
-    height: 1600px;
+    height: 1460px;
   }
 
   .gameinfo {
-  display: inline-flex;
-  flex-direction: row;
-  width: auto;
-  max-width: 450px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
-}
+    display: inline-flex;
+    flex-direction: row;
+    width: auto;
+    max-width: 450px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .price {
+    padding: 30px;
+  }
 }
 
-@media only screen and (min-width: 948px) {
-  
+@media only screen and (min-width: 936px) {
   main {
     padding: 4rem;
   }
@@ -209,72 +207,74 @@ h2 {
   }
 
   h1 {
-    padding-top: 0;
-  }
-
-  .headline {
-    margin: 0;
-    padding: 0;
+    padding: 10px;
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, 0.068);
   }
 
   h3 {
     padding: 30px;
   }
 
-  .products, .container-right {
-  max-width: auto;
-  padding: 10px;
-}
+  .container-right {
+    border-left: white solid thin;
+    padding: 10px;
+    padding-left: 1.4rem;
+    max-width: 650px;
+    max-height: 550px;
+  }
 
-.gameinfo, .offer-extra {
-  max-width: 100%;
-}
+  .products {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 10px;
+    max-width: auto;
+  }
 
-.coupon {
-  border: none;
-}
+  .coupon {
+    border: none;
+  }
 
-.coupon-container {
-  width: auto;
-  padding-top: 0;
-}
+  .coupon-container {
+    width: auto;
+    padding-top: 0;
+  }
 
-.coupon p:nth-child(2) {
-padding-top: 1.4rem;
-}
+  .coupon p:nth-child(2) {
+    padding-top: 1.4rem;
+  }
 
-.insert-coupon {
-  width: 50%;
-  margin: auto;
-}
+  .insert-coupon {
+    width: 50%;
+    margin: auto;
+  }
 
-.extra {
-  width: auto;
-  margin: 0;
-}
+  .extra {
+    width: auto;
+    margin: 0;
+  }
 
-.game img {
-  width: 70px;
-}
+  .game img {
+    width: 70px;
+  }
 
-.game {
-  margin: 0.4rem;
-  padding: 3px;
-  height: auto;
-}
+  .game {
+    margin: 0.4rem;
+    padding: 3px;
+    height: auto;
+  }
 
-.games-display {
-  padding-top: 0;
-}
+  .games-display {
+    padding-top: 0;
+  }
 
-.button-blue {
-  margin-top: 0;
-  width: 100%;
-}
+  .button-blue {
+    margin-top: 3rem;
+  }
 }
 
 @media only screen and (min-width: 1130px) {
-
   .extra {
     align-items: baseline;
     display: block;
@@ -282,12 +282,12 @@ padding-top: 1.4rem;
   }
   .game {
     margin: 0.2rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
 
   .game img {
     width: 140px;
-  } 
+  }
 
   .games-display {
     flex-wrap: nowrap;

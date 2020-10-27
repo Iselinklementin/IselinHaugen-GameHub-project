@@ -3,26 +3,38 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left 50% bottom 18%;
-  height: 800px;
+  height: 1850px;
   width: 100%;
   color: white;
   text-align: center;
 }
-
-.wrapper {
-  width: 100%;
+.grid {
+  padding-top: 1rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-gap: 20px;
-  text-align: left;
-  padding-top: 5rem;
+  grid-gap: 30px;
+  grid-template-areas:
+    "headline"
+    "products"
+    "offer-extra"
+    "coupon";
 }
 
-.headline-background {
-  background-color: rgba(255, 255, 255, 0.161);
-  grid-column: 2 / 4;
-  grid-row: 3;
+/* GRID */
+
+.headline {
+  grid-area: headline;
+}
+
+.products-left {
+  grid-area: products;
+}
+
+.offer-extra {
+  grid-area: offer-extra;
+}
+
+.coupon {
+  grid-area: coupon;
 }
 
 h1 {
@@ -30,8 +42,7 @@ h1 {
   margin: 0.5rem;
   font-size: 2.5rem;
   text-align: center;
-  grid-column: 2 / 4;
-  grid-row: 3;
+  padding-top: 2rem;
 }
 
 h2 {
@@ -43,25 +54,22 @@ h2 {
   text-transform: initial;
   height: 2rem;
   line-height: 1.5;
-  grid-column: 1 / 3;
   width: 100%;
 }
 
-.products-left {
-  grid-gap: 0.5rem;
-  grid-column: 2 / 3;
-  grid-row: 5;
-}
-
-.immortal {
-  border-top: thin solid white;
-}
 .gameinfo {
-  display: inline-flex;
-  width: 380px;
+  display: flex;
+  flex-direction: column;
+  width: 360px;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.052);
+}
+
+.castle {
+  margin-top: 0rem;
+  padding-top: 1rem;
 }
 
 .img-cart {
@@ -73,68 +81,20 @@ h2 {
 }
 
 .button-blue {
-  width: 100%;
-  margin-top: 0.3rem;
+  width: 16rem;
+  margin: auto;
+  margin-top: 1rem;
 }
 
-figure {
-  margin: 0;
-}
-
-.products-right {
-  grid-column: 3;
-  grid-row: 5;
-  padding-left: 1.4rem;
-  border-left: solid thin white;
-}
-
-.games-display {
-  display: inline-flex;
+.products {
+  display: grid;
   justify-content: center;
+  padding-bottom: 3rem;
 }
 
-.game1-img {
-  background-image: url(/images/games/entranceshopping.jpg);
-  width: 106px;
-  height: 141px;
-  background-repeat: no-repeat;
-  padding: 3px;
-  margin-bottom: 1rem;
-  cursor: pointer;
-}
-
-.game2-img {
-  background-image: url(/images/games/purpleshopping.jpg);
-  width: 106px;
-  height: 141px;
-  background-repeat: no-repeat;
-  padding: 3px;
-  margin-bottom: 1rem;
-  cursor: pointer;
-}
-
-.game3-img {
-  background-image: url(/images/games/treeshopping.jpg);
-  width: 106px;
-  height: 141px;
-  background-repeat: no-repeat;
-  padding: 3px;
-  margin-bottom: 1rem;
-  cursor: pointer;
-}
-
-.game4-img {
-  background-image: url(/images/games/xshopping.jpg);
-  cursor: pointer;
-  width: 106px;
-  height: 141px;
-  background-repeat: no-repeat;
-  padding: 3px;
-  margin-bottom: 1rem;
-}
-
-.display-image {
-  margin: 0.5rem;
+.img-cart {
+  padding: 0;
+  margin: 0;
 }
 
 .gamelink {
@@ -142,30 +102,194 @@ figure {
   color: white;
 }
 
-/*
+.offer-extra {
+  display: grid;
+  justify-content: center;
+}
+
 .coupon {
-  grid-column: 3;
-  grid-row: 7;
-} */
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  border: solid thin rgb(3, 3, 27);
+  background: linear-gradient(#890b334e, #d2690c);
+  margin-bottom: 2rem;
+}
+
+.coupon-container {
+  display: block;
+  margin: auto;
+  padding-top: 1rem;
+  width: 360px;
+  text-align: center;
+}
 
 .insert-coupon {
+  color: black;
   height: 3rem;
-  width: 30%;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.127);
+  background-color: rgba(255, 255, 255, 0.922);
   border-radius: 4px;
   line-height: 3;
 }
 
-/*
-@media only screen and (min-width: 600px) {
-  .wrapper {
-    grid-template-columns: repeat(2, 1fr);
+.extra {
+  margin-top: 2rem;
+  display: grid;
+  width: 360px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* GALLERY */
+
+.games-display {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  margin-top: 5rem;
+  padding-top: 2rem;
+  margin: 0;
+}
+
+.game {
+  flex: 0;
+  padding: 3px;
+  margin: 12px;
+  max-width: 250px;
+  height: 205px;
+  margin-top: 0;
+  padding-top: 0;
+  cursor: pointer;
+}
+
+.game img {
+  width: 130px;
+}
+
+@media only screen and (min-width: 650px) {
+  .background {
+    height: 1460px;
+  }
+
+  .gameinfo {
+    display: inline-flex;
+    flex-direction: row;
+    width: auto;
+    max-width: 450px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .price {
+    padding: 30px;
   }
 }
 
-@media only screen and (min-width: 800px) {
-  .wrapper {
-    grid-template-columns: repeat(4, 1fr);
+@media only screen and (min-width: 936px) {
+  main {
+    padding: 4rem;
+  }
+
+  .background {
+    height: 800px;
+  }
+
+  .grid {
+    justify-content: center;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, lfr);
+    grid-template-areas:
+      "headline headline"
+      "products coupon"
+      "offer-extra offer-extra";
+  }
+
+  h1 {
+    padding: 10px;
+    font-size: 2.8rem;
+    background-color: rgba(255, 255, 255, 0.068);
+  }
+
+  h3 {
+    padding: 30px;
+  }
+
+  .container-right {
+    border-left: white solid thin;
+    padding: 10px;
+    padding-left: 1.4rem;
+    max-width: 650px;
+    max-height: 550px;
+  }
+
+  .products {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 10px;
+    max-width: auto;
+  }
+
+  .coupon {
+    border: none;
+  }
+
+  .coupon-container {
+    width: auto;
+    padding-top: 0;
+  }
+
+  .coupon p:nth-child(2) {
+    padding-top: 1.4rem;
+  }
+
+  .insert-coupon {
+    width: 50%;
+    margin: auto;
+  }
+
+  .extra {
+    width: auto;
+    margin: 0;
+  }
+
+  .game img {
+    width: 70px;
+  }
+
+  .game {
+    margin: 0.4rem;
+    padding: 3px;
+    height: auto;
+  }
+
+  .games-display {
+    padding-top: 0;
+  }
+
+  .button-blue {
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1130px) {
+  .extra {
+    align-items: baseline;
+    display: block;
+    height: 360px;
+  }
+  .game {
+    margin: 0.2rem;
+    padding-top: 1rem;
+  }
+
+  .game img {
+    width: 140px;
+  }
+
+  .games-display {
+    flex-wrap: nowrap;
   }
 }
