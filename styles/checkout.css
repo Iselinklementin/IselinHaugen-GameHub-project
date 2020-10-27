@@ -44,12 +44,11 @@ legend, h2 {
   border-radius: 4px;
   border-color: rgba(255, 255, 255, 0.404);
   padding: 2px 30px;
-  opacity: 40%;
+  opacity: 80%;
   text-align: center;
   height: 30px;
   margin: auto;
   font-size: 1rem;
-  color: grey;
 }
 
 fieldset {
