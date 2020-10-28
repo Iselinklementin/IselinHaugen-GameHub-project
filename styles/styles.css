@@ -38,7 +38,7 @@ ul {
 nav li {
   display: block;
   border-bottom: rgb(252, 160, 39) thin solid;
-  width: 30%;
+  width: 35%;
 }
 
 nav a {
@@ -116,7 +116,6 @@ input[type="search"] {
   text-align: center;
   font-size: 1rem;
 }
-
 
 #search ::placeholder {
   color: white;
@@ -259,12 +258,11 @@ h2 {
   }
 }
 
-
 /* buttons */
 
 .button:hover,
 .button:active {
-  background-color: rgb(255, 174, 68);
+  background-color: rgb(249, 182, 94);
 }
 
 .button:focus {
@@ -303,6 +301,15 @@ a.button-blue {
 
 .button-blue:hover {
   background-color: #2ab3dd;
+}
+a.purple {
+  border: solid #7f276e 1px;
+  background-color: #a5358b;
+  color: white;
+}
+
+.purple:hover {
+  background-color: #bb3d9e;
 }
 
 .price {

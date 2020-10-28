@@ -7,7 +7,6 @@ main {
   width: 100%;
   color: white;
   text-align: center;
-
 }
 
 .slogan {
@@ -72,17 +71,6 @@ h2 {
   text-align: center;
 }
 
-/*
-.sell-searchbar::-webkit-search-cancel-button {
-  background-color: aqua;
-  border: red solid;
-}
-
-#search-sell::-webkit-search-cancel-button{
-  background: rgb(214, 136, 33);
-  border: red solid;
-}
-*/
 #search-sell::placeholder {
   font-size: 1rem;
   font-family: inherit;
@@ -104,7 +92,7 @@ input:focus {
   padding: 0 1rem;
 }
 
-@media (min-width: 900px) {
+@media only screen and (min-width: 900px) {
 
 .container {
   position: relative;

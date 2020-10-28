@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;0,900;1,400;1,700&display=swap" rel="stylesheet">
     <link href="styles/styles.css" rel="stylesheet">
+    <link href="styles/account.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9b8ac118a8.js" crossorigin="anonymous"></script>
     <title>Account</title>
   </head>
@@ -41,58 +42,87 @@
       </nav>
   </header>
     <main>
+      <div class="grid">
+
+    <section class="heading">
       <h1>Account overview</h1>
-      <small>Log out</small>
+      <a href="#" class="link log-out">Log out</a>
+    </section>
 
-      <div>
-        <h2>Contact info</h2>
-        <label>First name / Surname</label><br />
-        <input type="text" placeholder="First name/Surname" /><br />
-        <label>E-mail</label><br />
-        <input type="text" placeholder="Your e-mail" /><br />
-        <label>Phone number</label><br />
-        <input type="tel" placeholder="Phone number" /><br><br>
-        <small>Edit contact info</small>
+      <div class="account-wrap">
+      <section class="contact">
+        <form method="POST">
+          <fieldset>
+            <legend>Contact info</legend>
+            <label class="name" for="name">First name / Surname</label>
+            <input type="text" name="name" id="name" class="form-input" placeholder="First name / Surname"/>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" class="form-input" placeholder="Email" required/>
+            <label for="phone">Phone number</label>
+            <input type="phone" name="phone" id="phone" class="form-input" placeholder="Phone number"/>
+            <a href="#" class="link">Edit contact info</a>
+          </fieldset>
+        </form>
+        </section>
+
+        <section class="address">
+          <form method="POST">
+            <fieldset>
+              <legend>Address / Delivery</legend>
+              <label for="street">Street</label>
+              <input type="text" name="street" id="street" class="form-input" placeholder="Street"/>
+              <label for="street">State</label>
+              <input type="text" name="state" id="state" class="form-input" placeholder="State"/>
+              <label for="postal-code">Postal code</label>
+              <input type="number" name="post-code" id="post-code" class="form-input" placeholder="Postal code"/>
+              <a href="#" class="link">Edit address</a>
+            </fieldset>
+          </form>
+        </section>
       </div>
 
-      <div>
-        <h2>Address / Delivery</h2>
-        <label>Street</label>
-        <input type="text" placeholder="Street" />
-        <label>State</label>
-        <input type="text" placeholder="State" />
-        <label>Postal code</label>
-        <input type="number" placeholder="Postal code" />
-        <small>Edit address</small>
+    <div class="sale-wrap">
+      <section class="sale">
+        <h2>Sale</h2>
+        <div class="search-container">
+        <input type="search" id="search-sell" placeholder="Search for games">
       </div>
+      </section>
+      <ul class="group-link">
+      <li><a href="#" class="link">Share your sales list</a></li>
+      <li><a href="#" class="link">See sale history</a></li>
+      </ul>
+    </div>
 
-      <div>
-        <p>Sale</p>
-        <input type="search" placeholder="Search for games"><br>
-        <small>Share your sales list</small>
-        <small>See sale history</small>
-        <p>0.00,-</p>
+      <section class="balance">
+        <p>10.50</p>
         <p>GameHub Balance</p>
-      </div>
+      </section>
 
-      <div>
-        <h3>Orders and requests</h3>
-        <ul>
-          <li>Game 1 Price 1 Request</li>
-          <li>Game 2 Price 2 Sale</li>
-          <li>Game 3 Price 3 Request</li>
-          <li>Game 4 Price 4 Sale</li>
-        </ul>
-        <h3>Recent purchases</h3>
-        <ul>
-          <li>Date 1 Game 1 Price 1 Complete</li>
-          <li>Date 2 Game 2 Price 2 Complete</li>
-          <li>Date 3 Game 3 Price 3 Complete</li>
-          <li>Date 4 Game 4 Price 4 Complete</li>
-        </ul>
-        <small>Payment method</small>
-      </div>
+<div class="wrap-tables">
+      <section class="orders">
+      <table>
+        <h2>Orders and requests</h2>
+        <tr class="first"><th>Game 1</th><td>Price 1</td><td>Request</td></tr>
+        <tr><th>Game 2</th><td>Price 2</td><td>Request</td></tr>
+        <tr><th>Game 3</th><td>Price 3</td><td>Request</td></tr>
+        <tr><th>Game 4</th><td>Price 4</td><td>Request</td></tr>
+      </table>
+      </section>
+      
+      <section class="purchases">
+      <table>
+        <h2>Recent purchases</h2>
+          <tr class="first"><th>Game 1</th><td>Price 1</td><td>Complete</td></tr>
+          <tr><th>Game 2</th><td>Price 2</td><td>Complete</td></tr>
+          <tr><th>Game 3</th><td>Price 3</td><td>Complete</td></tr>
+          <tr><th>Game 4</th><td>Price 4</td><td>Complete</td></tr>
+        </table>
+        <a href="#" class="link">Payment method</a>
+      </section>
+    </div>
 
+    </div>
     </main>
     <footer>
       <img class="footer-logo" src="/images/icons/logo.svg" alt="Gamehub logo"/>

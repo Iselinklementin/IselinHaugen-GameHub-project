@@ -6,7 +6,6 @@
   height: 800px;
   width: 100%;
   color: white;
-  text-align: center;
 }
 
 h1 {
@@ -100,16 +99,22 @@ button {
   margin-top: 1.5rem;
 }
 
+.iceberg-container {
+  position: relative;
+  width: 100vw;
+  border: red solid thin;
+}
+
 .iceberg {
+  background-size: contain;
+  background-repeat: no-repeat;
   background-image: url(/images/elements/ice-element.png);
   width: 240px;
   height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
   z-index: 2;
   position: absolute;
   left: 64%;
-  top: 62%;
+  bottom: -2rem;
 }
 
 /*
