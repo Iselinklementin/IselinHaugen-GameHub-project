@@ -192,6 +192,7 @@ border-top: white solid 1px;
 
     main {
         padding: 4rem;
+        height: 1250px;
     }
 
     .grid {
@@ -199,6 +200,8 @@ border-top: white solid 1px;
         display: grid;
         grid-template-columns: auto;
         grid-auto-rows: auto;
+        max-width: 800px;
+        margin: auto;
       }
 
       .heading {
@@ -210,6 +213,24 @@ border-top: white solid 1px;
       h1 {
         font-size: 2.8rem;
         text-align: left;
+        margin-left: 2rem;
+        width: 340px;
+    }
+
+    .illustration {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(/images/elements/skullers.png);
+        width: 180px;
+        height: 230px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      .log-out {
+          margin-right: 3rem;
       }
 
       .account-wrap {
@@ -220,7 +241,7 @@ border-top: white solid 1px;
         justify-content: space-between;
         background-color: rgba(10, 153, 205, 0.33);
         padding: 1rem 0;
-        width: 800px;
+        width: 730px;
         margin: auto;
     }
 
@@ -229,13 +250,41 @@ border-top: white solid 1px;
         grid-row-start: 3;
     }
 
+    .sale {
+        flex-direction: column;
+        height: 200px;
+        align-items: center;
+        margin: 3rem 1 0 0;
+    }
+
+    .sale h2 {
+        border-right: none;
+        border-bottom: white solid 1px;
+        height: 60px;
+        width: 70%;
+        color: black;
+        margin: 2rem 0 1rem 0;
+        padding-bottom: 0.6rem;
+      }
+
+      .search-container {
+        display: flex;
+        padding-left: 0;
+      }
+
+      #search-sell {
+        width: 235px;
+      }
+
     .balance {
         grid-column-start: 1;
         grid-row-start: 4;
+        margin-top: 2rem;
     }
     .wrap-tables {
         grid-column-start: 2;
         grid-row-start: 3;
         grid-row-end: 5;
+        margin-top: 2rem;
 }
     }
