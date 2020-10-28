@@ -64,25 +64,33 @@ h2 {
   margin-left: 1rem;
 }
 
-.sell-icons {
-  display: block;
-  padding-bottom: 0.4rem;
-  padding: 10px;
-  width: 20rem;
+/* ICONS IN HEADER-IMAGE */
+
+.slogan {
+  max-width: 300px;
+  display: inline-flex;
+  padding: 0 0 1rem 0;
+  margin: 1.2rem 0 0 0;
+  justify-content: center;
+}
+
+.icons {
+  padding: 0;
+  margin: 1rem;
+}
+
+.slogan img {
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+.sell-guide {
+  max-width: 600px;
   margin: auto;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
+  padding: 1rem 0;
 }
 
-.list {
-  flex: 1;
-  font-style: italic;
-}
-
-.container-icontext {
-  display: flex;
-  padding-left: 8px;
-  padding-right: 8px;
-}
 
 /* GALLERY ONE */
 
@@ -107,7 +115,7 @@ h2 {
   max-width: 95%;
   margin: auto;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 6rem;
 }
 
 .gallery-top {
@@ -153,7 +161,7 @@ figcaption {
   font-weight: 500;
 }
 
-figcaption,
+.game-text,
 .price,
 .game-name,
 .support-display {
@@ -254,8 +262,7 @@ h3 {
   padding-bottom: 0;
 }
 
-.display-two figcaption {
-  padding: 10px;
+.game.text {
   display: none;
 }
 
@@ -303,7 +310,7 @@ h3 {
   display: block;
   font-size: 1.7rem;
   font-weight: bold;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 /* SUPPORT SCREEN */
@@ -381,9 +388,10 @@ h3 {
 }
 
 .access {
-  background-color: rgba(0, 0, 0, 0.654);
+  background-color: rgba(238, 153, 6, 0.654);
   height: 55px;
   font-size: 1.7rem;
+  line-height: 2;
 }
 
 /* ILLUSTRATION BOTTOM */
@@ -411,11 +419,17 @@ h3 {
     justify-content: center;
   }
 
+  .games-display-one {
+    max-width: 500px;
+  }
+
   /*  TO SHOP  */
 
   .font-to-shop {
     max-width: 14rem;
     margin-right: 1.5rem;
+    text-align: left;
+    padding-left: 30px;
   }
 
   .browse-container :nth-child(1) {
@@ -449,12 +463,12 @@ h3 {
   }
 
   .gallery-bottom {
-    width: 230px;
+    width: 210px;
     height: 300px;
   }
 
   .overwatch {
-    height: 300px;
+    height: 260px;
     max-width: 500px;
   }
   .release-game2,
@@ -465,7 +479,7 @@ h3 {
   /* SUPPORT MOBILE */
 
   .container {
-    width: 230px;
+    width: 210px;
     height: 300px;
   }
 
@@ -509,28 +523,20 @@ h3 {
   }
 
   .beta-btn-container {
-    display: flex;
-    position: relative;
-    height: 100px;
-    width: 90%;
-    position: relative;
-  }
-  .beta-btn {
-    display: initial;
-    position: absolute;
-    top: -7rem;
-    right: 0%;
-    margin: 0;
+    border: lightcoral solid thin;
+    height: 300px;
+    margin-top: -15rem;
   }
 
   .access {
     position: absolute;
     background-color: rgba(0, 0, 0, 0);
-    top: -17rem;
-    right: 0%;
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    right: 3%;
+    font-size: 2.8rem;
     text-align: right;
+    width: 250px;
+    line-height: normal;
+    border: red solid thin;
   }
 }
 @media only screen and (min-width: 839px) {
@@ -557,12 +563,12 @@ h3 {
   }
 
   .button-top {
-    margin-top: 4rem;
+    margin-top: 5rem;
   }
 
-  .sell-icons {
-    margin-top: 3rem;
-  }
+ .slogan {
+   margin-top: 5rem;
+ }
 
   h1 {
     margin-top: 4rem;
@@ -581,12 +587,17 @@ h3 {
 
   /* GALLERY ONE */
 
+  .games-display-one {
+    max-width: none;
+  }
+
   .heading-overview {
     display: flex;
+    padding: 0 0.7rem;
     margin-top: 12rem;
   }
 
-  figcaption,
+  .game-text,
   .direct-link,
   .price,
   .game-name {
@@ -596,11 +607,11 @@ h3 {
   .games-display-one {
     margin-top: 0;
     text-align: left;
-    flex-wrap: nowrap;
   }
+
   .gallery-top {
-    width: 235px;
-    height: 345px;
+    width: 230px;
+    height: 320px;
   }
 
   .game1,
@@ -608,8 +619,8 @@ h3 {
   .game3,
   .game4 {
     flex: 0;
-    margin: 0.5rem;
-    max-width: 235px;
+    margin: 0.2rem;
+    max-width: none;
   }
 
   /*  TO SHOP  */
@@ -646,8 +657,14 @@ h3 {
 
   /*  GALLERY TWO  */
 
-  .display-two figcaption {
+  .display-two, .game-text {
     display: block;
+    padding-right: 10px;
+  }
+
+  .display-two .game-text {
+    display: block;
+    padding-left: 10px;
   }
 
   .games-display-two {
@@ -679,6 +696,7 @@ h3 {
   .release {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    padding: 0 0rem;
   }
 
   /* SUPPORT  */
@@ -697,6 +715,14 @@ h3 {
     background-color: rgba(192, 201, 201, 0);
   }
 
+  .beta-btn-container {
+    display: flex;
+    position: relative;
+    height: 100px;
+    width: 90%;
+    position: relative;
+  }
+
   .openbeta-img {
     display: flex;
     max-width: 100%;
@@ -707,7 +733,7 @@ h3 {
     margin-top: 10rem;
   }
   .beta-btn-container {
-    height: 100px;
+    height: 200px;
     width: 100%;
   }
 
@@ -718,18 +744,11 @@ h3 {
   }
 
   .access {
-    top: -20rem;
-    right: 18%;
     text-align: right;
     line-height: 1.5;
   }
 }
 
-@media only screen and (min-width: 1000px) {
-  .buttons {
-    left: 18%;
-  }
-}
 
 @media only screen and (min-width: 1500px) {
   .header-img {

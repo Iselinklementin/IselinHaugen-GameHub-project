@@ -9,26 +9,32 @@
   text-align: center;
 }
 
+.far {
+  color: rgb(252, 160, 39);
+}
+
 h1,
 legend {
   color: white;
   padding-bottom: 0.4rem;
-  padding-top: 1rem;
-  margin: 0;
+  padding-top: 2rem;
   text-align: center;
   font-size: 2rem;
   font-weight: normal;
   text-transform: initial;
+  margin: auto;
 }
 
 .login-form {
-  padding-top: 4rem;
+  padding-top: 1rem;
   display: inline-block;
   margin: auto;
 }
 
 fieldset {
   border-style: none;
+  line-height: 2;
+  margin: auto;
 }
 
 label {
@@ -43,30 +49,30 @@ label {
   border-color: rgba(255, 255, 255, 0.404);
   padding: 2px 30px;
   margin: 1rem;
-  opacity: 40%;
+  opacity: 80%;
   width: 20rem;
   height: 2rem;
   text-align: center;
+  font-size: 1rem;
 }
 
-main a {
+.link {
   color: rgb(252, 160, 39);
   font-style: italic;
   font-weight: lighter;
   font-size: 0.8rem;
   margin-top: -0.5rem;
-
+  text-decoration: none;
   display: block;
 }
 
 .button {
   display: block;
   margin: auto;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .new-customer {
-  margin-top: 1rem;
   display: inline-block;
   margin: auto;
   text-align: center;
@@ -74,7 +80,7 @@ main a {
 
 .box {
   background: rgb(252, 160, 39);
-  width: 27rem;
+  width: 340px;
   height: 11rem;
   margin: auto 0;
   text-align: left;
@@ -100,6 +106,26 @@ main a {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  left: 57%;
-  bottom: 28%;
+  margin: 2rem auto 0 auto;
+}
+
+@media only screen and (min-width: 650px) {
+
+  .box {
+    width: 27rem;
+  }
+
+  .img-container {
+    position: relative;
+    height: 200px;
+    width: 460px;
+    margin: auto;
+    margin-top: -12rem;
+  }
+
+  .dragon {
+    position: absolute;
+    bottom: 28%;
+    right: 0;
+  }
 }

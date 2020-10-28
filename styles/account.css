@@ -30,11 +30,11 @@ main {
   }
 
   .log-out {
-      max-width: 340px;
-      display: block;
-      margin: auto;
-      text-align: right;
-      padding: 1rem 0;
+    max-width: 340px;
+    display: block;
+    margin: auto;
+    text-align: right;
+    padding: 1rem 0;
   }
 
   .form-input {
@@ -229,11 +229,11 @@ border-top: white solid 1px;
         margin: auto;
       }
 
-      .log-out {
+    .log-out {
           margin-right: 3rem;
       }
 
-      .account-wrap {
+    .account-wrap {
         grid-column-start: 1;
         grid-column: span 2;
         grid-row-start: 2;
@@ -267,12 +267,12 @@ border-top: white solid 1px;
         padding-bottom: 0.6rem;
       }
 
-      .search-container {
+    .search-container {
         display: flex;
         padding-left: 0;
       }
 
-      #search-sell {
+    #search-sell {
         width: 235px;
       }
 

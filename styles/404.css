@@ -1,295 +1,769 @@
-.background {
-  background-image: url(/images/backgrounds/background-general.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left 50% bottom 18%;
-  height: 1850px;
-  width: 100%;
+body,
+html {
   color: white;
-  text-align: center;
-}
-.grid {
-  padding-top: 1rem;
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas:
-    "headline"
-    "products"
-    "offer-extra"
-    "coupon";
+  scroll-behavior: smooth;
 }
 
-/* GRID */
-
-.headline {
-  grid-area: headline;
+html {
+  background: url(/images/backgrounds/home-background.jpg) no-repeat center
+    center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.products-left {
-  grid-area: products;
+.header-img {
+  display: flex;
+  background: url(/images/mobile/heading-mobile.jpg);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 580px;
+  background-position: 50%;
+  margin-top: 0;
+  position: absolute;
+  z-index: -1;
 }
 
-.offer-extra {
-  grid-area: offer-extra;
-}
-
-.coupon {
-  grid-area: coupon;
+.direct-link {
+  display: none;
 }
 
 h1 {
-  color: white;
-  margin: 0.5rem;
-  font-size: 2.5rem;
+  font-size: 1.4rem;
   text-align: center;
-  padding-top: 2rem;
+  color: rgb(252, 160, 39);
 }
 
 h2 {
-  background-color: rgb(252, 160, 39);
-  color: black;
+  font-size: 3rem;
+  margin: 0;
   text-align: center;
-  font-size: 1.3rem;
-  font-weight: 500;
-  text-transform: initial;
-  height: 2rem;
-  line-height: 1.5;
-  width: 100%;
 }
 
-.gameinfo {
+.intro-text {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.section-intro {
+  max-width: 20rem;
+  margin: auto;
+}
+
+.links {
   display: flex;
   flex-direction: column;
-  width: 360px;
-  justify-content: space-between;
   align-items: center;
-  padding: 0;
-  background-color: rgba(255, 255, 255, 0.052);
 }
 
-.castle {
-  margin-top: 0rem;
-  padding-top: 1rem;
-}
-
-.img-cart {
-  width: 70px;
-}
-
-.price {
-  font-weight: normal;
-}
-
-.button-blue {
-  width: 16rem;
-  margin: auto;
-  margin-top: 1rem;
-}
-
-.products {
-  display: grid;
-  justify-content: center;
-  padding-bottom: 3rem;
-}
-
-.img-cart {
-  padding: 0;
-  margin: 0;
-}
-
-.gamelink {
-  text-decoration: none;
-  color: white;
-}
-
-.offer-extra {
-  display: grid;
-  justify-content: center;
-}
-
-.coupon {
-  justify-content: center;
-  text-align: center;
-  height: 200px;
-  border: solid thin rgb(3, 3, 27);
-  background: linear-gradient(#890b334e, #d2690c);
-  margin-bottom: 2rem;
-}
-
-.coupon-container {
-  display: block;
-  margin: auto;
-  padding-top: 1rem;
-  width: 360px;
-  text-align: center;
-}
-
-.insert-coupon {
-  color: black;
-  height: 3rem;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.922);
-  border-radius: 4px;
-  line-height: 3;
-}
-
-.extra {
+.button,
+.purple {
   margin-top: 2rem;
-  display: grid;
-  width: 360px;
-  justify-content: space-between;
-  align-items: center;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
-/* GALLERY */
+.sell-icons {
+  display: block;
+  padding-bottom: 0.4rem;
+  padding: 10px;
+  width: 20rem;
+  margin: auto;
+  margin-top: 1.5rem;
+}
 
-.games-display {
+.list {
+  flex: 1;
+  font-style: italic;
+}
+
+.container-icontext {
+  display: flex;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* GALLERY ONE */
+
+.heading-overview {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 980px;
+  display: none;
+}
+
+.direct-link {
+  color: rgb(252, 160, 39);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.games-display-one {
   display: flex;
   flex-wrap: wrap;
+  max-width: 95%;
   margin: auto;
   justify-content: center;
   margin-top: 5rem;
-  padding-top: 2rem;
-  margin: 0;
 }
 
-.game {
-  flex: 0;
-  padding: 3px;
-  margin: 12px;
-  max-width: 250px;
+.gallery-top {
+  width: 150px;
   height: 205px;
+}
+
+.game1,
+.game2,
+.game3,
+.game4 {
+  flex: 1;
+  padding: 5px;
+  margin: 12px;
+  max-width: 150px;
   margin-top: 0;
   padding-top: 0;
   cursor: pointer;
 }
 
-.game img {
-  width: 130px;
+.text-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  line-height: 1.4;
 }
 
-@media only screen and (min-width: 650px) {
-  .background {
-    height: 1460px;
-  }
-
-  .gameinfo {
-    display: inline-flex;
-    flex-direction: row;
-    width: auto;
-    max-width: 450px;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .price {
-    padding: 30px;
-  }
+.game-name {
+  text-decoration: none;
+  color: white;
 }
 
-@media only screen and (min-width: 936px) {
-  main {
-    padding: 4rem;
+.price {
+  color: black;
+  background-color: rgb(252, 160, 39);
+  height: 25px;
+  width: 90px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+figcaption {
+  font-weight: 500;
+}
+
+figcaption,
+.price,
+.game-name,
+.support-display {
+  display: none;
+}
+
+/* TO SHOP */
+
+.browse-container {
+  background-color: rgba(13, 69, 118, 0.579);
+  display: flex;
+  width: 100%;
+  margin: auto;
+  cursor: pointer;
+  height: 340px;
+}
+
+.font-to-shop {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  max-width: 20rem;
+}
+
+.to-shop {
+  margin-top: 3rem;
+  margin: auto;
+  max-width: 90%;
+}
+
+.container-button {
+  position: relative;
+  width: 100%;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+}
+
+.browse {
+  position: absolute;
+  bottom: 70%;
+}
+
+.browse-wide {
+  display: none;
+}
+
+.photo-to-shop {
+  max-width: 16rem;
+}
+
+/*  GALLERY TWO  */
+
+.games-display-two {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  margin-top: -1rem;
+}
+
+.display-two {
+  max-width: 980px;
+  margin: auto;
+}
+
+.release-game1 {
+  display: none;
+}
+
+.release-game1,
+.release-game2,
+.release-game3 {
+  padding: 5px;
+  margin: 12px;
+  margin-top: 0;
+  padding-top: 0;
+  cursor: pointer;
+  flex: 0;
+}
+
+.release-game2,
+.release-game3 {
+  max-width: 150px;
+}
+
+h3 {
+  margin-top: 1rem;
+}
+
+.new-rel-wrap {
+  padding: 10px;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.display-two figcaption {
+  padding: 10px;
+  display: none;
+}
+
+.gallery-bottom {
+  width: 150px;
+  height: 205px;
+}
+
+.overwatch {
+  height: 205px;
+  max-width: 330px;
+}
+
+/* SUPPORT MOBILE */
+
+.support {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 95%;
+  margin: auto;
+  justify-content: center;
+  margin-top: -1rem;
+}
+
+.container {
+  width: 150px;
+  height: 205px;
+  background-color: rgba(0, 0, 0, 0.387);
+  padding: 5px;
+  margin: 12px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sell-buy {
+  margin-top: 2rem;
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 3;
+}
+
+.font {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* SUPPORT SCREEN */
+
+.support-display {
+  position: relative;
+  display: block;
+  height: 520px;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: none;
+}
+
+.support-img {
+  display: flex;
+  max-height: 520px;
+  position: absolute;
+  max-width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  position: absolute;
+  align-items: left;
+  top: 12%;
+  left: 8%;
+}
+
+.buttons h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.suprt-btn {
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 30px;
+}
+
+.support-sell {
+  display: block;
+  height: 520px;
+  left: 12%;
+  color: rgb(252, 160, 39);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.8rem;
+}
+
+/* BETA */
+
+.span-beta {
+  display: none;
+}
+
+.openbeta-img {
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+}
+.openbeta {
+  margin: auto;
+}
+
+.beta-btn {
+  display: none;
+}
+
+.access {
+  background-color: rgba(0, 0, 0, 0.654);
+  height: 55px;
+  font-size: 1.7rem;
+}
+
+/* ILLUSTRATION BOTTOM */
+
+.illustration {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  object-fit: contain;
+}
+
+.bottom-to-shop,
+.btn {
+  display: none;
+}
+
+@media only screen and (min-width: 454px) {
+  .header-img {
+    height: 500px;
   }
 
-  .background {
-    height: 800px;
-  }
-
-  .grid {
-    justify-content: center;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, lfr);
-    grid-template-areas:
-      "headline headline"
-      "products coupon"
-      "offer-extra offer-extra";
-  }
-
-  h1 {
-    padding: 10px;
-    font-size: 3rem;
-    background-color: rgba(255, 255, 255, 0.068);
-  }
-
-  h3 {
-    padding: 30px;
-  }
-
-  .container-right {
-    border-left: white solid thin;
-    padding: 10px;
-    padding-left: 1.4rem;
-    max-width: 650px;
-    max-height: 550px;
-  }
-
-  .products {
+  .links {
     display: flex;
-    flex-direction: column;
-    justify-content: start;
-    padding: 10px;
-    max-width: auto;
+    flex-direction: row;
+    justify-content: center;
   }
 
-  .coupon {
-    border: none;
+  /*  TO SHOP  */
+
+  .font-to-shop {
+    max-width: 14rem;
+    margin-right: 1.5rem;
   }
 
-  .coupon-container {
-    width: auto;
-    padding-top: 0;
+  .browse-container :nth-child(1) {
+    order: 2;
   }
 
-  .coupon p:nth-child(2) {
-    padding-top: 1.4rem;
+  .browse-container {
+    margin-top: 1rem;
   }
 
-  .insert-coupon {
-    width: 50%;
+  .to-shop {
+    display: flex;
+    margin: auto, 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .photo-to-shop {
+    max-width: 20rem;
+  }
+
+  .tracedphoto {
+    margin: 0;
+    padding: 0;
+  }
+
+  /*  GALLERY TWO  */
+
+  .release-game1 {
+    display: initial;
+  }
+
+  .gallery-bottom {
+    width: 230px;
+    height: 300px;
+  }
+
+  .overwatch {
+    height: 300px;
+    max-width: 500px;
+  }
+  .release-game2,
+  .release-game3 {
+    max-width: 300px;
+  }
+
+  /* SUPPORT MOBILE */
+
+  .container {
+    width: 230px;
+    height: 300px;
+  }
+
+  .sell-buy {
+    margin-top: 3.2rem;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 3;
+  }
+
+  .font {
+    font-size: 2.5rem;
+    line-height: 1;
+    max-width: 13rem;
     margin: auto;
   }
 
-  .extra {
-    width: auto;
-    margin: 0;
+  /* BETA */
+
+  .beta {
+    background-color: rgba(192, 201, 201, 0.36);
+    height: 350px;
+    display: flex;
+    margin-top: 2rem;
   }
 
-  .game img {
-    width: 70px;
-  }
-
-  .game {
-    margin: 0.4rem;
-    padding: 3px;
+  .openbeta {
+    position: relative;
+    width: 100%;
     height: auto;
   }
 
-  .games-display {
-    padding-top: 0;
+  .openbeta-img {
+    display: block;
+    position: absolute;
+    max-width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
-  .button-blue {
+  .beta-btn-container {
+    display: flex;
+    position: relative;
+    height: 100px;
+    width: 90%;
+    position: relative;
+  }
+  .beta-btn {
+    display: initial;
+    position: absolute;
+    top: -7rem;
+    right: 0%;
+    margin: 0;
+  }
+
+  .access {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    top: -17rem;
+    right: 0%;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 839px) {
+  .header-img {
+    background: url(/images/backgrounds/headerdragons.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 800px;
+    background-position: 50%;
+    position: absolute;
+  }
+  .section-intro {
+    max-width: 36rem;
+  }
+
+  .intro-text {
+    padding-top: 3rem;
+    text-align: center;
+    margin: auto;
+  }
+
+  .purple {
+    display: none;
+  }
+
+  .button-top {
+    margin-top: 4rem;
+  }
+
+  .sell-icons {
     margin-top: 3rem;
+  }
+
+  h1 {
+    margin-top: 4rem;
+  }
+
+  h2 {
+    font-size: 5.6rem;
+    line-height: 5.5rem;
+    margin: auto;
+  }
+
+  .container {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  /* GALLERY ONE */
+
+  .heading-overview {
+    display: flex;
+    margin-top: 12rem;
+  }
+
+  figcaption,
+  .direct-link,
+  .price,
+  .game-name {
+    display: initial;
+  }
+
+  .games-display-one {
+    margin-top: 0;
+    text-align: left;
+    flex-wrap: nowrap;
+  }
+  .gallery-top {
+    width: 235px;
+    height: 345px;
+  }
+
+  .game1,
+  .game2,
+  .game3,
+  .game4 {
+    flex: 0;
+    margin: 0.5rem;
+    max-width: 235px;
+  }
+
+  /*  TO SHOP  */
+
+  .browse {
+    display: none;
+  }
+
+  .browse-container {
+    background-color: rgba(13, 69, 118, 0);
+    margin-top: 4rem;
+  }
+
+  .container-button {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+  }
+
+  .photo-to-shop {
+    max-width: 38rem;
+  }
+
+  .browse-shop {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .browse-wide {
+    display: initial;
+  }
+
+  /*  GALLERY TWO  */
+
+  .display-two figcaption {
+    display: block;
+  }
+
+  .games-display-two {
+    margin-top: 0;
+    flex-wrap: nowrap;
+    text-align: left;
+    max-width: 70%;
+  }
+  .release-game1,
+  .release-game2,
+  .release-game3 {
+    flex: 0;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .gallery-bottom {
+    width: 235px;
+    height: 315px;
+    padding: 10px;
+  }
+
+  .overwatch {
+    height: 315px;
+    max-width: 600px;
+    padding: 10px;
+  }
+
+  .release {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* SUPPORT  */
+
+  .support {
+    display: none;
+  }
+
+  .support-display {
+    display: block;
+  }
+
+  /* BETA */
+
+  .beta {
+    background-color: rgba(192, 201, 201, 0);
+  }
+
+  .openbeta-img {
+    display: flex;
+    max-width: 100%;
+    height: 520px;
+    margin: auto;
+  }
+  .beta {
+    margin-top: 10rem;
+  }
+  .beta-btn-container {
+    height: 100px;
+    width: 100%;
+  }
+
+  .beta-btn {
+    display: initial;
+    top: -9rem;
+    right: 18%;
+  }
+
+  .access {
+    top: -20rem;
+    right: 18%;
+    text-align: right;
+    line-height: 1.5;
   }
 }
 
-@media only screen and (min-width: 1130px) {
-  .extra {
-    align-items: baseline;
-    display: block;
-    height: 360px;
+@media only screen and (min-width: 1000px) {
+  .buttons {
+    left: 18%;
   }
-  .game {
-    margin: 0.2rem;
-    padding-top: 1rem;
+}
+
+@media only screen and (min-width: 1500px) {
+  .header-img {
+    background: url(/images/backgrounds/heading-bigsize.jpg);
+    background-position: 50%;
   }
 
-  .game img {
-    width: 140px;
+  .games-display-two {
+    margin-top: 0;
+    text-align: left;
+    max-width: 70%;
   }
 
-  .games-display {
-    flex-wrap: nowrap;
+  .span-beta {
+    display: initial;
+  }
+  .beta-btn {
+    display: initial;
+    top: -4rem;
+    right: 25%;
+  }
+
+  .access {
+    right: 25%;
+  }
+
+  /* SUPPORT SCREEN */
+
+  .support-sell {
+    width: 49%;
+    left: 25%;
+  }
+  .buttons {
+    left: 26%;
+    width: 13%;
   }
 }
