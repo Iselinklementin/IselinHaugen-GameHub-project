@@ -27,15 +27,6 @@ h1 {
   text-align: center;
 }
 
-.press-media,
-.online,
-.customer-support {
-  padding: 1rem;
-  margin: 0rem 0.2rem;
-  padding-top: 4rem;
-  flex: 0;
-}
-
 h2 {
   display: inline-flex;
   background-color: rgb(252, 160, 39);
@@ -48,6 +39,17 @@ h2 {
   margin: 0;
 }
 
+/* CONTAINERS */
+
+.press-media,
+.online,
+.customer-support {
+  padding: 1rem;
+  margin: 0rem 0.2rem;
+  padding-top: 4rem;
+  flex: 0;
+}
+
 .contact {
   display: flex;
   width: 100%;
@@ -55,6 +57,9 @@ h2 {
   justify-content: center;
   flex-wrap: wrap;
 }
+
+/* TABLE */
+
 table {
   text-align: left;
   border-spacing: 0.5rem;
@@ -67,6 +72,8 @@ tr {
   padding: 0.2rem;
 }
 
+/* SOCIAL MEDIA */
+
 .some-contact {
   display: none;
   position: relative;
@@ -76,6 +83,9 @@ tr {
 .some-contact .fab {
   font-size: 1.8rem;
 }
+
+/* MEDIA */
+
 @media only screen and (min-width: 617px) {
   main {
     height: 800px;

@@ -9,6 +9,8 @@ main {
   text-align: center;
 }
 
+/* SLOGAN */
+
 .slogan {
   border-bottom: rgb(252, 160, 39) solid 2px;
   max-width: 300px;
@@ -27,6 +29,8 @@ main {
   height: 2rem;
   margin: 0.5rem;
 }
+
+/* SELL TEXT */
 
 .sell-guide {
   max-width: 600px;
@@ -52,6 +56,8 @@ h2 {
   margin: auto;
   margin-bottom: 2rem;
 }
+
+/* SEARCH SECTION */
 
 .search-section h2 {
   font-weight: lighter;
@@ -92,15 +98,16 @@ input:focus {
   padding: 0 1rem;
 }
 
-@media only screen and (min-width: 900px) {
+/* MEDIA */
 
-.container {
-  position: relative;
-  display: flex;
-  height: 320px;
-  justify-content: center;
-  padding: 60px;
-}
+@media only screen and (min-width: 900px) {
+  .container {
+    position: relative;
+    display: flex;
+    height: 320px;
+    justify-content: center;
+    padding: 60px;
+  }
 
   .border {
     position: absolute;
@@ -120,7 +127,8 @@ input:focus {
     padding-right: 2rem;
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     text-align: left;
     padding: 0;
     margin-bottom: 0.5rem;

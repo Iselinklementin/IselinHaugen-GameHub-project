@@ -57,8 +57,12 @@ h2 {
   width: 100%;
 }
 
-.trash {
-  cursor: pointer;
+/* PRODUCTS */
+
+.products {
+  display: grid;
+  justify-content: center;
+  padding-bottom: 3rem;
 }
 
 .gameinfo {
@@ -82,25 +86,6 @@ h2 {
 
 .img-cart {
   width: 70px;
-}
-
-.price {
-  font-weight: normal;
-}
-
-.button-blue {
-  width: 16rem;
-  margin: auto;
-  margin-top: 2.2rem;
-}
-
-.products {
-  display: grid;
-  justify-content: center;
-  padding-bottom: 3rem;
-}
-
-.img-cart {
   padding: 0;
   margin: 0;
 }
@@ -110,10 +95,21 @@ h2 {
   color: white;
 }
 
-.offer-extra {
-  display: grid;
-  justify-content: center;
+.price {
+  font-weight: normal;
 }
+
+.trash {
+  cursor: pointer;
+}
+
+.button-blue {
+  width: 16rem;
+  margin: auto;
+  margin-top: 2.2rem;
+}
+
+/* COUPON */
 
 .coupon {
   justify-content: center;
@@ -141,12 +137,19 @@ h2 {
   line-height: 3;
 }
 
+/* EXTRA */
+
 .extra {
   margin-top: 2rem;
   display: grid;
   width: 360px;
   justify-content: space-between;
   align-items: center;
+}
+
+.offer-extra {
+  display: grid;
+  justify-content: center;
 }
 
 /* GALLERY */
@@ -180,6 +183,8 @@ h2 {
   border: rgba(6, 5, 5, 0) solid thin;
 }
 
+/* MEDIA 650px */
+
 @media only screen and (min-width: 650px) {
   .background {
     height: 1460px;
@@ -192,6 +197,8 @@ h2 {
     align-items: center;
   }
 }
+
+/* MEDIA 936px */
 
 @media only screen and (min-width: 936px) {
   main {
@@ -222,6 +229,18 @@ h2 {
     padding: 30px;
   }
 
+  .products {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 10px;
+    max-width: auto;
+  }
+
+  .button-blue {
+    margin-top: 3rem;
+  }
+
   .container-right {
     border-left: white solid thin;
     padding: 10px;
@@ -230,13 +249,7 @@ h2 {
     max-height: 550px;
   }
 
-  .products {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    padding: 10px;
-    max-width: auto;
-  }
+  /* COUPON */
 
   .coupon {
     border: none;
@@ -256,6 +269,8 @@ h2 {
     margin: auto;
   }
 
+  /* EXTRA */
+
   .extra {
     width: auto;
     margin: 0;
@@ -274,11 +289,9 @@ h2 {
   .games-display {
     padding-top: 0;
   }
-
-  .button-blue {
-    margin-top: 3rem;
-  }
 }
+
+/* MEDIA 1130px */
 
 @media only screen and (min-width: 1130px) {
   .extra {
@@ -286,6 +299,11 @@ h2 {
     display: block;
     height: 360px;
   }
+
+  .games-display {
+    flex-wrap: nowrap;
+  }
+
   .game {
     margin: 0.2rem;
     padding-top: 1rem;
@@ -293,9 +311,5 @@ h2 {
 
   .game img {
     width: 140px;
-  }
-
-  .games-display {
-    flex-wrap: nowrap;
   }
 }

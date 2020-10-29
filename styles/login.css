@@ -1,3 +1,7 @@
+.far {
+  color: rgb(252, 160, 39);
+}
+
 .background {
   background-image: url(/images/backgrounds/register-background.jpg);
   background-size: cover;
@@ -7,10 +11,6 @@
   width: 100%;
   color: white;
   text-align: center;
-}
-
-.far {
-  color: rgb(252, 160, 39);
 }
 
 h1,
@@ -24,6 +24,8 @@ legend {
   text-transform: initial;
   margin: auto;
 }
+
+/* FORM LOGIN */
 
 .login-form {
   padding-top: 1rem;
@@ -50,7 +52,7 @@ label {
   padding: 2px 30px;
   margin: 1rem;
   opacity: 80%;
-  width: 20rem;
+  width: 17rem;
   height: 2rem;
   text-align: center;
   font-size: 1rem;
@@ -72,6 +74,8 @@ label {
   margin-bottom: 1rem;
 }
 
+/* CREATE ACCOUNT */
+
 .new-customer {
   display: inline-block;
   margin: auto;
@@ -80,7 +84,7 @@ label {
 
 .box {
   background: rgb(252, 160, 39);
-  width: 340px;
+  max-width: 340px;
   height: 11rem;
   margin: auto 0;
   text-align: left;
@@ -109,8 +113,9 @@ label {
   margin: 2rem auto 0 auto;
 }
 
-@media only screen and (min-width: 650px) {
+/* MEDIA 650px */
 
+@media only screen and (min-width: 650px) {
   .box {
     width: 27rem;
   }
@@ -125,7 +130,7 @@ label {
 
   .dragon {
     position: absolute;
-    bottom: 28%;
-    right: 0;
+    bottom: 33%;
+    right: -2rem;
   }
 }

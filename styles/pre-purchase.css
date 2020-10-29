@@ -27,6 +27,8 @@ html {
   background-size: cover;
 }
 
+/* INTRO & BUTTONS */
+
 .breadcrumbs,
 .info-text,
 .btn {
@@ -62,6 +64,8 @@ h1 {
   text-align: center;
 }
 
+/* GAME INFO + TEXT */
+
 .game-info {
   text-align: center;
   font-size: 1.2rem;
@@ -75,6 +79,8 @@ h1 {
   font-weight: normal;
   font-size: 1.6rem;
 }
+
+/* PICTURES FROM GAME */
 
 .scenes figure {
   display: flex;
@@ -98,6 +104,8 @@ figcaption {
   padding: 30px 0;
   background-color: rgba(255, 255, 255, 0.072);
 }
+
+/* GAME DETAILS / SYSTEM REQUIREMENTS */
 
 .container {
   display: flex;
@@ -136,23 +144,30 @@ th {
   padding-left: 2rem;
 }
 
+/* MEDIA */
+
 @media only screen and (min-width: 640px) {
   .header-img {
     background-image: url(/images/backgrounds/immortal-medium-new.jpg);
     margin-top: -10%;
   }
+
+  /* INTRO */
+
   .heading-container {
     display: flex;
     justify-content: space-between;
   }
 
-  .game-info {
-    max-width: 250px;
-    text-align: right;
+  .breadcrumbs {
+    display: block;
+    padding: 1rem 0 0 2rem;
+    font-size: 0.8rem;
   }
 
-  .button {
-    margin-left: 0rem;
+  .breadcrumbs a {
+    color: white;
+    text-decoration: none;
   }
 
   h1 {
@@ -160,11 +175,32 @@ th {
     text-align: left;
     margin-left: 2rem;
   }
+
+  .game-info {
+    max-width: 250px;
+    text-align: right;
+  }
+
+  /* BUTTONS */
+
+  .button {
+    margin-left: 0rem;
+  }
+
   .group-buttons {
     margin-top: 2rem;
     margin-left: 2rem;
     text-align: left;
   }
+
+  .btn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+  }
+
+  /* PICTURES FROM GAME */
 
   .scenes {
     display: flex;
@@ -186,6 +222,8 @@ th {
     padding-right: 20px;
   }
 
+  /* SELLING TEXT WIDE */
+
   .buy {
     position: relative;
     width: 243px;
@@ -194,11 +232,11 @@ th {
     margin-top: 2rem;
   }
 
-  .btn {
+  .info-text {
     display: block;
-    position: absolute;
-    top: 50%;
-    left: 10%;
+    max-width: 700px;
+    margin: auto;
+    padding: 2rem;
   }
 
   .input-illustration {
@@ -210,12 +248,7 @@ th {
     background-size: contain;
   }
 
-  .info-text {
-    display: block;
-    max-width: 700px;
-    margin: auto;
-    padding: 2rem;
-  }
+  /* GAME DETAILS / SYSTEM REQUIREMENTS */
 
   .table-wrap {
     display: flex;
@@ -239,11 +272,14 @@ th {
   }
 }
 
+/* MEDIA 1050px */
+
 @media only screen and (min-width: 1050px) {
   .header-img {
     background-image: url(/images/backgrounds/background-immortal.jpg);
     height: 2000px;
   }
+
   h1 {
     font-size: 4.4rem;
     text-align: left;
@@ -252,6 +288,18 @@ th {
 
   .group-buttons {
     margin-top: 4rem;
+  }
+
+  .info-text {
+    text-align: left;
+    max-width: 280px;
+    margin-left: 2rem;
+    margin-top: -93rem;
+    padding: 0;
+  }
+
+  .info-text h2 {
+    padding-top: 2rem;
   }
 
   .img-from-game {
@@ -274,23 +322,11 @@ th {
     background-color: rgba(255, 255, 255, 0.072);
   }
 
-  .info-text {
-    text-align: left;
-    max-width: 280px;
-    margin-left: 2rem;
-    margin-top: -93rem;
-    padding: 0;
-  }
-
-  .info-text h2 {
-    padding-top: 2rem;
+  .buy {
+    margin-top: 20rem;
   }
 
   .table-wrap {
     margin-top: 54rem;
-  }
-
-  .buy {
-    margin-top: 20rem;
   }
 }

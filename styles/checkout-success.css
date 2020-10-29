@@ -32,8 +32,19 @@ h1 {
 }
 
 .intro p:nth-child(3) {
-font-weight: bold;
-margin-top: 0;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+aside a {
+  margin: 0.5rem;
 }
 
 .input {
@@ -55,16 +66,7 @@ margin-top: 0;
   margin: auto;
 }
 
-aside {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2rem;
-}
-
-aside a {
-  margin: 0.5rem;
-}
+/* MEDIA */
 
 @media only screen and (min-width: 900px) {
   .header-img {
@@ -74,7 +76,7 @@ aside a {
 
   aside {
     flex-direction: row;
-   justify-content: center;
+    justify-content: center;
   }
 
   .iceberg-container {
