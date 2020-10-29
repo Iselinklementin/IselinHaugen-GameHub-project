@@ -117,10 +117,10 @@ label {
 
   .img-container {
     position: relative;
-    height: 200px;
+    height: 100px;
     width: 460px;
     margin: auto;
-    margin-top: -12rem;
+    margin-top: -8rem;
   }
 
   .dragon {

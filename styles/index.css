@@ -183,6 +183,7 @@ figcaption {
 }
 
 .font-to-shop {
+  color: white;
   display: block;
   text-align: center;
   font-size: 1.2rem;

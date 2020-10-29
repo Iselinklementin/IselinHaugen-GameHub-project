@@ -8,328 +8,85 @@
       rel="stylesheet"
     />
     <link href="styles/styles.css" rel="stylesheet" />
-    <link href="styles/index.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/9b8ac118a8.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Iselin Haugen - GameHub</title>
+    <link href="styles/create-account.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9b8ac118a8.js" crossorigin="anonymous"></script>
+    <title>Create account</title>
   </head>
-  <body>
+  <body class="background">
     <header>
       <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
-      <input type="checkbox" id="hamburger-menu" />
+      <input type="checkbox" id="hamburger-menu">
       <div class="nav-logo-center">
-        <a href="index.html"><img class="logo" src="/images/icons/logo.svg" alt="Gamehub logo"/></a>
-      </div>
-      <div class="shoppingcart-wrap">
-        <li>
-          <a href="shopping-cart.html"><img class="shoppingcart-icon" src="/images/icons/shoppingcart.svg" alt="Icon of shopping cart"/></a>
-        </li>
+        <a href="index.html"><img class="logo" src="/images/icons/logo.svg" alt="Gamehub logo"></a>
+       </div> 
+       <div class="shoppingcart-wrap">
+        <li><a href="shopping-cart.html"><img class="shoppingcart-icon" src="/images/icons/shoppingcart.svg" alt="Icon of shopping cart"></a></li>
       </div>
       <nav>
         <ul class="wrap">
           <div class="nav-left-container">
             <div class="nav-li-contain">
-              <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="shop.html">Shop</a></li>
-              <li><a href="sell.html">Sell</a></li>
-            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="sell.html">Sell</a></li>
+          </div>
             <div class="search-bar">
-              <li id="search">
-                <form action="" method="GET">
-                  <input type="search" placeholder="Search" />
-                </form>
-              </li>
+              <li id="search"><form action="" method="GET"><input type="search" placeholder="Search" /></form></li>
             </div>
           </div>
-          <div class="nav-right-container">
-            <div class="nav-li-contain">
-              <li class="login">
-                <i class="far fa-user"></i><a href="login.html">Login</a>
-              </li>
-              <li><a href="contact.html">Contact</a></li>
-            </div>
-            <li class="shop-text">
-              <a href="shopping-cart.html">Shopping cart</a>
-            </li>
+            <div class="nav-right-container">
+              <div class="nav-li-contain">
+            <li class="login"><i class="far fa-user"></i><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </div>
-        </ul>
+            <li class="shop-text"><a href="shopping-cart.html">Shopping cart</a></li>
+        </div>
+          </ul>
       </nav>
-    </header>
+  </header>
     <main>
-      <div class="header-img"></div>
+      <h1>Create account</h1>
+      
+      <form class="create-account-form" method="POST">
 
-      <!------- HEADING -------->
-
-      <div class="intro">
-        <section class="intro-text">
-          <div class="section-intro">
-            <h1>Online gamestore</h1>
-            <h2>Buy & sell <br /> games</h2>
+        <fieldset class="create">
+          <legend class="headline">Contact info</legend>
+          <div class="fieldset-column">
+          <label class="name" for="name">First name / Surname</label>
+          <input type="text" name="name" id="name" class="form-input" placeholder="First name / Surname"/>
+          <label for="phone">Phone number</label>
+          <input type="phone" name="phone" id="phone" class="form-input" placeholder="Phone number"/>
+          <label for="street">Street</label>
+          <input type="text" name="street" id="street" class="form-input" placeholder="Street"/>
+          <label for="street">State</label>
+          <input type="text" name="state" id="state" class="form-input" placeholder="State"/>
+          <label for="postal-code">Postal code</label>
+          <input type="number" name="post-code" id="post-code" class="form-input" placeholder="Postal code"/>
           </div>
+        </fieldset>
 
-          <section class="links">
-            <a href="sell.html" class="button button-top">Sell games</a>
-            <a href="shop.html" class="button purple">Buy used</a>
-          </section>
-
-          <section class="sell-icons">
-            <figure>
-              <img
-                src="/images/icons/list-send-pay.svg" alt="Yellow icons for list, send and pay games"/>
-            </figure>
-            <ul class="container-icontext">
-              <li class="list">List it</li>
-              <li class="list">Send it</li>
-              <li class="list">Get paid</li>
-            </ul>
-          </section>
-        </section>
-      </div>
-
-      <!------- GALLERY ONE -------->
-
-      <div class="display-one">
-        <div class="heading-overview">
-          <h3>Pre-purchase</h3>
-          <a href="shop.html" class="direct-link">Go to shop</a>
+        <fieldset class="register">
+          <legend class="headline headline-register">Register</legend>
+          <div class="fieldset-column">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" class="form-input" placeholder="Email" required/>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" class="form-input" placeholder="Password" required/>
+          <label for="confirm-password">Confirm password</label>
+          <input type="password" name="confirm-password" id="confirm-password" class="form-input" placeholder="Confirm password" required/>
         </div>
-        <section class="games-display-one">
-          <figure class="game1">
-            <img class="gallery-top" src="images/games/entrance-game.jpg" alt="cover of entrance-game"/>
-            
-            <div class="text-wrapper">
-              <h3>
-                <a href="pre-purchase.html" class="game-name">Game Name</a>
-              </h3>
-              <p class="price">NOK 299</p>
-            </div>
-            <figcaption>
-              Lorem ipsum dolor sit amet diam consetetur sadipscing.
-            </figcaption>
-          </figure>
-
-          <figure class="game2">
-            <img
-              class="gallery-top"
-              src="images/games/purple-game.jpg"
-              alt="cover of entrance-game"
-            />
-
-            <div class="text-wrapper">
-              <h3>
-                <a href="pre-purchase.html" class="game-name">Game Name</a>
-              </h3>
-              <p class="price">NOK 299</p>
-            </div>
-            <figcaption>
-              Lorem ipsum dolor sit amet diam consetetur sadipscing.
-            </figcaption>
-          </figure>
-
-          <figure class="game3">
-            <img
-              class="gallery-top"
-              src="images/games/tree-game.jpg"
-              alt="cover of fantasy-game"
-            />
-            <div class="text-wrapper">
-              <h3>
-                <a href="pre-purchase.html" class="game-name">Game Name</a>
-              </h3>
-              <p class="price">NOK 299</p>
-            </div>
-            <figcaption>
-              Lorem ipsum dolor sit amet diam consetetur sadipscing.
-            </figcaption>
-          </figure>
-
-          <figure class="game4">
-            <img
-              class="gallery-top"
-              src="images/games/x-game.jpg"
-              alt="cover of x-game"
-            />
-            <div class="text-wrapper">
-              <h3>
-                <a href="pre-purchase.html" class="game-name">Game Name</a>
-              </h3>
-              <p class="price">NOK 299</p>
-            </div>
-            <figcaption>
-              Lorem ipsum dolor sit amet diam consetetur sadipscing.
-            </figcaption>
-          </figure>
-        </section>
-      </div>
-
-      <!------- TO SHOP - MOBILE -------->
-
-      <div class="browse-container">
-        <section class="to-shop">
-          <figure class="tracedphoto">
-            <img
-              class="photo-to-shop"
-              src="/images/elements/illustration-home-low.png"
-              alt="Wardude protecting himself"
-            />
-          </figure>
-          <div class="browse-shop">
-            <label class="font-to-shop"
-              >Experience intergalactic warfare through an epic story
-              campaign</label
-            >
-            <a href="shop.html" class="button browse-wide">Browse</a>
+          <a href="account.html" class="button">Create account</a> 
+          
+          <div class="checkbox">
+            <input type="checkbox" />
+            <label class="agreement">I agree to the<a href="#">Registration Agreement and Privacy Policy</a></label><br>
+            <input type="checkbox" />
+            <label class="agreement">Send med latest news and discounts</label>
           </div>
-        </section>
-      </div>
-
-      <div class="container-button">
-        <a href="shop.html" class="button browse">Browse</a>
-      </div>
-
-      <!------- GALLERY TWO -------->
-
-      <div class="display-two">
-        <h3 class="heading-overview release">New releases</h3>
-        <section class="games-display-two">
-          <figure class="release-game1">
-            <img
-              class="overwatch"
-              src="/images/games/diva-game.jpg"
-              alt="Picture of D.VA from Overwatch"
-            />
-
-            <div class="text-wrapper new-rel-wrap">
-              <h3><a href="buy-game.html" class="game-name">Game Name</a></h3>
-              <p class="price">NOK 299</p>
-            </div>
-            <figcaption>
-              Lorem ipsum dolor sit amet diam consetetur sadipscing. Lorem ipsum
-              dolor sit amet diam consetetur sadipscing.
-            </figcaption>
-          </figure>
-
-          <figure class="release-game2">
-            <img
-              class="gallery-bottom"
-              src="/images/games/lol-game.jpg"
-              alt="Picture from LOL"
-            />
-            <div class="text-wrapper new-rel-wrap">
-              <h3><a href="buy-game.html" class="game-name">Game Name</a></h3>
-              <p class="price">NOK 299</p>
-            </div>
-            <figcaption>
-              Lorem ipsum dolor sit amet diam consetetur sadipscing.
-            </figcaption>
-          </figure>
-
-          <figure class="release-game3">
-            <img
-              class="gallery-bottom"
-              src="/images/games/gorilla-game.jpg"
-              alt="Picture of Gorilla"
-            />
-            <div class="text-wrapper new-rel-wrap">
-              <h3><a href="buy-game.html" class="game-name">Game Name</a></h3>
-              <p class="price">NOK 299</p>
-            </div>
-            <figcaption>
-              Lorem ipsum dolor sit amet diam consetetur sadipscing.
-            </figcaption>
-          </figure>
-        </section>
-      </div>
-
-      <!------- SUPPORT / SELL MOBILE -------->
-
-      <section class="support">
-        <aside class="container">
-          <h2 class="sell-buy">
-            Sell games & <span class="font">earn money</span>
-          </h2>
-        </aside>
-        <aside class="container">
-          <h2 class="sell-buy">
-            Buy used & <span class="font">support a gamer</span>
-          </h2>
-        </aside>
-      </section>
-
-      <!------- SUPPORT / SELL WIDE -------->
-
-      <section class="support-display">
-        <section class="support-wrap">
-          <figure>
-            <img
-              class="support-img"
-              src="/images/games/wood-game-home.jpg"
-              alt="Picture from game - giving and receive"
-            />
-          </figure>
-        </section>
-
-        <section class="support-sell">
-          <div class="buttons">
-            <h3>Support a gamer</h3>
-            <a href="shop.html" class="button button-blue suprt-btn"
-              >Buy used</a
-            >
-
-            <h3>Earn money</h3>
-            <a href="sell.html" class="button suprt-btn">Sell games</a>
-          </div>
-        </section>
-      </section>
-
-      <!------- BETA -------->
-
-      <section class="beta">
-        <figure class="openbeta">
-          <img
-            class="openbeta-img"
-            src="/images/games/war-game-1.jpg"
-            alt="Picture of a wargame"
-          />
-        </figure>
-      </section>
-
-      <div class="beta-btn-container">
-        <h2 class="access">
-          Get early <br />
-          access<span class="span-beta">
-            <br />
-            to open beta</span
-          >
-        </h2>
-        <a href="pre-purchase.html" class="button beta-btn">Open beta</a>
-      </div>
-
-      <!------- ILLUSTRATION TO SHOP -------->
-
-      <div class="bottom">
-        <section class="container-bottom">
-          <div class="bottom-to-shop">
-            <p>Play it your way</p>
-            <p>
-              Epic Heroes and relentless action on diverse battlegrounds. Play
-              with friends, and complete unique quests.
-            </p>
-          </div>
-          <button class="button button-blue btn">Pre-purchase</button>
-        </section>
-        <div class="illustration-to-shop">
-          <img
-            class="illustration"
-            src="/images/games/illustration-footer.png"
-            alt="Game-illustration"
-          />
-        </div>
-      </div>
+        </fieldset>
+      </form>
+      <div class="iceberg-container"><div class="iceberg"></div></div>
     </main>
-    <!--------------->
     <footer>
       <img class="footer-logo" src="/images/icons/logo.svg" alt="Gamehub logo"/>
       <ul>

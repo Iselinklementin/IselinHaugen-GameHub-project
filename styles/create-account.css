@@ -3,7 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left 50% bottom 18%;
-  height: 800px;
+  height: 1400px;
   width: 100%;
   color: white;
 }
@@ -19,10 +19,12 @@ h1 {
 
 .create-account-form {
   display: flex;
+  flex-direction: column;
+  width: 340px;
   justify-content: center;
-  margin-top: -5rem;
+  margin: 2rem auto 0 auto;
   text-align: center;
-  margin-bottom: -0.6rem;
+  height: 1100px;
 }
 
 .form-input {
@@ -30,25 +32,19 @@ h1 {
   border-radius: 4px;
   border-color: rgba(255, 255, 255, 0.404);
   padding: 2px 30px;
-  margin: 10px;
-  opacity: 60%;
+  margin: 0.5rem;
+  opacity: 80%;
+  width: 13rem;
+  height: 2rem;
   text-align: center;
-}
-
-legend {
-  position: absolute;
-  top: 16.4rem;
+  font-size: 0.7rem;
 }
 
 .headline {
-  margin-top: 1rem;
-  padding-bottom: 2rem;
-  padding-left: 2.9rem;
-  font-size: 24px;
-}
-
-.headline-register {
-  padding-left: 4.4rem;
+ position: relative;
+  top: 10%;
+  font-size: 2rem;
+  margin: auto;
 }
 
 .fieldset-column {
@@ -61,7 +57,7 @@ legend {
   color: white;
   flex: 0;
   padding: 3rem;
-  margin-top: 8rem;
+  margin-top: 2rem;
   border-style: none;
 }
 
@@ -70,7 +66,7 @@ legend {
   color: white;
   flex: 0;
   padding: 3rem;
-  margin-top: 8rem;
+  margin-top: 2rem;
   margin-bottom: 4.5rem;
   height: 30rem;
   border-style: none;
@@ -102,8 +98,22 @@ button {
 .iceberg-container {
   position: relative;
   width: 100vw;
-  border: red solid thin;
 }
+
+@media only screen and (min-width: 900px) {
+  .background {
+    height: 800px;
+  }
+
+  .create-account-form {
+    flex-direction: row;
+    height: 570px;
+    margin-top: 0;
+  }
+
+  .fieldset-column {
+    margin-top: 8px;
+  }
 
 .iceberg {
   background-size: contain;
@@ -113,8 +123,9 @@ button {
   height: 200px;
   z-index: 2;
   position: absolute;
-  left: 64%;
+  left: 69%;
   bottom: -2rem;
+}
 }
 
 /*

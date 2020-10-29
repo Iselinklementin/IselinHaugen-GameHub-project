@@ -3,3 +3,138 @@ background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
 .gallery-top:hover {
   border: rgba(6, 5, 5, 0) solid thin;
 }
+
+.background {
+  background-image: url(/images/backgrounds/register-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 50% bottom 18%;
+  height: 800px;
+  width: 100%;
+  color: white;
+}
+
+h1 {
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.create-account-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -5rem;
+  text-align: center;
+  margin-bottom: -0.6rem;
+  border: red solid thin;
+}
+
+.form-input {
+  display: block;
+  border-radius: 4px;
+  border-color: rgba(255, 255, 255, 0.404);
+  padding: 2px 30px;
+  margin: 0.5rem;
+  opacity: 80%;
+  width: 13rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+legend {
+  position: absolute;
+  top: 16.4rem;
+}
+
+.headline {
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 2.9rem;
+  font-size: 24px;
+}
+
+.headline-register {
+  padding-left: 4.4rem;
+}
+
+.fieldset-column {
+  margin-top: 25px;
+}
+
+.create {
+  background-color: #2f97c6;
+  height: 30rem;
+  color: white;
+  flex: 0;
+  padding: 3rem;
+  margin-top: 8rem;
+  border-style: none;
+}
+
+.register {
+  background-color: #a5358b;
+  color: white;
+  flex: 0;
+  padding: 3rem;
+  margin-top: 8rem;
+  margin-bottom: 4.5rem;
+  height: 30rem;
+  border-style: none;
+}
+
+.button {
+  margin: auto;
+  margin-top: 1.6rem;
+}
+
+.agreement a {
+  color: rgb(252, 160, 39);
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.checkbox {
+  line-height: 1.5;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+button {
+  margin-top: 1.5rem;
+}
+
+.iceberg-container {
+  position: relative;
+  width: 100vw;
+  border: red solid thin;
+}
+
+.iceberg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/images/elements/ice-element.png);
+  width: 240px;
+  height: 200px;
+  z-index: 2;
+  position: absolute;
+  left: 64%;
+  bottom: -2rem;
+}
+
+/*
+checkbox:checked {
+  padding-top: 2rem;
+  color: rgb(252, 160, 39);
+
+  main {
+  width: 100%;
+  margin-top: -1rem;
+}
+} */

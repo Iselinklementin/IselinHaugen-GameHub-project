@@ -196,6 +196,13 @@ padding: 0;
   margin-top: 1.5rem;
 }
 
+.game-title a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .price-section p:nth-child(1) {
 padding-top: 9px;
 }
