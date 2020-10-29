@@ -122,6 +122,10 @@ h2 {
   height: 205px;
 }
 
+.gallery-top:hover {
+  border: rgb(6, 5, 5) solid thin;
+}
+
 .game1,
 .game2,
 .game3,
@@ -192,7 +196,6 @@ figcaption {
   margin-top: 3rem;
   margin: auto;
   max-width: 90%;
-  border: green solid;
 }
 
 .container-button {
@@ -266,9 +269,17 @@ h3 {
   height: 205px;
 }
 
+.gallery-bottom:hover {
+  border: rgba(6, 5, 5, 0) solid thin;
+}
+
 .overwatch {
   height: 205px;
   max-width: 330px;
+}
+
+.overwatch:hover {
+  border: rgba(6, 5, 5, 0) solid thin;
 }
 
 /* SUPPORT MOBILE */
@@ -291,6 +302,10 @@ h3 {
   cursor: pointer;
   text-align: center;
   margin-bottom: 2rem;
+}
+
+.container:hover {
+  border: rgba(6, 5, 5, 0) solid thin;
 }
 
 .sell-buy {
@@ -360,7 +375,6 @@ h3 {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 2.5rem;
-  border: coral thin solid;
 }
 
 /* BETA */
@@ -501,7 +515,6 @@ h3 {
     height: 350px;
     display: flex;
     margin-top: 2rem;
-    border: yellow thin solid;
   }
 
   .openbeta {
@@ -530,7 +543,6 @@ h3 {
     height: 200px;
     line-height: normal;
     text-shadow: 3px 3px #0e1a267e;
-    border: coral thin solid;
   }
   .span-beta {
     display: initial;
@@ -588,7 +600,6 @@ h3 {
   /* GALLERY ONE */
 
   .display-one {
-  border: yellow solid thin;
   max-width: 800px;
   margin: auto;
   justify-content: space-between;
@@ -611,7 +622,6 @@ h3 {
     max-width: 800px;
     margin-top: 0;
     text-align: left;
-    border: red solid thin;
   }
 
   .gallery-top {
@@ -655,7 +665,6 @@ h3 {
     padding-left: 0;
     margin: auto;
     width: 180px;
-    border: yellow thin solid;
   }
 
   .browse-shop {
@@ -671,14 +680,12 @@ h3 {
 
   .display-releases {
     width: 800px;
-    border: yellow solid thin;
   }
 
   .games-display-two {
     margin-top: 0;
     text-align: left;
     max-width: 800px;
-    border: red solid thin;
   }
 
   .release-game1,
@@ -768,15 +775,4 @@ h3 {
     background: url(/images/backgrounds/heading-bigsize.jpg);
     background-position: 50%;
   }
-
-  .display-releases {
-    width: 1450px;
-  }
-
-  .games-display-two {
-    margin-top: 0;
-    text-align: left;
-    max-width: 70%;
-  }
-
-  /* SUPPORT SCREEN */
+}

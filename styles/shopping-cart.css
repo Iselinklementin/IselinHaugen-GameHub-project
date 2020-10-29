@@ -176,6 +176,10 @@ h2 {
   width: 130px;
 }
 
+.game img:hover {
+  border: rgba(6, 5, 5, 0) solid thin;
+}
+
 @media only screen and (min-width: 650px) {
   .background {
     height: 1460px;
