@@ -4,13 +4,9 @@ html {
   scroll-behavior: smooth;
 }
 
-html {
+.background {
   background: url(/images/backgrounds/home-background.jpg) no-repeat center
     center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .header-img {
@@ -22,7 +18,10 @@ html {
   background-position: 50%;
   margin-top: 0;
   position: absolute;
-  z-index: -1;
+}
+
+.intro {
+  position: relative;
 }
 
 .direct-link {
@@ -193,6 +192,7 @@ figcaption {
   margin-top: 3rem;
   margin: auto;
   max-width: 90%;
+  border: green solid;
 }
 
 .container-button {
@@ -226,8 +226,7 @@ figcaption {
   margin-top: -1rem;
 }
 
-.display-two {
-  max-width: 980px;
+.display-releases {
   margin: auto;
 }
 
@@ -246,17 +245,12 @@ figcaption {
   flex: 0;
 }
 
-.release-game2,
-.release-game3 {
-  max-width: 150px;
-}
-
 h3 {
   margin-top: 1rem;
 }
 
 .new-rel-wrap {
-  padding: 10px;
+  padding: 2px;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -264,6 +258,7 @@ h3 {
 
 .game.text {
   display: none;
+  padding: 2px;
 }
 
 .gallery-bottom {
@@ -329,22 +324,20 @@ h3 {
 .support-img {
   display: flex;
   max-height: 520px;
+  max-width: 800px;
   position: absolute;
-  max-width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 0;
+  right: 0;
   margin: auto;
 }
 
 .buttons {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 400px;
   position: absolute;
-  align-items: left;
-  top: 12%;
-  left: 8%;
+  padding-top: 3rem;
+  margin-left: 1rem;
 }
 
 .buttons h3 {
@@ -359,13 +352,15 @@ h3 {
 }
 
 .support-sell {
-  display: block;
-  height: 520px;
-  left: 12%;
+  position: relative;
+  height: 440px;
+  width: 800px;
+  margin: auto;
   color: rgb(252, 160, 39);
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
+  border: coral thin solid;
 }
 
 /* BETA */
@@ -445,6 +440,7 @@ h3 {
     margin: auto, 0;
     align-items: center;
     justify-content: center;
+    max-width: 800px;
   }
 
   .photo-to-shop {
@@ -505,6 +501,7 @@ h3 {
     height: 350px;
     display: flex;
     margin-top: 2rem;
+    border: yellow thin solid;
   }
 
   .openbeta {
@@ -522,24 +519,25 @@ h3 {
     transform: translate(-50%, -50%);
   }
 
-  .beta-btn-container {
-    border: lightcoral solid thin;
-    height: 300px;
-    margin-top: -15rem;
-  }
-
   .access {
     position: absolute;
     background-color: rgba(0, 0, 0, 0);
-    right: 3%;
+    right: 5%;
+    padding-top: 4rem;
     font-size: 2.8rem;
     text-align: right;
-    width: 250px;
+    width: 300px;
+    height: 200px;
     line-height: normal;
-    border: red solid thin;
+    text-shadow: 3px 3px #0e1a267e;
+    border: coral thin solid;
+  }
+  .span-beta {
+    display: initial;
   }
 }
-@media only screen and (min-width: 839px) {
+@media only screen and (min-width: 829px) {
+
   .header-img {
     background: url(/images/backgrounds/headerdragons.jpg);
     background-repeat: no-repeat;
@@ -547,7 +545,9 @@ h3 {
     height: 800px;
     background-position: 50%;
     position: absolute;
+    z-index: 0;
   }
+
   .section-intro {
     max-width: 36rem;
   }
@@ -587,8 +587,11 @@ h3 {
 
   /* GALLERY ONE */
 
-  .games-display-one {
-    max-width: none;
+  .display-one {
+  border: yellow solid thin;
+  max-width: 800px;
+  margin: auto;
+  justify-content: space-between;
   }
 
   .heading-overview {
@@ -605,13 +608,15 @@ h3 {
   }
 
   .games-display-one {
+    max-width: 800px;
     margin-top: 0;
     text-align: left;
+    border: red solid thin;
   }
 
   .gallery-top {
-    width: 230px;
-    height: 320px;
+    width: 180px;
+    height: 275px;
   }
 
   .game1,
@@ -646,6 +651,13 @@ h3 {
     max-width: 38rem;
   }
 
+  .font-to-shop {
+    padding-left: 0;
+    margin: auto;
+    width: 180px;
+    border: yellow thin solid;
+  }
+
   .browse-shop {
     display: flex;
     flex-direction: column-reverse;
@@ -657,45 +669,41 @@ h3 {
 
   /*  GALLERY TWO  */
 
-  .display-two, .game-text {
-    display: block;
-    padding-right: 10px;
-  }
-
-  .display-two .game-text {
-    display: block;
-    padding-left: 10px;
+  .display-releases {
+    width: 800px;
+    border: yellow solid thin;
   }
 
   .games-display-two {
     margin-top: 0;
-    flex-wrap: nowrap;
     text-align: left;
-    max-width: 70%;
+    max-width: 800px;
+    border: red solid thin;
   }
+
   .release-game1,
   .release-game2,
   .release-game3 {
-    flex: 0;
-    padding: 0;
-    margin: 0 auto;
+    padding: 2px;
+    margin: 0.2rem;
   }
 
   .gallery-bottom {
-    width: 235px;
-    height: 315px;
-    padding: 10px;
+    width: 210px;
+    height: 270px;
+    margin: 0.1rem;
+    padding: 0;
   }
 
   .overwatch {
-    height: 315px;
-    max-width: 600px;
-    padding: 10px;
+    height: 270px;
+    width: 335px;
+    padding: 0;
+    margin: 0.1rem;
   }
 
   .release {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem 1rem;
     padding: 0 0rem;
   }
 
@@ -711,49 +719,58 @@ h3 {
 
   /* BETA */
 
+
   .beta {
     background-color: rgba(192, 201, 201, 0);
+    position: relative;
+    width: 800px;
+    margin: 1rem auto 3rem auto;
+    padding-top: 10rem;
   }
 
   .beta-btn-container {
     display: flex;
-    position: relative;
+    position: absolute;
     height: 100px;
-    width: 90%;
-    position: relative;
-  }
-
-  .openbeta-img {
-    display: flex;
-    max-width: 100%;
-    height: 520px;
+    right: 3%;
+    bottom: 15%;
     margin: auto;
   }
-  .beta {
-    margin-top: 10rem;
-  }
-  .beta-btn-container {
-    height: 200px;
-    width: 100%;
+
+  .openbeta {
+    position: absolute;
   }
 
   .beta-btn {
     display: initial;
-    top: -9rem;
-    right: 18%;
+  }
+
+  .openbeta-img {
+    max-width: 800px;
+    height: 460px;
   }
 
   .access {
     text-align: right;
     line-height: 1.5;
+    height: 300px;
+    margin-top: -10rem;
+    padding-top: 0;
+  }
+
+  .span-beta {
+    display: initial;
   }
 }
-
 
 @media only screen and (min-width: 1500px) {
   .header-img {
     background: url(/images/backgrounds/heading-bigsize.jpg);
     background-position: 50%;
+  }
+
+  .display-releases {
+    width: 1450px;
   }
 
   .games-display-two {
@@ -762,27 +779,4 @@ h3 {
     max-width: 70%;
   }
 
-  .span-beta {
-    display: initial;
-  }
-  .beta-btn {
-    display: initial;
-    top: -4rem;
-    right: 25%;
-  }
-
-  .access {
-    right: 25%;
-  }
-
   /* SUPPORT SCREEN */
-
-  .support-sell {
-    width: 49%;
-    left: 25%;
-  }
-  .buttons {
-    left: 26%;
-    width: 13%;
-  }
-}

@@ -767,3 +767,63 @@ h3 {
     width: 13%;
   }
 }
+
+
+@media only screen and (min-width: 839px) {
+  .header-img {
+    background: url(/images/backgrounds/headerdragons.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 800px;
+    background-position: 50%;
+    position: absolute;
+  }
+
+  .header-img {
+    display: flex;
+    background: url(/images/mobile/heading-mobile.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 580px;
+    background-position: 50%;
+    margin-top: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+.beta-btn-container {
+  display: flex;
+  position: relative;
+  width: 800px;
+  margin: auto;
+  border: red solid thin;
+}
+
+.beta {
+  border: yellow thin solid;
+  width: 800px;
+  margin: auto;
+}
+
+.beta-btn {
+  display: initial;
+  position: relative;
+  right: 0;
+}
+
+.openbeta-img {
+  max-width: 800px;
+  height: 460px;
+  margin: auto;
+}
+
+.access {
+  text-align: right;
+  line-height: 1.5;
+  height: 200px;
+}
+
+.span-beta {
+  display: initial;
+}
+}
