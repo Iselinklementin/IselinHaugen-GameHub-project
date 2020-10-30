@@ -37,11 +37,11 @@ h1 {
   width: 13rem;
   height: 2rem;
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 .headline {
- position: relative;
+  position: relative;
   top: 10%;
   font-size: 2rem;
   margin: auto;
@@ -115,17 +115,17 @@ button {
     margin-top: 8px;
   }
 
-.iceberg {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(/images/elements/ice-element.png);
-  width: 240px;
-  height: 200px;
-  z-index: 2;
-  position: absolute;
-  left: 69%;
-  bottom: -2rem;
-}
+  .iceberg {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/images/elements/ice-element.png);
+    width: 240px;
+    height: 200px;
+    z-index: 2;
+    position: absolute;
+    left: 69%;
+    bottom: -2rem;
+  }
 }
 
 /*

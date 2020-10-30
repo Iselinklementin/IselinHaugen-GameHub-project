@@ -5,11 +5,10 @@ main {
   background-position: left 50% bottom 18%;
   height: 1900px;
   width: 100%;
-  color: white;
+  color: var(--white-color);
 }
 
 h1 {
-  color: white;
   width: 340px;
   margin: auto;
   margin-top: 0;
@@ -20,7 +19,6 @@ h1 {
 
 legend,
 h2 {
-  color: white;
   text-align: center;
   font-size: 1.3rem;
   font-weight: 500;

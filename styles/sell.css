@@ -89,10 +89,6 @@ h2 {
   text-align: center;
 }
 
-input:focus {
-  outline: none;
-}
-
 #search-sell:hover {
   background-color: rgba(238, 234, 228, 0.123);
   padding: 0 1rem;

@@ -9,7 +9,7 @@ main {
   background-position: left 50% bottom 18%;
   height: 1700px;
   width: 100%;
-  color: white;
+  color: var(--white-color);
 }
 
 .grid {
@@ -21,7 +21,6 @@ main {
 }
 
 h1 {
-  color: white;
   margin: 0.5rem;
   font-size: 2.5rem;
   text-align: center;
@@ -130,7 +129,7 @@ form {
   width: 15px;
   background-color: rgba(238, 238, 238, 0);
   border-radius: 3px;
-  border: solid 2px rgb(252, 160, 39);
+  border: var(--primary-border);
 }
 
 .radio-container:hover input ~ .hub-radio:after {
@@ -138,7 +137,7 @@ form {
 }
 
 .radio-container input:checked ~ .hub-radio {
-  background-color: rgb(252, 160, 39);
+  background-color: var(--primary-color);
 }
 
 /* SUMMERY */
@@ -157,7 +156,7 @@ form {
 }
 
 .sub-wrap {
-  background-color: white;
+  background-color: var(--white-color);
   margin: auto;
 }
 
@@ -210,7 +209,7 @@ form {
 
 .game-title a {
   text-decoration: none;
-  color: black;
+  color: var(--black-color);
   font-weight: bold;
   cursor: pointer;
 }

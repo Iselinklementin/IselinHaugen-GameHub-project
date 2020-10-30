@@ -12,6 +12,11 @@
   </head>
   <body>
     <header>
+            
+      <ul class="skip-links">
+        <li><a href="#main">Skip to the main content</a></li>  
+      </ul>
+
       <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
       <input type="checkbox" id="hamburger-menu">
       <div class="nav-logo-center">
@@ -42,7 +47,7 @@
           </ul>
       </nav>
   </header>
-    <main class="background">
+    <main class="background" id="main">
       <div class="grid">
 
         <div class="headline-background"></div>
@@ -102,9 +107,9 @@
         <fieldset>
           <legend>Payment</legend>
           <div class="radio-wrap">
-          <label class="radio-container"><span class="radio-text">Klarna - Pay in 14 days</span><input type="radio" name="payment" value="klarna"><span class="hub-radio"></span></label>
-          <label class="radio-container"><span class="radio-text">MasterCard / Credit</span><input type="radio" name="payment" value="credit"><span class="hub-radio"></span></label>
-          <label class="radio-container"><span class="radio-text">Pay monthly</span><input type="radio" name="payment" value="monthly"><span class="hub-radio"></span></label>
+          <label class="radio-container"><span class="radio-text">Klarna - Pay in 14 days</span><input type="radio" name="payment" value="klarna" aria-required="true"><span class="hub-radio"></span></label>
+          <label class="radio-container"><span class="radio-text">MasterCard / Credit</span><input type="radio" name="payment" value="credit" aria-required="true"><span class="hub-radio"></span></label>
+          <label class="radio-container"><span class="radio-text">Pay monthly</span><input type="radio" name="payment" value="monthly" aria-required="true"><span class="hub-radio"></span></label>
         </div>
         </fieldset>
       </form>

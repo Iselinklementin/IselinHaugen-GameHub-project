@@ -62,13 +62,18 @@ h3 a {
 
 .filter-platform {
   display: flex;
-  color: black;
-  font-weight: bold;
 }
 
 .containers {
   flex: 0;
   margin: 0.2rem;
+}
+
+.containers a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .platform {

@@ -1,3 +1,5 @@
+@import "/imports/variables.css";
+
 * {
   box-sizing: border-box;
 }
@@ -10,14 +12,33 @@ body {
   padding: 0;
 }
 
+.skip-links {
+  position: absolute;
+  top: -10rem;
+}
+
+.skip-links a {
+  color: var(--black-color);
+  padding: 1rem 0.4rem;
+  line-height: 3;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: var(--primary-color);
+}
+
+.skip-links:focus-within {
+  left: 0;
+  top: 0;
+}
+
 header {
   background-color: #000000;
   min-height: 100px;
 }
 
 .active {
-  color: rgb(252, 160, 39);
-  border-bottom: 1px rgb(252, 160, 39) solid;
+  color: var(--primary-color);
+  border-bottom: var(--primary-border);
 }
 
 nav,
@@ -35,12 +56,12 @@ ul {
 
 nav li {
   display: block;
-  border-bottom: rgb(252, 160, 39) thin solid;
+  border-bottom: var(--primary-border);
   width: 35%;
 }
 
 nav a {
-  color: #ffffff;
+  color: var(--white-color);
   text-decoration: none;
   padding: 10px;
   padding-left: 0;
@@ -49,7 +70,7 @@ nav a {
 }
 
 nav a:hover {
-  color: rgb(252, 160, 39);
+  color: var(--primary-color);
 }
 
 .hamburger-label {
@@ -57,7 +78,7 @@ nav a:hover {
   padding: 30px;
   font-size: 1.9rem;
   display: block;
-  color: rgb(252, 160, 39);
+  color: var(--primary-color);
 }
 
 #hamburger-menu:checked ~ nav {
@@ -106,13 +127,13 @@ ul li .far {
 }
 
 input[type="search"] {
-  background-color: black;
-  border: 1px solid rgb(252, 160, 39);
+  background-color: var(--black-color);
+  border: 1px solid var(--primary-color);
+  color: white;
   border-radius: 8px;
   height: 35px;
   width: 10rem;
   padding: 0 1rem;
-  color: white;
   text-align: center;
   font-size: 1rem;
 }
@@ -129,9 +150,6 @@ input[type="search"] {
 }
 ::-moz-placeholder {
   opacity: 1;
-}
-#search input:focus {
-  outline: none;
 }
 
 h1,
@@ -173,7 +191,7 @@ h2 {
 
   li.login,
   .far:hover {
-    color: rgb(252, 160, 39);
+    color: var(--primary-color);
   }
 
   .wrap {
@@ -261,6 +279,7 @@ h2 {
     position: relative;
     right: 11%;
   }
+
   .nav-right-container {
     margin-right: 16%;
   }
@@ -279,11 +298,11 @@ h2 {
 
 .button {
   display: block;
-  background-color: rgb(252, 160, 39);
+  background-color: var(--primary-color);
   font: inherit;
   text-transform: uppercase;
   font-weight: bold;
-  border: 1px solid rgb(214, 136, 33);
+  border: var(--primary-color-btn-border);
   padding: 14px 18px;
   cursor: pointer;
   width: 12rem;
@@ -293,17 +312,17 @@ h2 {
 
 a.button {
   text-decoration: none;
-  color: black;
+  color: var(--black-color);
   text-align: center;
 }
 
 a.button-blue {
-  color: white;
+  color: var(--white-color);
 }
 
 .button-blue {
-  background-color: #1a8fc6;
-  border: 1px #2f97c6 solid;
+  background-color: var(--secondary-color-blue);
+  border: var(--secondary-border-blue);
   color: white;
 }
 
@@ -311,13 +330,17 @@ a.button-blue {
   background-color: #2ab3dd;
 }
 a.purple {
-  border: solid #7f276e 1px;
-  background-color: #a5358b;
+  border: var(--secondary-border-purple);
+  background-color: var(--secondary-color-purple);
   color: white;
 }
 
 .purple:hover {
   background-color: #bb3d9e;
+}
+
+.button:focus {
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .price {
@@ -338,7 +361,7 @@ footer ul {
 }
 
 footer li a {
-  color: white;
+  color: var(--white-color);
   text-decoration: none;
   line-height: 1.8;
 }
@@ -376,14 +399,13 @@ footer section {
 footer figure {
   justify-content: center;
   padding: 10px;
-  color: white;
   display: flex;
   margin: 1rem;
 }
 
 .fab {
   font-size: 1.2rem;
-  color: white;
+  color: var(--white-color);
   padding: 0.5rem;
 }
 
