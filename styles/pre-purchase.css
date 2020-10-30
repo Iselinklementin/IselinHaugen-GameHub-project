@@ -63,6 +63,11 @@ h1 {
   text-align: center;
 }
 
+a.button-blue {
+  margin: auto;
+  margin-top: 1rem;
+}
+
 /* GAME INFO + TEXT */
 
 .game-info {
@@ -143,7 +148,7 @@ th {
   padding-left: 2rem;
 }
 
-/* MEDIA */
+/* MEDIA 640px */
 
 @media only screen and (min-width: 640px) {
   .header-img {
@@ -199,6 +204,11 @@ th {
     margin-top: 2rem;
     margin-left: 2rem;
     text-align: left;
+  }
+
+  a.button-blue {
+    margin-left: 0;
+    margin-top: 1rem;
   }
 
   .btn {
