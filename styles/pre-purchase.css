@@ -160,14 +160,23 @@ th {
   }
 
   .breadcrumbs {
-    display: block;
-    padding: 1rem 0 0 2rem;
-    font-size: 0.8rem;
+    display: inline-flex;
+    list-style-type: none;
+    margin-top: 2rem;
+    font-size: 0.9rem;
   }
 
   .breadcrumbs a {
     color: white;
     text-decoration: none;
+  }
+
+  .breadcrumbs a:hover {
+    color: rgb(252, 160, 39);
+  }
+
+  .fas {
+    padding: 0 10px;
   }
 
   h1 {
