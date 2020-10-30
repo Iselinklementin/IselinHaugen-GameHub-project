@@ -35,7 +35,7 @@ h1 {
   background-image: url(/images/elements/gameover.svg);
   width: 280px;
   height: 180px;
-  margin: 3rem auto;
+  margin: 3rem auto 1rem auto;
 }
 
 .back {
@@ -43,6 +43,7 @@ h1 {
   color: var(--primary-color);
   font-style: italic;
   padding-right: 2rem;
+  font-size: 1.2rem;
 }
 
 .start {
@@ -50,6 +51,7 @@ h1 {
   color: #98cfe0;
   font-style: italic;
   padding-left: 2rem;
+  font-size: 1.2rem;
 }
 
 @media only screen and (min-width: 650px) {
