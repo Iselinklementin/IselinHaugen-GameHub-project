@@ -66,7 +66,8 @@ h2 {
 /* IMAGE EFFECT */
 
 .gallery-top:hover,
-.gallery-bottom:hover {
+.gallery-bottom:hover,
+.overwatch:hover {
   background: linear-gradient(
     rgba(255, 255, 255, 0.278),
     rgba(255, 255, 255, 0.387)
@@ -283,10 +284,6 @@ h3 {
 .overwatch {
   height: 205px;
   max-width: 330px;
-}
-
-.overwatch:hover {
-  border: rgba(6, 5, 5, 0) solid thin;
 }
 
 /* SUPPORT MOBILE */
