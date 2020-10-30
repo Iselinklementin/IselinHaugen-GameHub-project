@@ -144,10 +144,6 @@ h3 a {
   display: inline-block;
 }
 
-.shop-gallery:hover {
-  border: rgba(6, 5, 5, 0) solid thin;
-}
-
 .game1,
 .game2,
 .game3,
@@ -181,6 +177,15 @@ figcaption {
   font-size: 0.8rem;
 }
 
+/* IMAGE EFFECT */
+
+.shop-gallery:hover {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.278),
+    rgba(255, 255, 255, 0.387)
+  );
+  border: rgba(6, 5, 5, 0) solid thin;
+}
 /* FILTER CATEGORIES / FEATURES */
 
 .highlight:hover {
