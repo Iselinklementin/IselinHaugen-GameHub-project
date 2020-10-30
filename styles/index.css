@@ -549,6 +549,7 @@ h3 {
     display: initial;
   }
 }
+
 @media only screen and (min-width: 829px) {
   .header-img {
     background: url(/images/backgrounds/headerdragons.jpg);
@@ -766,11 +767,94 @@ h3 {
   }
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1300px) {
   .header-img {
     background: url(/images/backgrounds/heading-bigsize.jpg);
     background-position: 50%;
     width: 100%;
     background-repeat: no-repeat;
+  }
+
+  .heading-overview {
+    max-width: 1200px;
+  }
+
+  /* GALLERY ONE */
+
+  .display-one {
+    max-width: 1000px;
+  }
+
+  .games-display-one {
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  .heading-overview {
+    max-width: 920px;
+  }
+
+  .gallery-top {
+    width: 200px;
+    height: 275px;
+  }
+
+  .game1,
+  .game2,
+  .game3,
+  .game4 {
+    padding: 5px;
+    margin: 12px;
+  }
+
+  /* TO SHOP */
+
+  .font-to-shop {
+    text-align: center;
+    margin-right: 2rem;
+    width: 240px;
+  }
+
+  /*  GALLERY TWO  */
+
+  .display-releases {
+    width: 920px;
+  }
+
+  .games-display-two {
+    max-width: 1000px;
+  }
+
+  .overwatch {
+    width: 410px;
+  }
+
+  .release-game1,
+  .release-game2,
+  .release-game3 {
+    padding: 5px;
+    margin: 8px;
+  }
+
+  /* SUPPORT */
+
+  .support-img {
+    max-width: 920px;
+  }
+
+  .support-sell {
+    width: 910px;
+  }
+
+  /* BETA */
+
+  .beta {
+    width: 920px;
+    margin-top: 7rem;
+  }
+
+  .openbeta-img {
+    max-width: 920px;
+    height: 500px;
   }
 }
