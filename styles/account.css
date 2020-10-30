@@ -75,8 +75,8 @@ legend {
 
 .sale {
   display: flex;
-  background-color: rgb(252, 160, 39);
-  color: black;
+  background-color: var(--primary-color);
+  color: var(--black-color);
   width: 340px;
   margin: auto;
   margin-top: 3rem;
@@ -99,7 +99,7 @@ legend {
 
 #search-sell {
   background-color: rgba(255, 255, 255, 0.57);
-  border: 1px solid rgb(252, 160, 39);
+  border: var(--primary-border);
   border-radius: 8px;
   height: 35px;
   font-size: 1rem;
@@ -110,7 +110,7 @@ legend {
   font-size: 1rem;
   font-family: inherit;
   background-size: 15px;
-  color: black;
+  color: var(--black-color);
   text-align: center;
 }
 
@@ -160,7 +160,7 @@ tr {
 
 .orders {
   padding-bottom: 2rem;
-  border-bottom: rgb(252, 160, 39) solid 2px;
+  border-bottom: var(--primary-border);
 }
 
 .orders,
@@ -189,7 +189,7 @@ tr {
 }
 
 .link {
-  color: rgb(252, 160, 39);
+  color: var(--primary-color);
   font-style: italic;
   text-decoration: none;
   font-size: 0.8rem;

@@ -5,13 +5,11 @@
   background-position: left 50% bottom 18%;
   height: 1400px;
   width: 100%;
-  color: white;
+  color: var(--white-color);
 }
 
 h1 {
-  color: white;
-  padding-top: 3rem;
-  padding-bottom: 0;
+  padding: 3rem 0 0 0;
   margin: 0;
   text-align: center;
   font-size: 2.5rem;
@@ -52,7 +50,7 @@ h1 {
 }
 
 .create {
-  background-color: #2f97c6;
+  background-color: var(--secondary-color-blue);
   height: 30rem;
   color: white;
   flex: 0;
@@ -62,7 +60,7 @@ h1 {
 }
 
 .register {
-  background-color: #a5358b;
+  background-color: var(--secondary-color-purple);
   color: white;
   flex: 0;
   padding: 3rem;
@@ -78,16 +76,21 @@ h1 {
 }
 
 .agreement a {
-  color: rgb(252, 160, 39);
+  color: var(--primary-color);
   font-style: italic;
   font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.privacy {
+  padding-left: 1.4rem;
 }
 
 .checkbox {
   line-height: 1.5;
-  padding-top: 1.5rem;
-  padding-left: 1rem;
+  padding-top: 1rem;
   text-align: left;
+  width: 240px;
   font-size: 0.8rem;
 }
 
@@ -127,14 +130,3 @@ button {
     bottom: -2rem;
   }
 }
-
-/*
-checkbox:checked {
-  padding-top: 2rem;
-  color: rgb(252, 160, 39);
-
-  main {
-  width: 100%;
-  margin-top: -1rem;
-}
-} */

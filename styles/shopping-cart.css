@@ -5,7 +5,7 @@
   background-position: left 50% bottom 18%;
   height: 1500px;
   width: 100%;
-  color: white;
+  color: var(--white-color);
   text-align: center;
 }
 .grid {
@@ -38,7 +38,6 @@
 }
 
 h1 {
-  color: white;
   margin: 0.5rem;
   font-size: 2.5rem;
   text-align: center;
@@ -46,7 +45,7 @@ h1 {
 }
 
 h2 {
-  background-color: rgb(252, 160, 39);
+  background-color: var(--primary-color);
   color: black;
   text-align: center;
   font-size: 1.3rem;
@@ -92,7 +91,7 @@ h2 {
 
 .gamelink {
   text-decoration: none;
-  color: white;
+  color: var(--white-color);
 }
 
 .price {
@@ -252,7 +251,7 @@ h2 {
   }
 
   .container-right {
-    border-left: white solid thin;
+    border-left: var(--white-color) solid thin;
     padding: 10px;
     padding-left: 1.4rem;
     max-width: 650px;

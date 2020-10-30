@@ -129,7 +129,7 @@ ul li .far {
 input[type="search"] {
   background-color: var(--black-color);
   border: 1px solid var(--primary-color);
-  color: white;
+  color: var(--white-color);
   border-radius: 8px;
   height: 35px;
   width: 10rem;
@@ -139,7 +139,7 @@ input[type="search"] {
 }
 
 #search ::placeholder {
-  color: white;
+  color: var(--white-color);
   font-size: 0.8rem;
   font-family: inherit;
   text-align: center;
@@ -238,7 +238,7 @@ h2 {
     display: initial;
   }
   .far {
-    color: white;
+    color: var(--white-color);
     padding-right: 10px;
   }
 
@@ -332,7 +332,7 @@ a.button-blue {
 a.purple {
   border: var(--secondary-border-purple);
   background-color: var(--secondary-color-purple);
-  color: white;
+  color: var(--white-color);
 }
 
 .purple:hover {

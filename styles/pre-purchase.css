@@ -1,5 +1,5 @@
 body {
-  color: white;
+  color: var(--white-color);
   height: 100%;
   width: 100%;
 }
@@ -47,7 +47,6 @@ button {
 }
 
 h1 {
-  color: white;
   padding-top: 3rem;
   line-height: 1.2;
   margin: 0;
@@ -75,7 +74,7 @@ h1 {
 
 .game-info h2,
 .info-text h2 {
-  color: rgb(252, 160, 39);
+  color: var(--primary-color);
   font-weight: normal;
   font-size: 1.6rem;
 }
@@ -133,7 +132,7 @@ table {
 }
 
 td {
-  color: rgb(252, 160, 39);
+  color: var(--primary-color);
   font-size: 0.9rem;
   padding-left: 2.2rem;
 }
@@ -167,12 +166,12 @@ th {
   }
 
   .breadcrumbs a {
-    color: white;
+    color: var(--white-color);
     text-decoration: none;
   }
 
   .breadcrumbs a:hover {
-    color: rgb(252, 160, 39);
+    color: var(--primary-color);
   }
 
   .fas {

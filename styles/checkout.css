@@ -28,8 +28,8 @@ h1 {
 
 legend,
 h2 {
-  background-color: rgb(252, 160, 39);
-  color: black;
+  background-color: var(--primary-color);
+  color: var(--black-color);
   text-align: center;
   font-size: 1.3rem;
   font-weight: 500;
@@ -145,13 +145,13 @@ form {
 .summery {
   display: flex;
   margin: 0.5rem 0;
-  border: rgb(252, 160, 39) solid thin;
+  border: var(--primary-border);
   flex-direction: column;
   color: black;
 }
 
 .summery-container {
-  background-color: rgb(252, 160, 39);
+  background-color: var(--primary-color);
   width: 340px;
 }
 
