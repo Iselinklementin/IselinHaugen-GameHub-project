@@ -8,6 +8,10 @@ main {
   color: var(--white-color);
 }
 
+.far {
+  color: rgb(252, 160, 39);
+}
+
 h1 {
   width: 340px;
   margin: auto;
