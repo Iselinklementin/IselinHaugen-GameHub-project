@@ -4,9 +4,13 @@ html {
   scroll-behavior: smooth;
 }
 
-.background {
+html {
   background: url(/images/backgrounds/home-background.jpg) no-repeat center
     center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .header-img {
@@ -767,5 +771,6 @@ h3 {
     background: url(/images/backgrounds/heading-bigsize.jpg);
     background-position: 50%;
     width: 100%;
+    background-repeat: no-repeat;
   }
 }
