@@ -23,6 +23,10 @@ h1 {
   text-transform: initial;
 }
 
+span {
+  white-space: nowrap;
+}
+
 .first {
   color: var(--primary-color);
 }
