@@ -1,3 +1,3 @@
 # IselinHaugen-GameHub-project
 
-This is my first project.
+Look at me! Coding and stuff!
