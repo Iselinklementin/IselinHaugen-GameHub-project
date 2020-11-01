@@ -94,6 +94,10 @@ h2 {
   color: var(--white-color);
 }
 
+.valuta {
+  display: none;
+}
+
 .price {
   font-weight: normal;
 }
@@ -191,6 +195,18 @@ h2 {
 @media only screen and (min-width: 650px) {
   .background {
     height: 1600px;
+  }
+
+  .valuta {
+    display: initial;
+  }
+
+  span {
+    display: none;
+  }
+
+  .price {
+    white-space: nowrap;
   }
 
   .gameinfo {

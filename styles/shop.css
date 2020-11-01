@@ -82,6 +82,7 @@ h3 a {
   width: 80px;
   height: 20px;
   text-align: center;
+  font-size: 0.9rem;
 }
 
 .filter-platform li {

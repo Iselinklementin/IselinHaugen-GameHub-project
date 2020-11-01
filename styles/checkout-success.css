@@ -35,6 +35,10 @@ h1 {
   margin-top: 0;
 }
 
+span {
+  white-space: nowrap;
+}
+
 aside {
   display: flex;
   flex-direction: column;
